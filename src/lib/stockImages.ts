@@ -9,8 +9,6 @@ export const stockImages = {
   interior: pexels(4740484),
   architecture: pexels(7147286),
   landscape: pexels(28461041),
-  collage1: pexels(7303151),
-  collage3: pexels(534172),
   processConsultation: pexels(5825380),
   processConcept: pexels(30909748),
   processDevelopment: pexels(6790091),
@@ -19,4 +17,8 @@ export const stockImages = {
   formulaBg: pexels(6180674),
   servicesGridFurniture: pexels(5570228),
   servicesGridInterior: pexels(3952034),
+  expertiseMasterplanning: pexels(5583618),
+  expertisePreDesign: pexels(37071204),
+  expertiseSchematicDesign: pexels(9617886),
+  expertiseDocuments: pexels(4134179),
 } as const;

@@ -44,9 +44,15 @@
     "banner": {
       "title": "Furniture\nMade for\nReal Life"
     },
-    "collage": {
-      "word1": "Crafted",
-      "word2": "Considered"
+    "expertise": {
+      "title": "Our Expertise",
+      "items": {
+        "masterplanning": "Masterplanning",
+        "preDesign": "Pre-Design",
+        "schematicDesign": "Schematic Design",
+        "documents": "Construction Documents",
+        "installation": "Installation"
+      }
     },
     "formula": {
       "title": "Design It.\nInstalled.",

@@ -3,13 +3,21 @@
 import { useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
 import { Link } from '@/i18n/navigation';
 import TopoPattern from './TopoPattern';
 import { stockImages } from '@/lib/stockImages';
 
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
 export default function Hero() {
   const t = useTranslations('home.hero');
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
+  const accentRef = useRef<HTMLSpanElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
@@ -29,16 +37,31 @@ export default function Hero() {
     gsap.set(title.words, { transformOrigin: '50% 100%' });
 
     const tl = gsap.timeline();
-    tl.from(title.words, {
-      scale: 5,
-      yPercent: 60,
-      rotationZ: () => gsap.utils.random(-30, 30),
+    tl.from(imageRef.current, {
+      scale: 1.2,
       opacity: 0,
-      filter: 'blur(24px)',
-      ease: 'back.out(1.4)',
-      duration: 1.4,
-      stagger: { each: 0.09, from: 'random' },
+      duration: 1.8,
+      ease: 'power2.out',
     })
+      .from(
+        accentRef.current,
+        { scaleY: 0, transformOrigin: 'top', duration: 0.9, ease: 'power3.out' },
+        '<0.2',
+      )
+      .from(
+        title.words,
+        {
+          scale: 5,
+          yPercent: 60,
+          rotationZ: () => gsap.utils.random(-30, 30),
+          opacity: 0,
+          filter: 'blur(24px)',
+          ease: 'back.out(1.4)',
+          duration: 1.4,
+          stagger: { each: 0.09, from: 'random' },
+        },
+        '<0.3',
+      )
       .from(
         paragraph.words,
         {
@@ -60,29 +83,49 @@ export default function Hero() {
         '<0.3',
       );
 
+    const parallax = gsap.to(imageRef.current, {
+      yPercent: 15,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+
     return () => {
       tl.kill();
+      parallax.scrollTrigger?.kill();
+      parallax.kill();
       title.revert();
       paragraph.revert();
     };
   }, []);
 
   return (
-    <section className="relative overflow-hidden bg-forest-950 px-6 pb-28 pt-6 sm:px-[6vw]">
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden bg-forest-950 px-6 pb-28 pt-6 sm:px-[6vw]"
+    >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
+        ref={imageRef}
         src={stockImages.heroBg}
         alt={t('imageAlt')}
-        className="absolute inset-0 h-full w-full object-cover opacity-50"
+        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-50"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/85 to-forest-950/60" />
-      <span className="absolute right-0 top-0 h-32 w-2.5 bg-amber-600" aria-hidden="true" />
+      <span
+        ref={accentRef}
+        className="absolute right-0 top-0 h-32 w-2.5 bg-amber-600"
+        aria-hidden="true"
+      />
       <TopoPattern className="right-0 top-0 h-auto w-[60%] text-amber-600 opacity-40" />
       <div className="relative z-10 mx-auto w-full max-w-7xl py-16 sm:py-24">
-        <p className="font-mono text-xs uppercase tracking-widest text-amber-100">Skog Mộc</p>
         <h1
           ref={titleRef}
-          className="mt-10 max-w-4xl font-display text-[clamp(2.75rem,9vw,6.5rem)] font-extrabold leading-[0.98] tracking-tight text-linen-50"
+          className="max-w-4xl font-display text-[clamp(2.75rem,9vw,6.5rem)] font-extrabold leading-[0.98] tracking-tight text-linen-50"
         >
           {t('title')}
         </h1>

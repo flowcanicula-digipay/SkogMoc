@@ -37,9 +37,16 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://example-skogmoc-todo.vn'),
 };
 
+// Next dev's HMR relies on inline <script> tags and eval()-based source maps,
+// both of which a strict `script-src 'self'` blocks — silently killing all
+// client JS (hydration, GSAP, etc.) when testing via `npm run dev`. The
+// production static export doesn't use either, so only the dev script-src is
+// relaxed; the shipped CSP stays exactly as strict as documented.
+const isDev = process.env.NODE_ENV === 'development';
+
 const csp = [
   "default-src 'none'",
-  "script-src 'self'",
+  isDev ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'" : "script-src 'self'",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "connect-src 'self' https://formspree.io",

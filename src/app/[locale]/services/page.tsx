@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import ServicesGrid from '@/components/ServicesGrid';
+import PhotoServiceGrid from '@/components/PhotoServiceGrid';
 import InstallationBanner from '@/components/InstallationBanner';
 import Reveal from '@/components/Reveal';
 
@@ -60,6 +61,8 @@ export default async function ServicesPage({
           <ServicesGrid namespace="services.core" />
         </div>
       </section>
+
+      <PhotoServiceGrid namespace="services.core" />
 
       <section className="mx-auto max-w-7xl px-6 py-24">
         <p className="font-mono text-sm text-amber-600">02 — {t('installation.title')}</p>

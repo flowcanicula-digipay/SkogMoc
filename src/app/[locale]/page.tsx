@@ -8,7 +8,7 @@ import Reveal from '@/components/Reveal';
 import StorySection from '@/components/StorySection';
 import ImageBanner from '@/components/ImageBanner';
 import PhotoServiceGrid from '@/components/PhotoServiceGrid';
-import Collage from '@/components/Collage';
+import ExpertiseSection from '@/components/ExpertiseSection';
 import ProcessShowcase from '@/components/ProcessShowcase';
 import FormulaSection from '@/components/FormulaSection';
 import PortfolioGrid from '@/components/PortfolioGrid';
@@ -44,9 +44,6 @@ export default async function HomePage({
       {/* Statement */}
       <StorySection />
 
-      {/* Full-bleed image banner */}
-      <ImageBanner image={stockImages.banner} alt={t('banner.title')} title={t('banner.title')} />
-
       {/* 01 Services — furniture leads, photo grid */}
       <Reveal className="mx-auto max-w-7xl px-6 pt-24">
         <p className="font-mono text-sm text-amber-600">01 — {tCommon('nav.services')}</p>
@@ -61,9 +58,12 @@ export default async function HomePage({
         <PhotoServiceGrid namespace="services.core" />
       </Reveal>
 
-      {/* Collage */}
+      {/* Full-bleed image banner */}
+      <ImageBanner image={stockImages.banner} alt={t('banner.title')} title={t('banner.title')} />
+
+      {/* Expertise */}
       <Reveal>
-        <Collage />
+        <ExpertiseSection />
       </Reveal>
 
       {/* 02 Process */}

@@ -44,9 +44,15 @@
     "banner": {
       "title": "Đồ nội thất\ncho cuộc sống\nthực tế"
     },
-    "collage": {
-      "word1": "Chế tác",
-      "word2": "Chu đáo"
+    "expertise": {
+      "title": "Chuyên môn của chúng tôi",
+      "items": {
+        "masterplanning": "Quy hoạch tổng thể",
+        "preDesign": "Tiền thiết kế",
+        "schematicDesign": "Thiết kế sơ bộ",
+        "documents": "Hồ sơ thiết kế thi công",
+        "installation": "Lắp đặt"
+      }
     },
     "formula": {
       "title": "Thiết kế.\nLắp đặt.",

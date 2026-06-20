@@ -44,9 +44,15 @@
     "banner": {
       "title": "暮らしのための\n家具を\nデザイン"
     },
-    "collage": {
-      "word1": "丁寧な手仕事",
-      "word2": "考え抜かれた"
+    "expertise": {
+      "title": "私たちの専門性",
+      "items": {
+        "masterplanning": "マスタープランニング",
+        "preDesign": "予備設計",
+        "schematicDesign": "基本設計",
+        "documents": "施工図面",
+        "installation": "設置"
+      }
     },
     "formula": {
       "title": "デザインして、\n設置する。",
