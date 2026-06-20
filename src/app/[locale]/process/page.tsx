@@ -21,7 +21,7 @@ const STEPS = [
   'concept',
   'development',
   'documentation',
-  'buildConnection',
+  'installation',
   'handover',
 ] as const;
 

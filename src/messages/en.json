@@ -15,30 +15,30 @@
       "learnMore": "Learn More"
     },
     "footer": {
-      "tagline": "Design first. Built to live in.",
+      "tagline": "Furniture made for how you live.",
       "address": "Visit",
       "privacy": "Privacy Policy"
     }
   },
   "home": {
     "hero": {
-      "title": "Design first. Built to live in.",
-      "subtitle": "Architecture, interior, furniture, and landscape design for Vietnamese homes — resolved together, from the first sketch.",
-      "cta": "Start a Project",
+      "title": "Furniture designed around how you actually live.",
+      "subtitle": "Custom and semi-custom furniture design for Vietnamese homes, with interior, architectural, and landscape design available alongside it. Want it installed? We'll handle that too.",
+      "cta": "Design My Furniture",
       "secondaryCta": "View Our Work",
-      "imageAlt": "Line drawing of a Vietnamese tube house elevation"
+      "imageAlt": "Line drawing of a custom armchair"
     },
     "about": {
-      "title": "A design studio, not a construction company",
-      "body": "Skog Mộc by TNP designs the building, the interior, the furniture, and the landscape as one resolved scheme. Construction is optional — when you need a builder, we introduce you to an independent, trusted partner; the build itself is never our contract.",
-      "point1": "Four core design disciplines, one studio",
-      "point2": "Vietnamese climate and lot conditions, from concept onward",
-      "point3": "Construction is optional and handled by partnered builders",
-      "point4": "Furniture and interiors resolved together, not furnished after"
+      "title": "Furniture-first, designed around your home",
+      "body": "Skog Mộc by TNP designs bespoke and semi-custom furniture, resolved alongside your interior so the pieces and the room are considered together — not furnished afterward. We also offer interior, architectural, and landscape design for projects that need them, and we'll install your furniture for you if you'd rather not handle that yourself.",
+      "point1": "Furniture design is what we do best",
+      "point2": "Vietnamese climate and lot conditions inform every piece",
+      "point3": "Installation available, if you want it handled for you",
+      "point4": "Interior, architectural, and landscape design available alongside"
     },
     "services": {
       "title": "What we design",
-      "lead": "Four disciplines, each considered from the first concept sketch — not applied as a styling layer afterward."
+      "lead": "Furniture first — the easiest place to start — with interior, architectural, and landscape design available alongside it."
     },
     "process": {
       "title": "How a project unfolds",
@@ -53,16 +53,16 @@
       },
       "step3": {
         "title": "Development & documentation",
-        "body": "Concept resolved into a construction-ready drawing and specification set."
+        "body": "Concept resolved into a fabrication-ready drawing and specification set."
       },
       "step4": {
         "title": "Handover",
-        "body": "Documentation delivered to you or your chosen builder, with an optional introduction to a partnered builder."
+        "body": "Documentation and specifications delivered to you, with installation available if you'd like it handled for you."
       }
     },
-    "buildConnection": {
-      "title": "We design. Independent builders construct.",
-      "body": "Skog Mộc does not employ a construction crew and does not contract directly for building work. When a project is ready to build, we can introduce you to a trusted, independent builder — the construction contract is between you and them, separate from your design agreement with us."
+    "installation": {
+      "title": "Design it. Install it. Done.",
+      "body": "Most clients start with furniture. If you'd rather not handle delivery and setup yourself, we'll install your pieces for you — just say so when you reach out."
     },
     "portfolio": {
       "title": "Recent work",
@@ -79,31 +79,31 @@
   "services": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "Four core design disciplines, plus access to a wider network of specialists when a project calls for one."
+      "subtitle": "Furniture design is what we do best — with interior, architectural, and landscape design, plus a wider network of specialists, available when a project calls for them."
     },
     "core": {
-      "title": "Core disciplines",
-      "architecture": {
-        "title": "Architectural Design",
-        "body": "Concept through construction documentation for houses, townhouses, and additions."
+      "title": "What we design",
+      "leadTag": "Easiest place to start",
+      "furniture": {
+        "title": "Furniture Design",
+        "body": "Bespoke and semi-custom pieces, designed around your space and how you live in it. Installation available, if you want it handled for you."
       },
       "interior": {
         "title": "Interior Design",
         "body": "Spatial planning, material and finish selection, lighting, and joinery detailing."
       },
-      "furniture": {
-        "title": "Furniture Design",
-        "body": "Bespoke and semi-custom pieces, resolved alongside the interior scheme."
+      "architecture": {
+        "title": "Architectural Design",
+        "body": "Concept design and documentation for houses, townhouses, and additions."
       },
       "landscape": {
         "title": "Landscape Design",
         "body": "Gardens, courtyards, rooftop greenery, and the transition from house to street."
       }
     },
-    "buildConnection": {
-      "title": "Design first. Build optional.",
-      "body": "We design every project to a construction-ready standard. If you need a builder, we introduce you to an independent, trusted partner.",
-      "disclaimer": "Skog Mộc designs; partnered, independent builders construct. We do not employ a construction crew and do not contract directly for construction work."
+    "installation": {
+      "title": "Furniture installation",
+      "body": "If you'd rather not handle delivery and setup yourself, we'll install your furniture for you — just let us know when you reach out."
     },
     "extended": {
       "title": "Extended specialist services",
@@ -156,13 +156,13 @@
       "design": {
         "name": "Full Design Package",
         "tagline": "Most projects",
-        "description": "Concept through construction documentation across the disciplines your project needs.",
+        "description": "Concept through fabrication-ready specifications across the disciplines your project needs.",
         "price": "Custom quote — contact us"
       },
       "fullService": {
-        "name": "Design + Build Connection",
+        "name": "Design + Installation",
         "tagline": "End to end",
-        "description": "Full design package plus an introduction to a partnered, independent builder for construction.",
+        "description": "Full design package plus delivery and installation of your furniture.",
         "price": "Custom quote — contact us"
       }
     },
@@ -172,9 +172,9 @@
         "Initial consultation",
         "Concept design direction",
         "Material and finish selection",
-        "Construction documentation",
+        "Fabrication-ready specifications",
         "Furniture layout and specification",
-        "Optional builder introduction"
+        "Optional installation service"
       ]
     },
     "comparison": {
@@ -184,28 +184,28 @@
     "faq": {
       "title": "Frequently asked questions",
       "q1": {
-        "question": "Does Skog Mộc by TNP build the house, or only design it?",
-        "answer": "We design — architecture, interior, furniture, and landscape. We do not employ a construction crew and don't contract directly for building work. If you'd like a builder, we can introduce you to an independent, partnered construction team we trust; the construction contract is between you and that builder directly, separate from your design agreement with us."
+        "question": "Does Skog Mộc by TNP install the furniture, or only design it?",
+        "answer": "We design first — furniture is what we do best, alongside interior, architectural, and landscape design when a project calls for them. Installation is available too: if you'd rather not handle delivery and setup yourself, just let us know and we'll take care of it."
       },
       "q2": {
-        "question": "What if I already have a builder?",
-        "answer": "That's fine — many clients do. We design to a level of construction documentation detail that any competent builder can work from. We're happy to coordinate with your chosen builder during construction if you want that handoff support; it's not required."
+        "question": "What if I already have my own installer or fabricator?",
+        "answer": "That's fine — many clients do. We design to a level of detail any competent installer or fabricator can work from, and we're happy to coordinate with your chosen team if you want that handoff support; it's not required."
       },
       "q3": {
-        "question": "Do you only design new houses, or also renovations?",
-        "answer": "Both. New builds, additions, and renovations of existing homes are all within scope. Renovation projects typically need an initial site survey to document the existing structure before concept design begins."
+        "question": "Do you only design furniture, or also full interiors?",
+        "answer": "Both. Furniture is our core focus, designed alongside an interior scheme when one's needed. Renovation and addition projects typically need an initial site survey before concept design begins."
       },
       "q4": {
         "question": "What's included in a full design package?",
-        "answer": "Deliverables vary by project — we'll confirm the exact set (concept drawings, visualisations, material specification, construction documentation, furniture and landscape plans) with you during consultation."
+        "answer": "Deliverables vary by project — we'll confirm the exact set (concept drawings, visualisations, material specification, fabrication-ready drawings, and furniture layout) with you during consultation."
       },
       "q5": {
         "question": "How long does the design process take?",
         "answer": "Timelines vary by project scope and scale. See our Process page for a phase breakdown; we'll give you a realistic estimate during consultation."
       },
       "q6": {
-        "question": "Do you handle construction permits?",
-        "answer": "Our construction documentation is prepared to a standard suitable for permit submission. We'll confirm with you during consultation whether permit submission itself is included or is the client's/builder's responsibility for your project."
+        "question": "What materials and finishes do you work with?",
+        "answer": "Material and finish choices are confirmed for each piece based on durability, budget, and the Vietnamese climate — we'll walk you through options during consultation."
       },
       "q7": {
         "question": "What areas of Vietnam do you work in?",
@@ -254,15 +254,15 @@
       },
       "documentation": {
         "title": "Documentation",
-        "body": "Construction-ready drawings and specifications, suitable for permit submission and builder pricing."
+        "body": "Fabrication-ready drawings and specifications for your furniture and any accompanying interior or architectural work."
       },
-      "buildConnection": {
-        "title": "Build connection (optional)",
-        "body": "If you'd like a builder, we introduce you to an independent, partnered construction team — the build contract is between you and them."
+      "installation": {
+        "title": "Installation (optional)",
+        "body": "If you'd like your furniture installed for you, we'll handle delivery and setup — just let us know when you reach out."
       },
       "handover": {
         "title": "Handover",
-        "body": "Final documentation delivered to you, ready for your records or your builder."
+        "body": "Final documentation delivered to you, ready for your records or your fabricator."
       }
     },
     "timeline": {
@@ -286,8 +286,8 @@
       "plotArea": { "label": "Approximate plot or floor area" },
       "province": { "label": "Province / city" },
       "budgetRange": { "label": "Approximate budget range" },
-      "wantsBuildConnection": {
-        "label": "Would you also like an introduction to a partnered builder?"
+      "wantsInstallation": {
+        "label": "Would you also like installation handled for you?"
       },
       "language": { "label": "Preferred follow-up language" },
       "notes": { "label": "Notes, inspiration links, or questions" },
@@ -385,12 +385,12 @@
   },
   "meta": {
     "home": {
-      "title": "Skog Mộc by TNP — Architectural, Interior, Furniture & Landscape Design",
-      "description": "Architectural, interior, furniture, and landscape design for Vietnamese homes. Design-led, build-optional."
+      "title": "Skog Mộc by TNP — Furniture Design for Vietnamese Homes",
+      "description": "Custom and semi-custom furniture design for Vietnamese homes, with interior, architectural, and landscape design available alongside it. Installation available."
     },
     "services": {
       "title": "Services — Skog Mộc by TNP",
-      "description": "Architectural design, interior design, furniture design, and landscape design, plus extended specialist services."
+      "description": "Furniture design and installation, with interior, architectural, and landscape design available alongside it."
     },
     "pricing": {
       "title": "Pricing — Skog Mộc by TNP",

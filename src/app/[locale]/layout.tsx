@@ -3,20 +3,21 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Archivo, Inter, Inter_Tight } from 'next/font/google';
+import { Plus_Jakarta_Sans, Montserrat, Inter_Tight } from 'next/font/google';
 import { routing, type Locale } from '@/i18n/routing';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
+import SmoothScroll from '@/components/SmoothScroll';
 import '../globals.css';
 
-const archivo = Archivo({
+const displayFont = Plus_Jakarta_Sans({
   subsets: ['latin', 'vietnamese'],
   variable: '--font-display',
   display: 'swap',
 });
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ['latin', 'vietnamese'],
   variable: '--font-inter',
   display: 'swap',
@@ -62,12 +63,13 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${archivo.variable} ${inter.variable} ${interMono.variable}`}>
+    <html lang={locale} className={`${displayFont.variable} ${montserrat.variable} ${interMono.variable}`}>
       <head>
         <meta httpEquiv="Content-Security-Policy" content={csp} />
       </head>
       <body className="bg-linen-50 text-ink font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
+          <SmoothScroll />
           <SchemaJsonLd />
           <Header />
           <main>{children}</main>

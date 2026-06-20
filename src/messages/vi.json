@@ -15,30 +15,30 @@
       "learnMore": "Tìm hiểu thêm"
     },
     "footer": {
-      "tagline": "Thiết kế trước. Sống thật sau.",
+      "tagline": "Đồ nội thất làm cho cách bạn sống.",
       "address": "Địa chỉ",
       "privacy": "Chính sách bảo mật"
     }
   },
   "home": {
     "hero": {
-      "title": "Thiết kế trước. Sống thật sau.",
-      "subtitle": "Thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan cho nhà ở Việt Nam — được giải quyết đồng bộ, ngay từ phác thảo đầu tiên.",
-      "cta": "Bắt đầu dự án",
+      "title": "Đồ nội thất được thiết kế theo cách bạn thực sự sống.",
+      "subtitle": "Thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu cho nhà ở Việt Nam, cùng với thiết kế nội thất, kiến trúc và cảnh quan khi cần. Muốn lắp đặt? Chúng tôi cũng đảm nhận luôn.",
+      "cta": "Thiết kế đồ nội thất của tôi",
       "secondaryCta": "Xem dự án của chúng tôi",
-      "imageAlt": "Bản vẽ đường nét mặt đứng nhà ống Việt Nam"
+      "imageAlt": "Bản vẽ đường nét một chiếc ghế bành thiết kế riêng"
     },
     "about": {
-      "title": "Một studio thiết kế, không phải công ty xây dựng",
-      "body": "Skog Mộc by TNP thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan như một phương án thống nhất. Thi công là tùy chọn — khi bạn cần đơn vị thi công, chúng tôi giới thiệu một đối tác độc lập, đáng tin cậy; việc xây dựng không bao giờ thuộc hợp đồng của chúng tôi.",
-      "point1": "Bốn lĩnh vực thiết kế cốt lõi, một studio",
-      "point2": "Điều kiện khí hậu và lô đất Việt Nam, từ ý tưởng đầu tiên",
-      "point3": "Thi công là tùy chọn và do đơn vị thi công đối tác thực hiện",
-      "point4": "Đồ nội thất và không gian được giải quyết cùng nhau, không phải bố trí sau"
+      "title": "Đồ nội thất là trọng tâm, thiết kế theo ngôi nhà của bạn",
+      "body": "Skog Mộc by TNP thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu, được giải quyết cùng với không gian nội thất để đồ đạc và căn phòng được xem xét đồng thời — không bố trí sau. Chúng tôi cũng cung cấp thiết kế nội thất, kiến trúc và cảnh quan cho các dự án cần đến, và sẽ lắp đặt đồ nội thất cho bạn nếu bạn không muốn tự thực hiện.",
+      "point1": "Thiết kế đồ nội thất là thế mạnh của chúng tôi",
+      "point2": "Khí hậu và điều kiện lô đất Việt Nam định hình từng sản phẩm",
+      "point3": "Có dịch vụ lắp đặt, nếu bạn muốn chúng tôi đảm nhận",
+      "point4": "Thiết kế nội thất, kiến trúc và cảnh quan có sẵn khi cần"
     },
     "services": {
       "title": "Chúng tôi thiết kế gì",
-      "lead": "Bốn lĩnh vực, mỗi lĩnh vực được xem xét từ phác thảo ý tưởng đầu tiên — không phải lớp trang trí áp dụng sau."
+      "lead": "Đồ nội thất là trọng tâm — điểm khởi đầu dễ nhất — cùng với thiết kế nội thất, kiến trúc và cảnh quan khi cần."
     },
     "process": {
       "title": "Một dự án diễn ra như thế nào",
@@ -53,16 +53,16 @@
       },
       "step3": {
         "title": "Phát triển & hồ sơ thiết kế",
-        "body": "Ý tưởng được hoàn thiện thành hồ sơ thiết kế thi công và bảng vật liệu."
+        "body": "Ý tưởng được hoàn thiện thành hồ sơ bản vẽ và quy cách sẵn sàng để sản xuất."
       },
       "step4": {
         "title": "Giao hồ sơ",
-        "body": "Hồ sơ được giao cho bạn hoặc đơn vị thi công bạn chọn, kèm giới thiệu tùy chọn đến đơn vị thi công đối tác."
+        "body": "Hồ sơ và quy cách được giao cho bạn, kèm dịch vụ lắp đặt nếu bạn muốn chúng tôi đảm nhận."
       }
     },
-    "buildConnection": {
-      "title": "Chúng tôi thiết kế. Đơn vị thi công độc lập xây dựng.",
-      "body": "Skog Mộc không có đội ngũ thi công và không trực tiếp nhận hợp đồng xây dựng. Khi dự án sẵn sàng để xây, chúng tôi có thể giới thiệu một đơn vị thi công độc lập, đáng tin cậy — hợp đồng thi công là giữa bạn và đơn vị đó, tách biệt với hợp đồng thiết kế với chúng tôi."
+    "installation": {
+      "title": "Thiết kế. Lắp đặt. Hoàn thành.",
+      "body": "Hầu hết khách hàng bắt đầu với đồ nội thất. Nếu bạn không muốn tự vận chuyển và lắp đặt, chúng tôi sẽ lắp đặt sản phẩm cho bạn — chỉ cần cho chúng tôi biết khi liên hệ."
     },
     "portfolio": {
       "title": "Dự án gần đây",
@@ -79,31 +79,31 @@
   "services": {
     "hero": {
       "title": "Dịch vụ của chúng tôi",
-      "subtitle": "Bốn lĩnh vực thiết kế cốt lõi, cùng khả năng tiếp cận mạng lưới chuyên gia rộng hơn khi dự án cần."
+      "subtitle": "Thiết kế đồ nội thất là thế mạnh của chúng tôi — cùng thiết kế nội thất, kiến trúc, cảnh quan và mạng lưới chuyên gia rộng hơn khi dự án cần."
     },
     "core": {
-      "title": "Lĩnh vực cốt lõi",
-      "architecture": {
-        "title": "Thiết kế kiến trúc",
-        "body": "Từ ý tưởng đến hồ sơ thiết kế thi công cho nhà phố, nhà ống và các công trình mở rộng."
+      "title": "Chúng tôi thiết kế gì",
+      "leadTag": "Điểm khởi đầu dễ nhất",
+      "furniture": {
+        "title": "Thiết kế đồ nội thất",
+        "body": "Các sản phẩm đặt riêng và bán đặt riêng, thiết kế theo không gian và cách bạn sống. Có dịch vụ lắp đặt, nếu bạn muốn chúng tôi đảm nhận."
       },
       "interior": {
         "title": "Thiết kế nội thất",
         "body": "Bố trí không gian, lựa chọn vật liệu và hoàn thiện, thiết kế chiếu sáng và chi tiết mộc."
       },
-      "furniture": {
-        "title": "Thiết kế đồ nội thất",
-        "body": "Các sản phẩm đặt riêng và bán đặt riêng, được giải quyết cùng phương án nội thất."
+      "architecture": {
+        "title": "Thiết kế kiến trúc",
+        "body": "Thiết kế ý tưởng và hồ sơ cho nhà phố, nhà ống và các công trình mở rộng."
       },
       "landscape": {
         "title": "Thiết kế cảnh quan",
         "body": "Vườn, sân trong, cây xanh trên mái và sự chuyển tiếp từ nhà ra phố."
       }
     },
-    "buildConnection": {
-      "title": "Thiết kế trước. Thi công là tùy chọn.",
-      "body": "Chúng tôi thiết kế mọi dự án đạt tiêu chuẩn sẵn sàng thi công. Nếu bạn cần đơn vị thi công, chúng tôi giới thiệu một đối tác độc lập, đáng tin cậy.",
-      "disclaimer": "Skog Mộc thiết kế; đơn vị thi công độc lập, đối tác sẽ xây dựng. Chúng tôi không có đội ngũ thi công và không trực tiếp nhận hợp đồng xây dựng."
+    "installation": {
+      "title": "Lắp đặt đồ nội thất",
+      "body": "Nếu bạn không muốn tự vận chuyển và lắp đặt, chúng tôi sẽ lắp đặt đồ nội thất cho bạn — chỉ cần cho chúng tôi biết khi liên hệ."
     },
     "extended": {
       "title": "Dịch vụ chuyên môn mở rộng",
@@ -156,13 +156,13 @@
       "design": {
         "name": "Gói thiết kế đầy đủ",
         "tagline": "Phù hợp hầu hết dự án",
-        "description": "Từ ý tưởng đến hồ sơ thiết kế thi công cho các lĩnh vực dự án của bạn cần.",
+        "description": "Từ ý tưởng đến hồ sơ sẵn sàng sản xuất cho các lĩnh vực dự án của bạn cần.",
         "price": "Báo giá riêng — liên hệ chúng tôi"
       },
       "fullService": {
-        "name": "Thiết kế + Kết nối thi công",
+        "name": "Thiết kế + Lắp đặt",
         "tagline": "Trọn gói",
-        "description": "Gói thiết kế đầy đủ cùng giới thiệu đến đơn vị thi công đối tác, độc lập để xây dựng.",
+        "description": "Gói thiết kế đầy đủ cùng dịch vụ vận chuyển và lắp đặt đồ nội thất.",
         "price": "Báo giá riêng — liên hệ chúng tôi"
       }
     },
@@ -172,9 +172,9 @@
         "Tư vấn ban đầu",
         "Định hướng thiết kế ý tưởng",
         "Lựa chọn vật liệu và hoàn thiện",
-        "Hồ sơ thiết kế thi công",
+        "Hồ sơ sẵn sàng sản xuất",
         "Bố trí và thông số đồ nội thất",
-        "Giới thiệu đơn vị thi công (tùy chọn)"
+        "Dịch vụ lắp đặt (tùy chọn)"
       ]
     },
     "comparison": {
@@ -184,28 +184,28 @@
     "faq": {
       "title": "Câu hỏi thường gặp",
       "q1": {
-        "question": "Skog Mộc by TNP có xây nhà, hay chỉ thiết kế?",
-        "answer": "Chúng tôi thiết kế — kiến trúc, nội thất, đồ nội thất và cảnh quan. Chúng tôi không có đội ngũ thi công và không trực tiếp nhận hợp đồng xây dựng. Nếu bạn cần đơn vị thi công, chúng tôi có thể giới thiệu một đội thi công đối tác, độc lập mà chúng tôi tin tưởng; hợp đồng thi công là giữa bạn và đơn vị đó, tách biệt với hợp đồng thiết kế với chúng tôi."
+        "question": "Skog Mộc by TNP có lắp đặt đồ nội thất, hay chỉ thiết kế?",
+        "answer": "Chúng tôi thiết kế trước — đồ nội thất là thế mạnh của chúng tôi, cùng thiết kế nội thất, kiến trúc và cảnh quan khi dự án cần. Lắp đặt cũng có sẵn: nếu bạn không muốn tự vận chuyển và lắp đặt, chỉ cần cho chúng tôi biết và chúng tôi sẽ đảm nhận."
       },
       "q2": {
-        "question": "Nếu tôi đã có đơn vị thi công thì sao?",
-        "answer": "Không vấn đề — nhiều khách hàng đã có. Chúng tôi thiết kế hồ sơ thi công đủ chi tiết để bất kỳ đơn vị thi công có năng lực nào cũng có thể thực hiện. Chúng tôi sẵn lòng phối hợp với đơn vị thi công bạn chọn trong quá trình xây dựng nếu bạn muốn; điều này không bắt buộc."
+        "question": "Nếu tôi đã có đơn vị lắp đặt hoặc sản xuất riêng thì sao?",
+        "answer": "Không vấn đề — nhiều khách hàng đã có. Chúng tôi thiết kế hồ sơ đủ chi tiết để bất kỳ đơn vị lắp đặt hoặc sản xuất có năng lực nào cũng có thể thực hiện. Chúng tôi sẵn lòng phối hợp với đơn vị bạn chọn nếu bạn muốn; điều này không bắt buộc."
       },
       "q3": {
-        "question": "Bạn chỉ thiết kế nhà mới, hay cả cải tạo?",
-        "answer": "Cả hai. Xây mới, mở rộng và cải tạo nhà hiện có đều trong phạm vi dịch vụ. Dự án cải tạo thường cần khảo sát hiện trạng ban đầu để ghi nhận công trình hiện có trước khi bắt đầu thiết kế ý tưởng."
+        "question": "Bạn chỉ thiết kế đồ nội thất, hay cả không gian nội thất đầy đủ?",
+        "answer": "Cả hai. Đồ nội thất là trọng tâm của chúng tôi, được thiết kế cùng phương án nội thất khi cần. Dự án cải tạo hoặc mở rộng thường cần khảo sát hiện trạng ban đầu trước khi bắt đầu thiết kế ý tưởng."
       },
       "q4": {
         "question": "Gói thiết kế đầy đủ bao gồm những gì?",
-        "answer": "Hạng mục bàn giao thay đổi theo từng dự án — chúng tôi sẽ xác nhận chính xác (bản vẽ ý tưởng, hình ảnh 3D, bảng vật liệu, hồ sơ thiết kế thi công, bố trí nội thất và cảnh quan) cùng bạn trong buổi tư vấn."
+        "answer": "Hạng mục bàn giao thay đổi theo từng dự án — chúng tôi sẽ xác nhận chính xác (bản vẽ ý tưởng, hình ảnh 3D, bảng vật liệu, hồ sơ sẵn sàng sản xuất, bố trí đồ nội thất) cùng bạn trong buổi tư vấn."
       },
       "q5": {
         "question": "Quá trình thiết kế kéo dài bao lâu?",
         "answer": "Thời gian thay đổi theo phạm vi và quy mô dự án. Xem trang Quy trình của chúng tôi để biết các giai đoạn; chúng tôi sẽ đưa ra ước tính thực tế trong buổi tư vấn."
       },
       "q6": {
-        "question": "Bạn có hỗ trợ xin giấy phép xây dựng không?",
-        "answer": "Hồ sơ thiết kế thi công của chúng tôi được chuẩn bị đạt tiêu chuẩn phù hợp để nộp xin giấy phép. Chúng tôi sẽ xác nhận cùng bạn trong buổi tư vấn liệu việc nộp xin giấy phép có nằm trong gói dịch vụ hay thuộc trách nhiệm của khách hàng/đơn vị thi công cho dự án của bạn."
+        "question": "Bạn làm việc với vật liệu và hoàn thiện nào?",
+        "answer": "Lựa chọn vật liệu và hoàn thiện được xác nhận cho từng sản phẩm dựa trên độ bền, ngân sách và khí hậu Việt Nam — chúng tôi sẽ giới thiệu các lựa chọn trong buổi tư vấn."
       },
       "q7": {
         "question": "Bạn làm việc ở khu vực nào tại Việt Nam?",
@@ -253,16 +253,16 @@
         "body": "Ý tưởng được hoàn thiện thành phương án kiến trúc, nội thất, đồ nội thất và cảnh quan đồng bộ."
       },
       "documentation": {
-        "title": "Hồ sơ thiết kế thi công",
-        "body": "Bản vẽ và thông số kỹ thuật sẵn sàng thi công, phù hợp để xin giấy phép và báo giá thi công."
+        "title": "Hồ sơ thiết kế",
+        "body": "Bản vẽ và thông số kỹ thuật sẵn sàng sản xuất cho đồ nội thất và phần nội thất hoặc kiến trúc đi kèm."
       },
-      "buildConnection": {
-        "title": "Kết nối thi công (tùy chọn)",
-        "body": "Nếu bạn cần đơn vị thi công, chúng tôi giới thiệu một đội thi công đối tác, độc lập — hợp đồng thi công là giữa bạn và đơn vị đó."
+      "installation": {
+        "title": "Lắp đặt (tùy chọn)",
+        "body": "Nếu bạn muốn đồ nội thất được lắp đặt cho mình, chúng tôi sẽ vận chuyển và lắp đặt — chỉ cần cho chúng tôi biết khi liên hệ."
       },
       "handover": {
         "title": "Giao hồ sơ",
-        "body": "Hồ sơ cuối cùng được giao cho bạn, sẵn sàng để lưu trữ hoặc giao cho đơn vị thi công."
+        "body": "Hồ sơ cuối cùng được giao cho bạn, sẵn sàng để lưu trữ hoặc giao cho đơn vị sản xuất."
       }
     },
     "timeline": {
@@ -286,8 +286,8 @@
       "plotArea": { "label": "Diện tích đất hoặc diện tích sàn ước tính" },
       "province": { "label": "Tỉnh / thành phố" },
       "budgetRange": { "label": "Khoảng ngân sách ước tính" },
-      "wantsBuildConnection": {
-        "label": "Bạn có muốn được giới thiệu đến đơn vị thi công đối tác không?"
+      "wantsInstallation": {
+        "label": "Bạn có muốn chúng tôi đảm nhận việc lắp đặt không?"
       },
       "language": { "label": "Ngôn ngữ liên hệ ưu tiên" },
       "notes": { "label": "Ghi chú, liên kết tham khảo hoặc câu hỏi" },
@@ -385,12 +385,12 @@
   },
   "meta": {
     "home": {
-      "title": "Skog Mộc by TNP — Thiết kế kiến trúc, nội thất, đồ nội thất & cảnh quan",
-      "description": "Thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan cho nhà ở Việt Nam. Thiết kế dẫn đầu, thi công tùy chọn."
+      "title": "Skog Mộc by TNP — Thiết kế đồ nội thất cho nhà ở Việt Nam",
+      "description": "Thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu cho nhà ở Việt Nam, cùng thiết kế nội thất, kiến trúc và cảnh quan khi cần. Có dịch vụ lắp đặt."
     },
     "services": {
       "title": "Dịch vụ — Skog Mộc by TNP",
-      "description": "Thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan, cùng các dịch vụ chuyên môn mở rộng."
+      "description": "Thiết kế và lắp đặt đồ nội thất, cùng thiết kế nội thất, kiến trúc và cảnh quan khi cần."
     },
     "pricing": {
       "title": "Bảng giá — Skog Mộc by TNP",

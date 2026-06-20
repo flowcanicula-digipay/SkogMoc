@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import ServicesGrid from '@/components/ServicesGrid';
-import BuildConnectionBanner from '@/components/BuildConnectionBanner';
+import InstallationBanner from '@/components/InstallationBanner';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -57,13 +57,10 @@ export default async function ServicesPage({
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-24">
-        <p className="font-mono text-sm text-amber-600">02 — {t('buildConnection.title')}</p>
+        <p className="font-mono text-sm text-amber-600">02 — {t('installation.title')}</p>
         <div className="mt-8">
-          <BuildConnectionBanner namespace="services.buildConnection" />
+          <InstallationBanner namespace="services.installation" />
         </div>
-        <p className="mt-6 max-w-2xl text-sm leading-relaxed text-ink/70">
-          {t('buildConnection.disclaimer')}
-        </p>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-24">

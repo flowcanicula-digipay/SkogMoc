@@ -142,13 +142,13 @@ export default function ProjectInquiryForm() {
 
       <div className="flex items-center gap-3">
         <input
-          id="wantsBuildConnection"
-          name="wantsBuildConnection"
+          id="wantsInstallation"
+          name="wantsInstallation"
           type="checkbox"
           className="h-4 w-4 rounded border-amber-100 text-amber-600 focus:ring-amber-600"
         />
-        <label htmlFor="wantsBuildConnection" className="text-sm text-forest-950">
-          {t('wantsBuildConnection.label')}
+        <label htmlFor="wantsInstallation" className="text-sm text-forest-950">
+          {t('wantsInstallation.label')}
         </label>
       </div>
 
