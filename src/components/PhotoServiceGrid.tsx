@@ -51,8 +51,8 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
               onMouseLeave={() => setActive(null)}
               onFocus={() => setActive(i)}
               onBlur={() => setActive(null)}
-              style={{ flexGrow: isActive ? 3 : 1 }}
-              className="relative h-full overflow-hidden border-r border-forest-950/10 text-left transition-[flex-grow] duration-700 ease-out last:border-r-0 focus:outline-none"
+              style={{ flexGrow: isActive ? 27 : 1 }}
+              className="relative h-full overflow-hidden border-r border-forest-950/10 text-left transition-[flex-grow] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] last:border-r-0 focus:outline-none"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

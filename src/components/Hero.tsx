@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import SplitType from 'split-type';
+import { ArrowRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import TopoPattern from './TopoPattern';
 import { stockImages } from '@/lib/stockImages';
@@ -106,7 +107,7 @@ export default function Hero() {
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-forest-950 px-6 pb-28 pt-6 sm:px-[6vw]"
+      className="relative flex min-h-[70vh] items-end overflow-hidden bg-forest-950 px-6 pb-14 pt-24 sm:min-h-[75vh] sm:px-[6vw] sm:pb-16"
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
@@ -122,29 +123,32 @@ export default function Hero() {
         aria-hidden="true"
       />
       <TopoPattern className="right-0 top-0 h-auto w-[60%] text-amber-600 opacity-40" />
-      <div className="relative z-10 mx-auto w-full max-w-7xl py-16 sm:py-24">
+      <div className="relative z-10 mx-auto w-full max-w-7xl">
         <h1
           ref={titleRef}
-          className="max-w-4xl font-display text-[clamp(2.75rem,9vw,6.5rem)] font-extrabold leading-[0.98] tracking-tight text-linen-50"
+          className="max-w-4xl font-display text-[clamp(2.5rem,8vw,5.5rem)] font-extrabold leading-[0.98] tracking-tight text-linen-50"
         >
           {t('title')}
         </h1>
         <p
           ref={paragraphRef}
-          className="hero-split mt-7 max-w-xl text-base leading-relaxed text-linen-50/70"
+          className="hero-split mt-6 max-w-xl text-base leading-relaxed text-linen-50/70"
         >
           {t('subtitle')}
         </p>
-        <div ref={buttonsRef} className="mt-10 flex flex-wrap gap-4">
+        <div ref={buttonsRef} className="mt-8 flex flex-wrap items-center gap-5">
           <Link
             href="/contact"
-            className="rounded-full bg-amber-600 px-7 py-3 text-sm font-medium text-linen-50 hover:bg-amber-700"
+            className="group flex items-center gap-3 rounded-full bg-linen-50 py-1.5 pl-6 pr-1.5 text-sm font-medium text-forest-950 transition-colors hover:bg-white"
           >
             {t('cta')}
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-forest-950 text-linen-50 transition-transform group-hover:translate-x-0.5">
+              <ArrowRight size={16} />
+            </span>
           </Link>
           <Link
             href="/portfolio"
-            className="rounded-full border-2 border-linen-50/60 px-7 py-3 text-sm font-medium text-linen-50 hover:border-amber-600 hover:text-amber-600"
+            className="border-b border-linen-50/50 pb-1 text-sm font-medium text-linen-50 hover:border-linen-50 hover:text-white"
           >
             {t('secondaryCta')}
           </Link>

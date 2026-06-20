@@ -16,6 +16,8 @@
     },
     "footer": {
       "tagline": "Đồ nội thất làm cho cách bạn sống.",
+      "ctaTitle": "Cùng thiết kế không gian tiếp theo của bạn.",
+      "ctaBody": "Hãy kể cho chúng tôi về ngôi nhà của bạn và điều bạn muốn thiết kế — chúng tôi sẽ lo phần còn lại.",
       "address": "Địa chỉ",
       "privacy": "Chính sách bảo mật"
     }
@@ -26,7 +28,7 @@
       "subtitle": "Thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu cho nhà ở Việt Nam, cùng với thiết kế nội thất, kiến trúc và cảnh quan khi cần. Muốn lắp đặt? Chúng tôi cũng đảm nhận luôn.",
       "cta": "Thiết kế đồ nội thất của tôi",
       "secondaryCta": "Xem dự án của chúng tôi",
-      "imageAlt": "Ngôi nhà hiện đại của Việt Nam với sàn gỗ và bể bơi dưới ánh sáng ban ngày"
+      "imageAlt": "Ngôi nhà kính và gỗ rực sáng ấm áp lúc chạng vạng, giữa rừng cây"
     },
     "about": {
       "title": "Đồ nội thất là trọng tâm, thiết kế theo ngôi nhà của bạn",
@@ -59,7 +61,9 @@
       "tag": "Quy trình của chúng tôi, lời hứa của chúng tôi.",
       "eyebrow1": "THIẾT KẾ",
       "eyebrow2": "LẮP ĐẶT",
-      "result": "XONG"
+      "result": "XONG",
+      "resultCaption": "Sẵn sàng để sống.",
+      "note": "Thiết kế cho nhà ở Việt Nam — khí hậu nhiệt đới, đất đô thị hẹp, và hộ gia đình nhiều thế hệ, không phải mặt bằng rập khuôn."
     },
     "services": {
       "title": "Chúng tôi thiết kế gì",

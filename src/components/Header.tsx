@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import gsap from 'gsap';
 import { Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -20,9 +21,33 @@ export default function Header() {
   const tCta = useTranslations('common.cta');
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const headerRef = useRef<HTMLElement>(null);
+  const isHome = pathname === '/';
+
+  useEffect(() => {
+    if (!isHome || !headerRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    gsap.set(headerRef.current, { y: -80, opacity: 0 });
+    const tween = gsap.to(headerRef.current, {
+      y: 0,
+      opacity: 1,
+      duration: 0.9,
+      delay: 2.8,
+      ease: 'power3.out',
+    });
+
+    return () => {
+      tween.kill();
+    };
+  }, [isHome]);
 
   return (
-    <header className="sticky top-0 z-50 border-b-2 border-amber-600 bg-forest-950">
+    <header
+      ref={headerRef}
+      className="sticky top-0 z-50 border-b-2 border-amber-600 bg-forest-950"
+    >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
         <Link href="/" className="group flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}

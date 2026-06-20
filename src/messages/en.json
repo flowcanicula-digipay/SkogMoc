@@ -16,6 +16,8 @@
     },
     "footer": {
       "tagline": "Furniture made for how you live.",
+      "ctaTitle": "Let's design your next room.",
+      "ctaBody": "Tell us about your home and what you're hoping to design — we'll take it from there.",
       "address": "Visit",
       "privacy": "Privacy Policy"
     }
@@ -26,7 +28,7 @@
       "subtitle": "Custom and semi-custom furniture design for Vietnamese homes, with interior, architectural, and landscape design available alongside it. Want it installed? We'll handle that too.",
       "cta": "Design My Furniture",
       "secondaryCta": "View Our Work",
-      "imageAlt": "Modern Vietnamese home with a wood deck and pool in bright daylight"
+      "imageAlt": "Glass and timber home glowing warmly at dusk, surrounded by forest"
     },
     "about": {
       "title": "Furniture-first, designed around your home",
@@ -59,7 +61,9 @@
       "tag": "Our process, our promise.",
       "eyebrow1": "DESIGN",
       "eyebrow2": "INSTALL",
-      "result": "DONE"
+      "result": "DONE",
+      "resultCaption": "Ready to live in.",
+      "note": "Designed for Vietnamese homes — tropical climate, narrow urban lots, and multi-generational households, not generic floor plans."
     },
     "services": {
       "title": "What we design",

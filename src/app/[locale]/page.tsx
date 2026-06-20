@@ -41,9 +41,6 @@ export default async function HomePage({
     <>
       <Hero />
 
-      {/* Statement */}
-      <StorySection />
-
       {/* 01 Services — furniture leads, photo grid */}
       <Reveal className="mx-auto max-w-7xl px-6 pt-24">
         <p className="font-mono text-sm text-amber-600">01 — {tCommon('nav.services')}</p>
@@ -66,6 +63,9 @@ export default async function HomePage({
         <ExpertiseSection />
       </Reveal>
 
+      {/* Statement */}
+      <StorySection />
+      
       {/* 02 Process */}
       <Reveal className="mx-auto max-w-7xl px-6 py-24">
         <p className="font-mono text-sm text-amber-600">02 — {tCommon('nav.process')}</p>
