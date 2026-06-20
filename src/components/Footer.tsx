@@ -20,7 +20,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <div>
-            <p className="font-display text-2xl">Skog Mộc</p>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/logo/logo-light.png"
+              alt="Skog Mộc by TNP"
+              className="h-14 w-auto"
+            />
             <p className="mt-3 max-w-xs text-sm text-stone-600">
               {t('footer.tagline')}
             </p>

@@ -43,7 +43,7 @@ const csp = [
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "connect-src 'self' https://formspree.io",
-  "img-src 'self' data:",
+  "img-src 'self' data: https://images.pexels.com",
   "base-uri 'self'",
   "form-action https://formspree.io",
 ].join('; ');

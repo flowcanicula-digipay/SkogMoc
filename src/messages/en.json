@@ -26,7 +26,7 @@
       "subtitle": "Custom and semi-custom furniture design for Vietnamese homes, with interior, architectural, and landscape design available alongside it. Want it installed? We'll handle that too.",
       "cta": "Design My Furniture",
       "secondaryCta": "View Our Work",
-      "imageAlt": "Line drawing of a custom armchair"
+      "imageAlt": "Modern Vietnamese home with a wood deck and pool in bright daylight"
     },
     "about": {
       "title": "Furniture-first, designed around your home",
@@ -35,6 +35,25 @@
       "point2": "Vietnamese climate and lot conditions inform every piece",
       "point3": "Installation available, if you want it handled for you",
       "point4": "Interior, architectural, and landscape design available alongside"
+    },
+    "statement": {
+      "title": "Craft\nShaping\nHow You Live",
+      "body": "Our expertise is furniture, told through how you actually live. We design pieces that fit your space and your routine — not furniture chosen to fill a room.",
+      "lead": "Every piece is made for a real home in Vietnam — not a showroom."
+    },
+    "banner": {
+      "title": "Furniture\nMade for\nReal Life"
+    },
+    "collage": {
+      "word1": "Crafted",
+      "word2": "Considered"
+    },
+    "formula": {
+      "title": "Design It.\nInstalled.",
+      "tag": "Our process, our promise.",
+      "eyebrow1": "DESIGN",
+      "eyebrow2": "INSTALL",
+      "result": "DONE"
     },
     "services": {
       "title": "What we design",
@@ -111,30 +130,37 @@
       "items": [
         {
           "title": "Architectural Technologist",
+          "discipline": "Architectural Technology",
           "body": "Detailed technical drawings and code compliance once a design is locked in."
         },
         {
           "title": "Interior & Spatial Designer",
+          "discipline": "Interior & Spatial Design",
           "body": "A second perspective on space planning for layouts that need extra care."
         },
         {
           "title": "Building Surveyor",
+          "discipline": "Building Surveying",
           "body": "A condition survey of the existing structure before a renovation begins."
         },
         {
           "title": "Town Planner",
+          "discipline": "Town Planning",
           "body": "Guidance through zoning rules and local planning questions."
         },
         {
           "title": "Production Designer",
+          "discipline": "Production Design",
           "body": "Spatial design for film, photography, or event productions."
         },
         {
           "title": "Historic Buildings Inspector",
+          "discipline": "Historic Buildings Inspection",
           "body": "Heritage assessment for renovations inside a protected zone."
         },
         {
           "title": "Structural Engineer",
+          "discipline": "Structural Engineering",
           "body": "Structural calculations for load-bearing walls and additions."
         }
       ],

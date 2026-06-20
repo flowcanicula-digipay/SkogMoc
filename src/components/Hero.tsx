@@ -2,10 +2,11 @@
 
 import { useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import gsap from 'gsap';
 import SplitType from 'split-type';
 import { Link } from '@/i18n/navigation';
+import TopoPattern from './TopoPattern';
+import { stockImages } from '@/lib/stockImages';
 
 export default function Hero() {
   const t = useTranslations('home.hero');
@@ -25,12 +26,18 @@ export default function Hero() {
     const title = new SplitType(titleRef.current, { types: 'lines,words' });
     const paragraph = new SplitType(paragraphRef.current, { types: 'lines,words' });
 
+    gsap.set(title.words, { transformOrigin: '50% 100%' });
+
     const tl = gsap.timeline();
     tl.from(title.words, {
-      yPercent: 120,
-      ease: 'circ.out',
-      duration: 1,
-      stagger: 0.05,
+      scale: 5,
+      yPercent: 60,
+      rotationZ: () => gsap.utils.random(-30, 30),
+      opacity: 0,
+      filter: 'blur(24px)',
+      ease: 'back.out(1.4)',
+      duration: 1.4,
+      stagger: { each: 0.09, from: 'random' },
     })
       .from(
         paragraph.words,
@@ -40,7 +47,7 @@ export default function Hero() {
           duration: 1,
           stagger: 0.02,
         },
-        '<0.3',
+        '<0.6',
       )
       .from(
         buttonsRef.current,
@@ -61,26 +68,27 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-forest-950">
-      <Image
-        src="/assets/images/hero/hero-bg.svg"
+    <section className="relative overflow-hidden bg-forest-950 px-6 pb-28 pt-6 sm:px-[6vw]">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={stockImages.heroBg}
         alt={t('imageAlt')}
-        fill
-        priority
-        className="object-cover opacity-80"
+        className="absolute inset-0 h-full w-full object-cover opacity-50"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/60 to-transparent" />
-      <div className="relative mx-auto w-full max-w-7xl px-6 py-32">
+      <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/85 to-forest-950/60" />
+      <span className="absolute right-0 top-0 h-32 w-2.5 bg-amber-600" aria-hidden="true" />
+      <TopoPattern className="right-0 top-0 h-auto w-[60%] text-amber-600 opacity-40" />
+      <div className="relative z-10 mx-auto w-full max-w-7xl py-16 sm:py-24">
         <p className="font-mono text-xs uppercase tracking-widest text-amber-100">Skog Mộc</p>
         <h1
           ref={titleRef}
-          className="hero-split mt-6 max-w-3xl font-display text-4xl leading-tight text-linen-50 sm:text-6xl"
+          className="mt-10 max-w-4xl font-display text-[clamp(2.75rem,9vw,6.5rem)] font-extrabold leading-[0.98] tracking-tight text-linen-50"
         >
           {t('title')}
         </h1>
         <p
           ref={paragraphRef}
-          className="hero-split mt-6 max-w-xl text-base leading-relaxed text-linen-50/80"
+          className="hero-split mt-7 max-w-xl text-base leading-relaxed text-linen-50/70"
         >
           {t('subtitle')}
         </p>

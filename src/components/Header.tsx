@@ -25,9 +25,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b-2 border-amber-600 bg-forest-950">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-6 py-4">
         <Link href="/" className="group flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center border border-stone-600 font-display text-sm tracking-widest text-linen-50 transition-colors group-hover:border-amber-600">
-            SM
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/logo/logo-mark-light.png"
+            alt="Skog Mộc by TNP"
+            className="h-10 w-10 transition-opacity group-hover:opacity-80"
+          />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-display text-base tracking-[0.08em] text-linen-50">
               SKOG MỘC

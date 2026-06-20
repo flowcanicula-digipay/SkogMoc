@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-split .line {
+.hero-split .line,
+.story-split .line {
   display: block;
   overflow: hidden;
 }

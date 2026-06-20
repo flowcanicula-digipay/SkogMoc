@@ -26,7 +26,7 @@
       "subtitle": "Thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu cho nhà ở Việt Nam, cùng với thiết kế nội thất, kiến trúc và cảnh quan khi cần. Muốn lắp đặt? Chúng tôi cũng đảm nhận luôn.",
       "cta": "Thiết kế đồ nội thất của tôi",
       "secondaryCta": "Xem dự án của chúng tôi",
-      "imageAlt": "Bản vẽ đường nét một chiếc ghế bành thiết kế riêng"
+      "imageAlt": "Ngôi nhà hiện đại của Việt Nam với sàn gỗ và bể bơi dưới ánh sáng ban ngày"
     },
     "about": {
       "title": "Đồ nội thất là trọng tâm, thiết kế theo ngôi nhà của bạn",
@@ -35,6 +35,25 @@
       "point2": "Khí hậu và điều kiện lô đất Việt Nam định hình từng sản phẩm",
       "point3": "Có dịch vụ lắp đặt, nếu bạn muốn chúng tôi đảm nhận",
       "point4": "Thiết kế nội thất, kiến trúc và cảnh quan có sẵn khi cần"
+    },
+    "statement": {
+      "title": "Tay nghề\nĐịnh hình\nCách bạn sống",
+      "body": "Chuyên môn của chúng tôi là đồ nội thất, kể qua cách bạn thực sự sống. Chúng tôi thiết kế sản phẩm phù hợp với không gian và nhịp sống của bạn — không phải đồ nội thất chọn để lấp đầy phòng.",
+      "lead": "Mỗi sản phẩm được làm cho một ngôi nhà thực sự tại Việt Nam — không phải cho phòng trưng bày."
+    },
+    "banner": {
+      "title": "Đồ nội thất\ncho cuộc sống\nthực tế"
+    },
+    "collage": {
+      "word1": "Chế tác",
+      "word2": "Chu đáo"
+    },
+    "formula": {
+      "title": "Thiết kế.\nLắp đặt.",
+      "tag": "Quy trình của chúng tôi, lời hứa của chúng tôi.",
+      "eyebrow1": "THIẾT KẾ",
+      "eyebrow2": "LẮP ĐẶT",
+      "result": "XONG"
     },
     "services": {
       "title": "Chúng tôi thiết kế gì",
@@ -111,30 +130,37 @@
       "items": [
         {
           "title": "Chuyên gia công nghệ kiến trúc",
+          "discipline": "Công nghệ kiến trúc",
           "body": "Bản vẽ kỹ thuật chi tiết và tuân thủ quy chuẩn xây dựng khi thiết kế đã được chốt."
         },
         {
           "title": "Nhà thiết kế nội thất & không gian",
+          "discipline": "Thiết kế nội thất & không gian",
           "body": "Góc nhìn thứ hai về bố trí không gian cho những mặt bằng cần sự tinh chỉnh kỹ hơn."
         },
         {
           "title": "Chuyên viên khảo sát công trình",
+          "discipline": "Khảo sát công trình",
           "body": "Khảo sát hiện trạng công trình trước khi bắt đầu cải tạo."
         },
         {
           "title": "Chuyên gia quy hoạch đô thị",
+          "discipline": "Quy hoạch đô thị",
           "body": "Hướng dẫn về quy định quy hoạch và các vấn đề pháp lý đất đai tại địa phương."
         },
         {
           "title": "Nhà thiết kế sản xuất",
+          "discipline": "Thiết kế sản xuất",
           "body": "Thiết kế không gian cho phim, chụp ảnh hoặc sản xuất sự kiện."
         },
         {
           "title": "Chuyên viên khảo sát công trình lịch sử",
+          "discipline": "Khảo sát công trình lịch sử",
           "body": "Đánh giá giá trị di sản cho các công trình cải tạo trong khu vực được bảo tồn."
         },
         {
           "title": "Kỹ sư kết cấu",
+          "discipline": "Kỹ thuật kết cấu",
           "body": "Tính toán kết cấu cho tường chịu lực và các công trình mở rộng."
         }
       ],
