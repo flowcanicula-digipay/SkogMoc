@@ -1,0 +1,420 @@
+{
+  "common": {
+    "nav": {
+      "home": "Trang chủ",
+      "services": "Dịch vụ",
+      "portfolio": "Dự án",
+      "pricing": "Bảng giá",
+      "process": "Quy trình",
+      "professionals": "Đối tác chuyên môn",
+      "contact": "Liên hệ"
+    },
+    "cta": {
+      "startProject": "Bắt đầu dự án",
+      "getQuote": "Nhận báo giá",
+      "learnMore": "Tìm hiểu thêm"
+    },
+    "footer": {
+      "tagline": "Thiết kế trước. Sống thật sau.",
+      "address": "Địa chỉ",
+      "privacy": "Chính sách bảo mật"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Thiết kế trước. Sống thật sau.",
+      "subtitle": "Thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan cho nhà ở Việt Nam — được giải quyết đồng bộ, ngay từ phác thảo đầu tiên.",
+      "cta": "Bắt đầu dự án",
+      "secondaryCta": "Xem dự án của chúng tôi",
+      "imageAlt": "Bản vẽ đường nét mặt đứng nhà ống Việt Nam"
+    },
+    "about": {
+      "title": "Một studio thiết kế, không phải công ty xây dựng",
+      "body": "Skog Mộc by TNP thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan như một phương án thống nhất. Thi công là tùy chọn — khi bạn cần đơn vị thi công, chúng tôi giới thiệu một đối tác độc lập, đáng tin cậy; việc xây dựng không bao giờ thuộc hợp đồng của chúng tôi.",
+      "point1": "Bốn lĩnh vực thiết kế cốt lõi, một studio",
+      "point2": "Điều kiện khí hậu và lô đất Việt Nam, từ ý tưởng đầu tiên",
+      "point3": "Thi công là tùy chọn và do đơn vị thi công đối tác thực hiện",
+      "point4": "Đồ nội thất và không gian được giải quyết cùng nhau, không phải bố trí sau"
+    },
+    "services": {
+      "title": "Chúng tôi thiết kế gì",
+      "lead": "Bốn lĩnh vực, mỗi lĩnh vực được xem xét từ phác thảo ý tưởng đầu tiên — không phải lớp trang trí áp dụng sau."
+    },
+    "process": {
+      "title": "Một dự án diễn ra như thế nào",
+      "lead": "Từ buổi tư vấn đầu tiên đến khi giao hồ sơ, qua bốn giai đoạn.",
+      "step1": {
+        "title": "Tư vấn",
+        "body": "Chúng tôi tìm hiểu gia đình, khu đất và ngân sách của bạn trước khi vẽ bất cứ điều gì."
+      },
+      "step2": {
+        "title": "Thiết kế ý tưởng",
+        "body": "Định hướng không gian và vật liệu ban đầu, trình bày để bạn góp ý."
+      },
+      "step3": {
+        "title": "Phát triển & hồ sơ thiết kế",
+        "body": "Ý tưởng được hoàn thiện thành hồ sơ thiết kế thi công và bảng vật liệu."
+      },
+      "step4": {
+        "title": "Giao hồ sơ",
+        "body": "Hồ sơ được giao cho bạn hoặc đơn vị thi công bạn chọn, kèm giới thiệu tùy chọn đến đơn vị thi công đối tác."
+      }
+    },
+    "buildConnection": {
+      "title": "Chúng tôi thiết kế. Đơn vị thi công độc lập xây dựng.",
+      "body": "Skog Mộc không có đội ngũ thi công và không trực tiếp nhận hợp đồng xây dựng. Khi dự án sẵn sàng để xây, chúng tôi có thể giới thiệu một đơn vị thi công độc lập, đáng tin cậy — hợp đồng thi công là giữa bạn và đơn vị đó, tách biệt với hợp đồng thiết kế với chúng tôi."
+    },
+    "portfolio": {
+      "title": "Dự án gần đây",
+      "lead": "Một góc nhìn về các dự án chúng tôi thiết kế.",
+      "honestNote": "Chúng tôi đang xây dựng portfolio công khai. Các dự án thực tế, với sự cho phép của khách hàng, sẽ xuất hiện ở đây sớm.",
+      "viewAll": "Xem tất cả dự án"
+    },
+    "cta": {
+      "title": "Bạn đang có một dự án?",
+      "body": "Hãy cho chúng tôi biết về ngôi nhà của bạn và những gì bạn muốn thiết kế.",
+      "button": "Bắt đầu dự án"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Dịch vụ của chúng tôi",
+      "subtitle": "Bốn lĩnh vực thiết kế cốt lõi, cùng khả năng tiếp cận mạng lưới chuyên gia rộng hơn khi dự án cần."
+    },
+    "core": {
+      "title": "Lĩnh vực cốt lõi",
+      "architecture": {
+        "title": "Thiết kế kiến trúc",
+        "body": "Từ ý tưởng đến hồ sơ thiết kế thi công cho nhà phố, nhà ống và các công trình mở rộng."
+      },
+      "interior": {
+        "title": "Thiết kế nội thất",
+        "body": "Bố trí không gian, lựa chọn vật liệu và hoàn thiện, thiết kế chiếu sáng và chi tiết mộc."
+      },
+      "furniture": {
+        "title": "Thiết kế đồ nội thất",
+        "body": "Các sản phẩm đặt riêng và bán đặt riêng, được giải quyết cùng phương án nội thất."
+      },
+      "landscape": {
+        "title": "Thiết kế cảnh quan",
+        "body": "Vườn, sân trong, cây xanh trên mái và sự chuyển tiếp từ nhà ra phố."
+      }
+    },
+    "buildConnection": {
+      "title": "Thiết kế trước. Thi công là tùy chọn.",
+      "body": "Chúng tôi thiết kế mọi dự án đạt tiêu chuẩn sẵn sàng thi công. Nếu bạn cần đơn vị thi công, chúng tôi giới thiệu một đối tác độc lập, đáng tin cậy.",
+      "disclaimer": "Skog Mộc thiết kế; đơn vị thi công độc lập, đối tác sẽ xây dựng. Chúng tôi không có đội ngũ thi công và không trực tiếp nhận hợp đồng xây dựng."
+    },
+    "extended": {
+      "title": "Dịch vụ chuyên môn mở rộng",
+      "lead": "Có sẵn khi dự án cần, qua mạng lưới chuyên môn của chúng tôi — không phải công việc thường xuyên của studio.",
+      "items": [
+        {
+          "title": "Chuyên gia công nghệ kiến trúc",
+          "body": "Bản vẽ kỹ thuật chi tiết và tuân thủ quy chuẩn xây dựng khi thiết kế đã được chốt."
+        },
+        {
+          "title": "Nhà thiết kế nội thất & không gian",
+          "body": "Góc nhìn thứ hai về bố trí không gian cho những mặt bằng cần sự tinh chỉnh kỹ hơn."
+        },
+        {
+          "title": "Chuyên viên khảo sát công trình",
+          "body": "Khảo sát hiện trạng công trình trước khi bắt đầu cải tạo."
+        },
+        {
+          "title": "Chuyên gia quy hoạch đô thị",
+          "body": "Hướng dẫn về quy định quy hoạch và các vấn đề pháp lý đất đai tại địa phương."
+        },
+        {
+          "title": "Nhà thiết kế sản xuất",
+          "body": "Thiết kế không gian cho phim, chụp ảnh hoặc sản xuất sự kiện."
+        },
+        {
+          "title": "Chuyên viên khảo sát công trình lịch sử",
+          "body": "Đánh giá giá trị di sản cho các công trình cải tạo trong khu vực được bảo tồn."
+        },
+        {
+          "title": "Kỹ sư kết cấu",
+          "body": "Tính toán kết cấu cho tường chịu lực và các công trình mở rộng."
+        }
+      ],
+      "note": "Có sẵn khi cần, qua mạng lưới của chúng tôi."
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Bảng giá",
+      "subtitle": "Các gói thiết kế theo mức độ dịch vụ. Mỗi dự án nhận báo giá riêng theo phạm vi công việc."
+    },
+    "packages": {
+      "consult": {
+        "name": "Tư vấn thiết kế",
+        "tagline": "Bắt đầu tại đây",
+        "description": "Buổi tư vấn ban đầu để thảo luận về dự án, khu đất và mục tiêu của bạn trước khi chọn gói thiết kế đầy đủ.",
+        "price": "Báo giá riêng — liên hệ chúng tôi"
+      },
+      "design": {
+        "name": "Gói thiết kế đầy đủ",
+        "tagline": "Phù hợp hầu hết dự án",
+        "description": "Từ ý tưởng đến hồ sơ thiết kế thi công cho các lĩnh vực dự án của bạn cần.",
+        "price": "Báo giá riêng — liên hệ chúng tôi"
+      },
+      "fullService": {
+        "name": "Thiết kế + Kết nối thi công",
+        "tagline": "Trọn gói",
+        "description": "Gói thiết kế đầy đủ cùng giới thiệu đến đơn vị thi công đối tác, độc lập để xây dựng.",
+        "price": "Báo giá riêng — liên hệ chúng tôi"
+      }
+    },
+    "included": {
+      "title": "Bao gồm những gì",
+      "items": [
+        "Tư vấn ban đầu",
+        "Định hướng thiết kế ý tưởng",
+        "Lựa chọn vật liệu và hoàn thiện",
+        "Hồ sơ thiết kế thi công",
+        "Bố trí và thông số đồ nội thất",
+        "Giới thiệu đơn vị thi công (tùy chọn)"
+      ]
+    },
+    "comparison": {
+      "title": "So sánh các gói",
+      "note": "Hạng mục cụ thể sẽ được xác nhận cùng bạn trong buổi tư vấn."
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "q1": {
+        "question": "Skog Mộc by TNP có xây nhà, hay chỉ thiết kế?",
+        "answer": "Chúng tôi thiết kế — kiến trúc, nội thất, đồ nội thất và cảnh quan. Chúng tôi không có đội ngũ thi công và không trực tiếp nhận hợp đồng xây dựng. Nếu bạn cần đơn vị thi công, chúng tôi có thể giới thiệu một đội thi công đối tác, độc lập mà chúng tôi tin tưởng; hợp đồng thi công là giữa bạn và đơn vị đó, tách biệt với hợp đồng thiết kế với chúng tôi."
+      },
+      "q2": {
+        "question": "Nếu tôi đã có đơn vị thi công thì sao?",
+        "answer": "Không vấn đề — nhiều khách hàng đã có. Chúng tôi thiết kế hồ sơ thi công đủ chi tiết để bất kỳ đơn vị thi công có năng lực nào cũng có thể thực hiện. Chúng tôi sẵn lòng phối hợp với đơn vị thi công bạn chọn trong quá trình xây dựng nếu bạn muốn; điều này không bắt buộc."
+      },
+      "q3": {
+        "question": "Bạn chỉ thiết kế nhà mới, hay cả cải tạo?",
+        "answer": "Cả hai. Xây mới, mở rộng và cải tạo nhà hiện có đều trong phạm vi dịch vụ. Dự án cải tạo thường cần khảo sát hiện trạng ban đầu để ghi nhận công trình hiện có trước khi bắt đầu thiết kế ý tưởng."
+      },
+      "q4": {
+        "question": "Gói thiết kế đầy đủ bao gồm những gì?",
+        "answer": "Hạng mục bàn giao thay đổi theo từng dự án — chúng tôi sẽ xác nhận chính xác (bản vẽ ý tưởng, hình ảnh 3D, bảng vật liệu, hồ sơ thiết kế thi công, bố trí nội thất và cảnh quan) cùng bạn trong buổi tư vấn."
+      },
+      "q5": {
+        "question": "Quá trình thiết kế kéo dài bao lâu?",
+        "answer": "Thời gian thay đổi theo phạm vi và quy mô dự án. Xem trang Quy trình của chúng tôi để biết các giai đoạn; chúng tôi sẽ đưa ra ước tính thực tế trong buổi tư vấn."
+      },
+      "q6": {
+        "question": "Bạn có hỗ trợ xin giấy phép xây dựng không?",
+        "answer": "Hồ sơ thiết kế thi công của chúng tôi được chuẩn bị đạt tiêu chuẩn phù hợp để nộp xin giấy phép. Chúng tôi sẽ xác nhận cùng bạn trong buổi tư vấn liệu việc nộp xin giấy phép có nằm trong gói dịch vụ hay thuộc trách nhiệm của khách hàng/đơn vị thi công cho dự án của bạn."
+      },
+      "q7": {
+        "question": "Bạn làm việc ở khu vực nào tại Việt Nam?",
+        "answer": "Liên hệ với chúng tôi cùng vị trí dự án và chúng tôi sẽ xác nhận liệu khu vực đó có thuộc phạm vi dịch vụ hiện tại."
+      },
+      "q8": {
+        "question": "Bạn có thể mời kỹ sư kết cấu, chuyên gia quy hoạch hoặc chuyên gia khác nếu dự án cần không?",
+        "answer": "Có — ngoài bốn lĩnh vực thiết kế cốt lõi, chúng tôi có mạng lưới chuyên gia bổ sung và sẽ mời đúng người khi dự án cần."
+      }
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Dự án",
+      "subtitle": "Bộ sưu tập các dự án kiến trúc, nội thất, đồ nội thất và cảnh quan."
+    },
+    "comingSoon": {
+      "title": "Hồ sơ dự án sắp ra mắt",
+      "body": "Chúng tôi đang xây dựng portfolio công khai. Các dự án thực tế, với sự cho phép của khách hàng, sẽ xuất hiện ở đây sớm."
+    },
+    "filters": {
+      "all": "Tất cả",
+      "architecture": "Kiến trúc",
+      "interior": "Nội thất",
+      "furniture": "Đồ nội thất",
+      "landscape": "Cảnh quan"
+    }
+  },
+  "process": {
+    "hero": {
+      "title": "Quy trình của chúng tôi",
+      "subtitle": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ."
+    },
+    "steps": {
+      "consultation": {
+        "title": "Tư vấn",
+        "body": "Chúng tôi tìm hiểu gia đình, khu đất và ngân sách của bạn trước khi vẽ bất cứ điều gì."
+      },
+      "concept": {
+        "title": "Thiết kế ý tưởng",
+        "body": "Định hướng không gian và vật liệu ban đầu, trình bày để bạn góp ý."
+      },
+      "development": {
+        "title": "Phát triển thiết kế",
+        "body": "Ý tưởng được hoàn thiện thành phương án kiến trúc, nội thất, đồ nội thất và cảnh quan đồng bộ."
+      },
+      "documentation": {
+        "title": "Hồ sơ thiết kế thi công",
+        "body": "Bản vẽ và thông số kỹ thuật sẵn sàng thi công, phù hợp để xin giấy phép và báo giá thi công."
+      },
+      "buildConnection": {
+        "title": "Kết nối thi công (tùy chọn)",
+        "body": "Nếu bạn cần đơn vị thi công, chúng tôi giới thiệu một đội thi công đối tác, độc lập — hợp đồng thi công là giữa bạn và đơn vị đó."
+      },
+      "handover": {
+        "title": "Giao hồ sơ",
+        "body": "Hồ sơ cuối cùng được giao cho bạn, sẵn sàng để lưu trữ hoặc giao cho đơn vị thi công."
+      }
+    },
+    "timeline": {
+      "note": "Thời gian thay đổi theo phạm vi dự án và tỉnh thành; chúng tôi sẽ xác nhận ước tính thực tế trong buổi tư vấn."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Bắt đầu dự án",
+      "subtitle": "Hãy cho chúng tôi biết về ngôi nhà của bạn và những gì bạn muốn thiết kế."
+    },
+    "form": {
+      "name": { "label": "Họ và tên" },
+      "email": { "label": "Email" },
+      "phone": { "label": "Số điện thoại / Zalo / WhatsApp", "hint": "Không bắt buộc" },
+      "projectType": {
+        "label": "Loại dự án",
+        "options": ["Kiến trúc", "Nội thất", "Đồ nội thất", "Cảnh quan", "Kết hợp"]
+      },
+      "propertyType": { "label": "Loại bất động sản" },
+      "plotArea": { "label": "Diện tích đất hoặc diện tích sàn ước tính" },
+      "province": { "label": "Tỉnh / thành phố" },
+      "budgetRange": { "label": "Khoảng ngân sách ước tính" },
+      "wantsBuildConnection": {
+        "label": "Bạn có muốn được giới thiệu đến đơn vị thi công đối tác không?"
+      },
+      "language": { "label": "Ngôn ngữ liên hệ ưu tiên" },
+      "notes": { "label": "Ghi chú, liên kết tham khảo hoặc câu hỏi" },
+      "submit": "Gửi yêu cầu",
+      "privacy": "Khi gửi, bạn đồng ý với Chính sách bảo mật của chúng tôi."
+    },
+    "sidebar": {
+      "direct": { "title": "Liên hệ trực tiếp" },
+      "hours": "TODO — ví dụ: Thứ Hai–Thứ Bảy, 9:00 – 18:00 (GMT+7)",
+      "next": {
+        "title": "Điều gì xảy ra tiếp theo",
+        "step1": "Chúng tôi xem xét yêu cầu của bạn trong vòng hai ngày làm việc.",
+        "step2": "Chúng tôi lên lịch cuộc gọi tư vấn hoặc khảo sát ban đầu.",
+        "step3": "Chúng tôi xác nhận phạm vi, gói dịch vụ và các bước tiếp theo."
+      },
+      "trust": "Thông tin của bạn chỉ được sử dụng để thảo luận về dự án."
+    }
+  },
+  "professionals": {
+    "hero": {
+      "title": "Dành cho đối tác chuyên môn",
+      "subtitle": "Kiến trúc sư, đơn vị thi công, chủ đầu tư và các studio khác — cùng hợp tác."
+    },
+    "form": {
+      "name": { "label": "Họ và tên" },
+      "firmName": { "label": "Tên công ty / đơn vị" },
+      "role": {
+        "label": "Vai trò của bạn",
+        "options": [
+          "Chuyên gia công nghệ kiến trúc",
+          "Nhà thiết kế nội thất & không gian",
+          "Chuyên viên khảo sát công trình",
+          "Chuyên gia quy hoạch đô thị",
+          "Nhà thiết kế sản xuất",
+          "Chuyên viên khảo sát công trình lịch sử",
+          "Kỹ sư kết cấu",
+          "Đơn vị thi công",
+          "Khác"
+        ]
+      },
+      "email": { "label": "Email" },
+      "phone": { "label": "Số điện thoại", "hint": "Không bắt buộc" },
+      "collaboration": { "label": "Hình thức hợp tác" },
+      "notes": { "label": "Ghi chú" },
+      "submit": "Gửi yêu cầu",
+      "privacy": "Khi gửi, bạn đồng ý với Chính sách bảo mật của chúng tôi."
+    },
+    "sidebar": {
+      "direct": { "title": "Liên hệ trực tiếp" },
+      "hours": "TODO — ví dụ: Thứ Hai–Thứ Bảy, 9:00 – 18:00 (GMT+7)",
+      "next": {
+        "title": "Điều gì xảy ra tiếp theo",
+        "step1": "Chúng tôi xem xét yêu cầu của bạn trong vòng hai ngày làm việc.",
+        "step2": "Chúng tôi liên hệ lại để thảo luận chi tiết hợp tác."
+      },
+      "trust": "Thông tin của bạn chỉ được sử dụng để thảo luận về hợp tác."
+    }
+  },
+  "privacy": {
+    "title": "Chính sách bảo mật",
+    "lastUpdated": "TODO",
+    "intro": "Trang này giải thích thông tin chúng tôi thu thập và cách chúng tôi sử dụng.",
+    "s01": {
+      "heading": "Thông tin chúng tôi thu thập",
+      "body": "Khi bạn gửi mẫu liên hệ dự án hoặc liên hệ chuyên môn, chúng tôi thu thập họ tên, email, số điện thoại (không bắt buộc) và thông tin dự án hoặc hợp tác. Chúng tôi chỉ sử dụng để phản hồi yêu cầu và thảo luận về dự án của bạn. Chúng tôi không tự động thu thập dữ liệu qua cookie ngoài một cookie chức năng duy nhất để ghi nhớ tùy chọn ngôn ngữ."
+    },
+    "s02": {
+      "heading": "Cách chúng tôi sử dụng dữ liệu của bạn",
+      "body": "Thông tin liên hệ của bạn được sử dụng để phản hồi yêu cầu, lên lịch tư vấn và theo dõi nếu bạn chưa nhận được phản hồi. Chúng tôi không sử dụng dữ liệu của bạn cho mục đích quảng cáo không mong muốn. Chúng tôi không bán, cho thuê hoặc chia sẻ dữ liệu của bạn với bên thứ ba trừ khi pháp luật yêu cầu."
+    },
+    "s03": {
+      "heading": "Lưu trữ dữ liệu",
+      "body": "Các biểu mẫu được xử lý qua Formspree (formspree.io), một dịch vụ biểu mẫu của bên thứ ba. Chính sách bảo mật của Formspree áp dụng cho dữ liệu xử lý trên nền tảng của họ. Chúng tôi lưu giữ thông tin yêu cầu của bạn trong thời gian cần thiết để xử lý yêu cầu hoặc theo quy định pháp luật Việt Nam."
+    },
+    "s04": {
+      "heading": "Cookie",
+      "body": "Trang web này sử dụng một cookie chức năng duy nhất để ghi nhớ ngôn ngữ hoặc tùy chọn thông báo bảo mật của bạn. Không sử dụng cookie theo dõi, pixel quảng cáo hoặc script phân tích. Chúng tôi không sử dụng Google Analytics hoặc bất kỳ dịch vụ theo dõi của bên thứ ba nào."
+    },
+    "s05": {
+      "heading": "Quyền của bạn",
+      "body": "Bạn có quyền truy cập, sửa đổi hoặc yêu cầu xóa dữ liệu cá nhân của mình. Để thực hiện các quyền này, vui lòng gửi email đến thuy@tnpgr.vn. Chúng tôi sẽ phản hồi trong vòng 30 ngày."
+    },
+    "s06": {
+      "heading": "Liên hệ với chúng tôi",
+      "body": "Về các vấn đề bảo mật: thuy@tnpgr.vn · +84 90 333 37 29 · Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Việt Nam"
+    },
+    "backHome": "Về trang chủ"
+  },
+  "notFound": {
+    "title": "404",
+    "tagline": "Căn phòng này chưa tồn tại.",
+    "body": "Trang bạn tìm không tồn tại. Hãy để chúng tôi đưa bạn trở lại đúng hướng.",
+    "goHome": "Về trang chủ",
+    "contact": "Liên hệ"
+  },
+  "meta": {
+    "home": {
+      "title": "Skog Mộc by TNP — Thiết kế kiến trúc, nội thất, đồ nội thất & cảnh quan",
+      "description": "Thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan cho nhà ở Việt Nam. Thiết kế dẫn đầu, thi công tùy chọn."
+    },
+    "services": {
+      "title": "Dịch vụ — Skog Mộc by TNP",
+      "description": "Thiết kế kiến trúc, nội thất, đồ nội thất và cảnh quan, cùng các dịch vụ chuyên môn mở rộng."
+    },
+    "pricing": {
+      "title": "Bảng giá — Skog Mộc by TNP",
+      "description": "Các gói thiết kế theo mức độ dịch vụ. Liên hệ chúng tôi để nhận báo giá riêng."
+    },
+    "portfolio": {
+      "title": "Dự án — Skog Mộc by TNP",
+      "description": "Bộ sưu tập các dự án kiến trúc, nội thất, đồ nội thất và cảnh quan."
+    },
+    "contact": {
+      "title": "Liên hệ — Skog Mộc by TNP",
+      "description": "Bắt đầu dự án thiết kế nhà ở cùng Skog Mộc by TNP."
+    },
+    "professionals": {
+      "title": "Dành cho đối tác chuyên môn — Skog Mộc by TNP",
+      "description": "Yêu cầu hợp tác cho kiến trúc sư, đơn vị thi công, chủ đầu tư và các studio khác."
+    },
+    "privacy": {
+      "title": "Chính sách bảo mật — Skog Mộc by TNP",
+      "description": "Cách Skog Mộc by TNP thu thập và sử dụng thông tin của bạn."
+    },
+    "process": {
+      "title": "Quy trình của chúng tôi — Skog Mộc by TNP",
+      "description": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ."
+    }
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "pricing": "Pricing",
+      "process": "Process",
+      "professionals": "Professionals",
+      "contact": "Contact"
+    },
+    "cta": {
+      "startProject": "Start a Project",
+      "getQuote": "Get a Quote",
+      "learnMore": "Learn More"
+    },
+    "footer": {
+      "tagline": "Design first. Built to live in.",
+      "address": "Visit",
+      "privacy": "Privacy Policy"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Design first. Built to live in.",
+      "subtitle": "Architecture, interior, furniture, and landscape design for Vietnamese homes — resolved together, from the first sketch.",
+      "cta": "Start a Project",
+      "secondaryCta": "View Our Work",
+      "imageAlt": "Line drawing of a Vietnamese tube house elevation"
+    },
+    "about": {
+      "title": "A design studio, not a construction company",
+      "body": "Skog Mộc by TNP designs the building, the interior, the furniture, and the landscape as one resolved scheme. Construction is optional — when you need a builder, we introduce you to an independent, trusted partner; the build itself is never our contract.",
+      "point1": "Four core design disciplines, one studio",
+      "point2": "Vietnamese climate and lot conditions, from concept onward",
+      "point3": "Construction is optional and handled by partnered builders",
+      "point4": "Furniture and interiors resolved together, not furnished after"
+    },
+    "services": {
+      "title": "What we design",
+      "lead": "Four disciplines, each considered from the first concept sketch — not applied as a styling layer afterward."
+    },
+    "process": {
+      "title": "How a project unfolds",
+      "lead": "From first consultation to handover, in four phases.",
+      "step1": {
+        "title": "Consultation",
+        "body": "We learn your household, your site, and your budget before drawing anything."
+      },
+      "step2": {
+        "title": "Concept design",
+        "body": "Initial spatial and material direction, presented for your feedback."
+      },
+      "step3": {
+        "title": "Development & documentation",
+        "body": "Concept resolved into a construction-ready drawing and specification set."
+      },
+      "step4": {
+        "title": "Handover",
+        "body": "Documentation delivered to you or your chosen builder, with an optional introduction to a partnered builder."
+      }
+    },
+    "buildConnection": {
+      "title": "We design. Independent builders construct.",
+      "body": "Skog Mộc does not employ a construction crew and does not contract directly for building work. When a project is ready to build, we can introduce you to a trusted, independent builder — the construction contract is between you and them, separate from your design agreement with us."
+    },
+    "portfolio": {
+      "title": "Recent work",
+      "lead": "A look at the kind of projects we design.",
+      "honestNote": "We're building our public portfolio. Real projects, with the client's permission, will appear here soon.",
+      "viewAll": "View all work"
+    },
+    "cta": {
+      "title": "Have a project in mind?",
+      "body": "Tell us about your home, your site, and what you're hoping to design.",
+      "button": "Start a Project"
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "Our Services",
+      "subtitle": "Four core design disciplines, plus access to a wider network of specialists when a project calls for one."
+    },
+    "core": {
+      "title": "Core disciplines",
+      "architecture": {
+        "title": "Architectural Design",
+        "body": "Concept through construction documentation for houses, townhouses, and additions."
+      },
+      "interior": {
+        "title": "Interior Design",
+        "body": "Spatial planning, material and finish selection, lighting, and joinery detailing."
+      },
+      "furniture": {
+        "title": "Furniture Design",
+        "body": "Bespoke and semi-custom pieces, resolved alongside the interior scheme."
+      },
+      "landscape": {
+        "title": "Landscape Design",
+        "body": "Gardens, courtyards, rooftop greenery, and the transition from house to street."
+      }
+    },
+    "buildConnection": {
+      "title": "Design first. Build optional.",
+      "body": "We design every project to a construction-ready standard. If you need a builder, we introduce you to an independent, trusted partner.",
+      "disclaimer": "Skog Mộc designs; partnered, independent builders construct. We do not employ a construction crew and do not contract directly for construction work."
+    },
+    "extended": {
+      "title": "Extended specialist services",
+      "lead": "Available when a project needs them, via our professional network — not part of our everyday core work.",
+      "items": [
+        {
+          "title": "Architectural Technologist",
+          "body": "Detailed technical drawings and code compliance once a design is locked in."
+        },
+        {
+          "title": "Interior & Spatial Designer",
+          "body": "A second perspective on space planning for layouts that need extra care."
+        },
+        {
+          "title": "Building Surveyor",
+          "body": "A condition survey of the existing structure before a renovation begins."
+        },
+        {
+          "title": "Town Planner",
+          "body": "Guidance through zoning rules and local planning questions."
+        },
+        {
+          "title": "Production Designer",
+          "body": "Spatial design for film, photography, or event productions."
+        },
+        {
+          "title": "Historic Buildings Inspector",
+          "body": "Heritage assessment for renovations inside a protected zone."
+        },
+        {
+          "title": "Structural Engineer",
+          "body": "Structural calculations for load-bearing walls and additions."
+        }
+      ],
+      "note": "Available as needed, via our network."
+    }
+  },
+  "pricing": {
+    "hero": {
+      "title": "Pricing",
+      "subtitle": "Design package tiers by service depth. Every project gets a custom quote based on scope."
+    },
+    "packages": {
+      "consult": {
+        "name": "Design Consultation",
+        "tagline": "Start here",
+        "description": "An initial consultation to discuss your project, site, and goals before committing to a full design package.",
+        "price": "Custom quote — contact us"
+      },
+      "design": {
+        "name": "Full Design Package",
+        "tagline": "Most projects",
+        "description": "Concept through construction documentation across the disciplines your project needs.",
+        "price": "Custom quote — contact us"
+      },
+      "fullService": {
+        "name": "Design + Build Connection",
+        "tagline": "End to end",
+        "description": "Full design package plus an introduction to a partnered, independent builder for construction.",
+        "price": "Custom quote — contact us"
+      }
+    },
+    "included": {
+      "title": "What's included",
+      "items": [
+        "Initial consultation",
+        "Concept design direction",
+        "Material and finish selection",
+        "Construction documentation",
+        "Furniture layout and specification",
+        "Optional builder introduction"
+      ]
+    },
+    "comparison": {
+      "title": "Compare packages",
+      "note": "Exact deliverables are confirmed with you during consultation."
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "q1": {
+        "question": "Does Skog Mộc by TNP build the house, or only design it?",
+        "answer": "We design — architecture, interior, furniture, and landscape. We do not employ a construction crew and don't contract directly for building work. If you'd like a builder, we can introduce you to an independent, partnered construction team we trust; the construction contract is between you and that builder directly, separate from your design agreement with us."
+      },
+      "q2": {
+        "question": "What if I already have a builder?",
+        "answer": "That's fine — many clients do. We design to a level of construction documentation detail that any competent builder can work from. We're happy to coordinate with your chosen builder during construction if you want that handoff support; it's not required."
+      },
+      "q3": {
+        "question": "Do you only design new houses, or also renovations?",
+        "answer": "Both. New builds, additions, and renovations of existing homes are all within scope. Renovation projects typically need an initial site survey to document the existing structure before concept design begins."
+      },
+      "q4": {
+        "question": "What's included in a full design package?",
+        "answer": "Deliverables vary by project — we'll confirm the exact set (concept drawings, visualisations, material specification, construction documentation, furniture and landscape plans) with you during consultation."
+      },
+      "q5": {
+        "question": "How long does the design process take?",
+        "answer": "Timelines vary by project scope and scale. See our Process page for a phase breakdown; we'll give you a realistic estimate during consultation."
+      },
+      "q6": {
+        "question": "Do you handle construction permits?",
+        "answer": "Our construction documentation is prepared to a standard suitable for permit submission. We'll confirm with you during consultation whether permit submission itself is included or is the client's/builder's responsibility for your project."
+      },
+      "q7": {
+        "question": "What areas of Vietnam do you work in?",
+        "answer": "Contact us with your project location and we'll confirm whether it's within our current service area."
+      },
+      "q8": {
+        "question": "Can you bring in a structural engineer, town planner, or other specialist if my project needs one?",
+        "answer": "Yes — beyond our four core design disciplines, we have access to a network of additional specialists and bring the right one in when a project calls for it."
+      }
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "title": "Portfolio",
+      "subtitle": "A gallery of architecture, interior, furniture, and landscape work."
+    },
+    "comingSoon": {
+      "title": "Project case studies coming soon",
+      "body": "We're building our public portfolio. Real projects, with the client's permission, will appear here soon."
+    },
+    "filters": {
+      "all": "All",
+      "architecture": "Architecture",
+      "interior": "Interior",
+      "furniture": "Furniture",
+      "landscape": "Landscape"
+    }
+  },
+  "process": {
+    "hero": {
+      "title": "Our Process",
+      "subtitle": "How a project moves from first conversation to handover."
+    },
+    "steps": {
+      "consultation": {
+        "title": "Consultation",
+        "body": "We learn your household, your site, and your budget before drawing anything."
+      },
+      "concept": {
+        "title": "Concept design",
+        "body": "Initial spatial and material direction, presented for your feedback."
+      },
+      "development": {
+        "title": "Development",
+        "body": "Concept refined into a coordinated architectural, interior, furniture, and landscape scheme."
+      },
+      "documentation": {
+        "title": "Documentation",
+        "body": "Construction-ready drawings and specifications, suitable for permit submission and builder pricing."
+      },
+      "buildConnection": {
+        "title": "Build connection (optional)",
+        "body": "If you'd like a builder, we introduce you to an independent, partnered construction team — the build contract is between you and them."
+      },
+      "handover": {
+        "title": "Handover",
+        "body": "Final documentation delivered to you, ready for your records or your builder."
+      }
+    },
+    "timeline": {
+      "note": "Timelines vary by project scope and province; we'll confirm a realistic estimate during consultation."
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Start a Project",
+      "subtitle": "Tell us about your home and what you're hoping to design."
+    },
+    "form": {
+      "name": { "label": "Full name" },
+      "email": { "label": "Email" },
+      "phone": { "label": "Phone / Zalo / WhatsApp", "hint": "Optional" },
+      "projectType": {
+        "label": "Project type",
+        "options": ["Architecture", "Interior", "Furniture", "Landscape", "Combination"]
+      },
+      "propertyType": { "label": "Property type" },
+      "plotArea": { "label": "Approximate plot or floor area" },
+      "province": { "label": "Province / city" },
+      "budgetRange": { "label": "Approximate budget range" },
+      "wantsBuildConnection": {
+        "label": "Would you also like an introduction to a partnered builder?"
+      },
+      "language": { "label": "Preferred follow-up language" },
+      "notes": { "label": "Notes, inspiration links, or questions" },
+      "submit": "Send Inquiry",
+      "privacy": "By submitting, you agree to our Privacy Policy."
+    },
+    "sidebar": {
+      "direct": { "title": "Reach us directly" },
+      "hours": "TODO — e.g. Monday–Saturday, 9:00 AM – 6:00 PM (GMT+7)",
+      "next": {
+        "title": "What happens next",
+        "step1": "We review your inquiry within two business days.",
+        "step2": "We schedule an initial consultation call or visit.",
+        "step3": "We confirm scope, package tier, and next steps."
+      },
+      "trust": "Your details are used only to discuss your project."
+    }
+  },
+  "professionals": {
+    "hero": {
+      "title": "For Professionals",
+      "subtitle": "Architects, builders, developers, and other studios — let's collaborate."
+    },
+    "form": {
+      "name": { "label": "Full name" },
+      "firmName": { "label": "Firm / company name" },
+      "role": {
+        "label": "Your role",
+        "options": [
+          "Architectural Technologist",
+          "Interior & Spatial Designer",
+          "Building Surveyor",
+          "Town Planner",
+          "Production Designer",
+          "Historic Buildings Inspector",
+          "Structural Engineer",
+          "Builder",
+          "Other"
+        ]
+      },
+      "email": { "label": "Email" },
+      "phone": { "label": "Phone", "hint": "Optional" },
+      "collaboration": { "label": "Nature of the collaboration" },
+      "notes": { "label": "Notes" },
+      "submit": "Send Inquiry",
+      "privacy": "By submitting, you agree to our Privacy Policy."
+    },
+    "sidebar": {
+      "direct": { "title": "Reach us directly" },
+      "hours": "TODO — e.g. Monday–Saturday, 9:00 AM – 6:00 PM (GMT+7)",
+      "next": {
+        "title": "What happens next",
+        "step1": "We review your inquiry within two business days.",
+        "step2": "We follow up to discuss collaboration details."
+      },
+      "trust": "Your details are used only to discuss collaboration."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "TODO",
+    "intro": "This page explains what information we collect and how we use it.",
+    "s01": {
+      "heading": "What we collect",
+      "body": "When you submit our project inquiry or professional inquiry form, we collect your name, email, phone number (optional), and project or collaboration details. We use this solely to respond to your enquiry and discuss your project. We do not collect data automatically through cookies beyond a single functional preference cookie for the language banner."
+    },
+    "s02": {
+      "heading": "How we use your data",
+      "body": "Your contact details are used to respond to your inquiry, schedule a consultation, and follow up if you haven't received a response. We do not use your data for unsolicited marketing. We do not sell, rent, or share your data with third parties except where required by law."
+    },
+    "s03": {
+      "heading": "Data storage",
+      "body": "Form submissions are processed via Formspree (formspree.io), a third-party form service. Formspree's privacy policy governs data processed on their platform. We retain your enquiry details for as long as necessary to fulfil your request or as required by Vietnamese law."
+    },
+    "s04": {
+      "heading": "Cookies",
+      "body": "This website uses a single functional cookie to remember your language or privacy banner preference. No tracking cookies, advertising pixels, or analytics scripts are used. We do not use Google Analytics or any third-party tracking services."
+    },
+    "s05": {
+      "heading": "Your rights",
+      "body": "You have the right to access, correct, or request deletion of your personal data. To exercise these rights, email thuy@tnpgr.vn. We will respond within 30 days."
+    },
+    "s06": {
+      "heading": "Contact us",
+      "body": "For privacy questions: thuy@tnpgr.vn · +84 90 333 37 29 · Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Vietnam"
+    },
+    "backHome": "Back to Home"
+  },
+  "notFound": {
+    "title": "404",
+    "tagline": "This room doesn't exist yet.",
+    "body": "The page you're looking for doesn't exist. Let's get you back on plan.",
+    "goHome": "Go Home",
+    "contact": "Contact Us"
+  },
+  "meta": {
+    "home": {
+      "title": "Skog Mộc by TNP — Architectural, Interior, Furniture & Landscape Design",
+      "description": "Architectural, interior, furniture, and landscape design for Vietnamese homes. Design-led, build-optional."
+    },
+    "services": {
+      "title": "Services — Skog Mộc by TNP",
+      "description": "Architectural design, interior design, furniture design, and landscape design, plus extended specialist services."
+    },
+    "pricing": {
+      "title": "Pricing — Skog Mộc by TNP",
+      "description": "Design package tiers by service depth. Contact us for a custom quote."
+    },
+    "portfolio": {
+      "title": "Portfolio — Skog Mộc by TNP",
+      "description": "A gallery of architecture, interior, furniture, and landscape work."
+    },
+    "contact": {
+      "title": "Contact — Skog Mộc by TNP",
+      "description": "Start a residential design project with Skog Mộc by TNP."
+    },
+    "professionals": {
+      "title": "For Professionals — Skog Mộc by TNP",
+      "description": "Collaboration inquiries for architects, builders, developers, and other studios."
+    },
+    "privacy": {
+      "title": "Privacy Policy — Skog Mộc by TNP",
+      "description": "How Skog Mộc by TNP collects and uses your information."
+    },
+    "process": {
+      "title": "Our Process — Skog Mộc by TNP",
+      "description": "How a project moves from first conversation to handover."
+    }
+  }
+}
