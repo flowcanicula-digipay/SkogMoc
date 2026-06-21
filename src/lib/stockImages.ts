@@ -3,7 +3,7 @@ function pexels(id: number, width = 1600) {
 }
 
 export const stockImages = {
-  heroBg: pexels(128304),
+  heroBg: pexels(13573493),
   banner: pexels(3965520),
   furniture: pexels(696407),
   interior: pexels(4740484),

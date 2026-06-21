@@ -114,9 +114,8 @@ export default function Hero() {
         ref={imageRef}
         src={stockImages.heroBg}
         alt={t('imageAlt')}
-        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-50"
+        className="absolute inset-0 h-full w-full scale-110 object-cover opacity-100"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-forest-950 via-forest-950/85 to-forest-950/60" />
       <span
         ref={accentRef}
         className="absolute right-0 top-0 h-32 w-2.5 bg-amber-600"

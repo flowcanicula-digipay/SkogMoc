@@ -73,6 +73,15 @@ export default async function LocaleLayout({
     <html lang={locale} className={`${displayFont.variable} ${montserrat.variable} ${interMono.variable}`}>
       <head>
         <meta httpEquiv="Content-Security-Policy" content={csp} />
+        {/*
+          The site already ships real en/vi/ja translations via next-intl.
+          Without this, Chrome's built-in "Translate this page" prompt injects
+          a stylesheet from gstatic.com that the strict CSP above correctly
+          blocks (showing as a console error) — telling the browser not to
+          offer translation avoids triggering that injection at all, rather
+          than loosening style-src for an unnecessary duplicate feature.
+        */}
+        <meta name="google" content="notranslate" />
       </head>
       <body className="bg-linen-50 text-ink font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
