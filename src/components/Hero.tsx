@@ -19,6 +19,7 @@ export default function Hero() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const imageRef = useRef<HTMLImageElement>(null);
   const accentRef = useRef<HTMLSpanElement>(null);
+  const logoRef = useRef<HTMLImageElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const paragraphRef = useRef<HTMLParagraphElement>(null);
   const buttonsRef = useRef<HTMLDivElement>(null);
@@ -48,6 +49,11 @@ export default function Hero() {
         accentRef.current,
         { scaleY: 0, transformOrigin: 'top', duration: 0.9, ease: 'power3.out' },
         '<0.2',
+      )
+      .from(
+        logoRef.current,
+        { scale: 0.4, opacity: 0, rotation: -25, duration: 1.2, ease: 'back.out(1.6)' },
+        '<0.1',
       )
       .from(
         title.words,
@@ -84,6 +90,13 @@ export default function Hero() {
         '<0.3',
       );
 
+    const spin = gsap.to(logoRef.current, {
+      rotation: 360,
+      duration: 50,
+      repeat: -1,
+      ease: 'none',
+    });
+
     const parallax = gsap.to(imageRef.current, {
       yPercent: 15,
       ease: 'none',
@@ -97,6 +110,7 @@ export default function Hero() {
 
     return () => {
       tl.kill();
+      spin.kill();
       parallax.scrollTrigger?.kill();
       parallax.kill();
       title.revert();
@@ -116,12 +130,21 @@ export default function Hero() {
         alt={t('imageAlt')}
         className="absolute inset-0 h-full w-full scale-110 object-cover opacity-100"
       />
+      <div className="absolute inset-0 bg-gradient-to-t from-forest-950/45 via-forest-950/10 to-transparent" />
       <span
         ref={accentRef}
         className="absolute right-0 top-0 h-32 w-2.5 bg-amber-600"
         aria-hidden="true"
       />
       <TopoPattern className="right-0 top-0 h-auto w-[60%] text-amber-600 opacity-40" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        ref={logoRef}
+        src="/assets/logo/logo-mark-light.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute left-[74%] top-[24%] hidden h-24 w-24 -translate-x-1/2 -translate-y-1/2 drop-shadow-lg sm:block sm:h-28 sm:w-28"
+      />
       <div className="relative z-10 mx-auto w-full max-w-7xl">
         <h1
           ref={titleRef}

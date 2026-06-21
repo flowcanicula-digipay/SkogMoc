@@ -49,10 +49,10 @@
     "expertise": {
       "title": "Our Expertise",
       "items": {
-        "masterplanning": "Masterplanning",
-        "preDesign": "Pre-Design",
-        "schematicDesign": "Schematic Design",
-        "documents": "Construction Documents",
+        "furnitureDesign": "Furniture Design",
+        "materialSelection": "Material & Finish Selection",
+        "spatialPlanning": "Interior & Spatial Planning",
+        "documentation": "Architectural Documentation",
         "installation": "Installation"
       }
     },
@@ -249,18 +249,17 @@
       },
       "q8": {
         "question": "Can you bring in a structural engineer, town planner, or other specialist if my project needs one?",
-        "answer": "Yes — beyond our four core design disciplines, we have access to a network of additional specialists and bring the right one in when a project calls for it."
+        "answer": "Yes — beyond furniture design, our core focus, we have access to a network of additional specialists (architectural technologist, interior and spatial designer, building surveyor, town planner, production designer, historic buildings inspector, structural engineer) and bring the right one in when a project calls for it."
       }
     }
   },
   "portfolio": {
     "hero": {
       "title": "Portfolio",
-      "subtitle": "A gallery of architecture, interior, furniture, and landscape work."
+      "subtitle": "A gallery of furniture design, making, and installation — most of our work — alongside interior, architectural, and landscape projects."
     },
     "comingSoon": {
-      "title": "Project case studies coming soon",
-      "body": "We're building our public portfolio. Real projects, with the client's permission, will appear here soon."
+      "title": "Project case studies coming soon"
     },
     "filters": {
       "all": "All",
@@ -316,7 +315,7 @@
       "phone": { "label": "Phone / Zalo / WhatsApp", "hint": "Optional" },
       "projectType": {
         "label": "Project type",
-        "options": ["Architecture", "Interior", "Furniture", "Landscape", "Combination"]
+        "options": ["Furniture", "Interior", "Architecture", "Landscape", "Combination"]
       },
       "propertyType": { "label": "Property type" },
       "plotArea": { "label": "Approximate plot or floor area" },
@@ -404,11 +403,11 @@
     },
     "s05": {
       "heading": "Your rights",
-      "body": "You have the right to access, correct, or request deletion of your personal data. To exercise these rights, email thuy@tnpgr.vn. We will respond within 30 days."
+      "body": "You have the right to access, correct, or request deletion of your personal data. To exercise these rights, email thuyken52914@yahoo.com.vn. We will respond within 30 days."
     },
     "s06": {
       "heading": "Contact us",
-      "body": "For privacy questions: thuy@tnpgr.vn · +84 90 333 37 29 · Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Vietnam"
+      "body": "For privacy questions: thuyken52914@yahoo.com.vn · +84 90 333 37 29 · Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Vietnam"
     },
     "backHome": "Back to Home"
   },
@@ -434,7 +433,7 @@
     },
     "portfolio": {
       "title": "Portfolio — Skog Mộc by TNP",
-      "description": "A gallery of architecture, interior, furniture, and landscape work."
+      "description": "A gallery of furniture design, making, and installation, alongside interior, architectural, and landscape work."
     },
     "contact": {
       "title": "Contact — Skog Mộc by TNP",

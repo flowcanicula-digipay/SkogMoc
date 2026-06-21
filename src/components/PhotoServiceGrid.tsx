@@ -5,10 +5,10 @@ import { useTranslations } from 'next-intl';
 import { stockImages } from '@/lib/stockImages';
 
 const TILES = [
-  { key: 'furniture', image: stockImages.furniture },
-  { key: 'interior', image: stockImages.interior },
-  { key: 'architecture', image: stockImages.architecture },
-  { key: 'landscape', image: stockImages.landscape },
+  { key: 'furniture', image: stockImages.furniture, focalPoint: '0%' },
+  { key: 'interior', image: stockImages.interior, focalPoint: '50%' },
+  { key: 'architecture', image: stockImages.architecture, focalPoint: '70%' },
+  { key: 'landscape', image: stockImages.landscape, focalPoint: '100%' },
 ] as const;
 
 export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
@@ -39,7 +39,7 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
 
       {/* Desktop: expanding panel row, opens to color on hover */}
       <div className="hidden h-[58vh] min-h-[420px] w-full overflow-hidden sm:flex">
-        {TILES.map(({ key, image }, i) => {
+        {TILES.map(({ key, image, focalPoint }, i) => {
           const isActive = active === i;
           const isDimmed = active !== null && !isActive;
 
@@ -51,26 +51,25 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
               onMouseLeave={() => setActive(null)}
               onFocus={() => setActive(i)}
               onBlur={() => setActive(null)}
-              style={{ flexGrow: isActive ? 27 : 1 }}
-              className="relative h-full overflow-hidden border-r border-forest-950/10 text-left transition-[flex-grow] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] last:border-r-0 focus:outline-none"
+              style={{
+                flexGrow: isActive ? 60 : 1,
+                backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 12%), url(${image})`,
+                backgroundPosition: `0 0, ${focalPoint}`,
+                backgroundSize: 'auto, cover',
+                filter: isDimmed ? 'grayscale(1)' : 'grayscale(0)',
+                transition:
+                  'filter 0.8s cubic-bezier(0.55,0.085,0.68,0.53), flex-grow 1.5s cubic-bezier(0.645,0.045,0.355,1)',
+              }}
+              className="relative flex h-full items-end overflow-hidden border-r border-forest-950/10 px-6 pb-6 text-left last:border-r-0 focus:outline-none"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={image}
-                alt={t(`${key}.title`)}
-                className={`h-full w-full object-cover transition-all duration-700 ease-out ${
-                  isDimmed ? 'scale-100 grayscale' : 'scale-105 grayscale-0'
-                }`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/10 to-transparent" />
-              <div className="absolute bottom-6 left-6 right-6 overflow-hidden whitespace-nowrap text-linen-50">
-                <span
-                  className={`inline-block border-b border-linen-50/70 pb-1 font-display uppercase tracking-wide transition-all duration-500 ${
+              <div className="overflow-hidden whitespace-nowrap text-linen-50">
+                <h3
+                  className={`font-display uppercase tracking-wide transition-all duration-500 ${
                     isActive ? 'text-2xl font-extrabold' : 'text-base font-bold'
                   }`}
                 >
                   {t(`${key}.title`)}
-                </span>
+                </h3>
                 <p
                   className={`mt-2 max-w-xs whitespace-normal text-sm text-linen-50/85 transition-opacity duration-500 ${
                     isActive ? 'opacity-100' : 'opacity-0'
@@ -78,6 +77,11 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
                 >
                   {t(`${key}.body`)}
                 </p>
+                <div
+                  className={`mt-3 h-px bg-linen-50/70 transition-all duration-500 ${
+                    isActive ? 'w-16' : 'w-8'
+                  }`}
+                />
               </div>
             </button>
           );

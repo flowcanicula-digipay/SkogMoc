@@ -8,7 +8,7 @@ re-litigating.
 
 ## Reporting a vulnerability
 
-Email **thuy@tnpgr.vn** with details and reproduction steps. Do not open a
+Email **thuyken52914@yahoo.com.vn** with details and reproduction steps. Do not open a
 public GitHub issue for security concerns.
 
 ## OWASP Top 10 (2021) coverage

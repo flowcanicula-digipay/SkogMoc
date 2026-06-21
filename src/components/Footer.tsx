@@ -29,10 +29,10 @@ export default function Footer() {
               {t('footer.ctaBody')}
             </p>
             <a
-              href="mailto:thuy@tnpgr.vn"
+              href="mailto:thuyken52914@yahoo.com.vn"
               className="mt-6 inline-block border-b border-linen-50/40 text-lg text-linen-50 hover:border-amber-600 hover:text-amber-600"
             >
-              thuy@tnpgr.vn
+              thuyken52914@yahoo.com.vn
             </a>
 
             <div className="mt-10 flex flex-wrap gap-x-12 gap-y-4">

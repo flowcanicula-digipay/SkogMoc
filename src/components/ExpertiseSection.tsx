@@ -6,10 +6,10 @@ import { stockImages } from '@/lib/stockImages';
 import TopoPattern from './TopoPattern';
 
 const ITEMS = [
-  { key: 'masterplanning', image: stockImages.expertiseMasterplanning },
-  { key: 'preDesign', image: stockImages.expertisePreDesign },
-  { key: 'schematicDesign', image: stockImages.expertiseSchematicDesign },
-  { key: 'documents', image: stockImages.expertiseDocuments },
+  { key: 'furnitureDesign', image: stockImages.expertiseFurnitureDesign },
+  { key: 'materialSelection', image: stockImages.expertiseMaterialSelection },
+  { key: 'spatialPlanning', image: stockImages.expertiseSpatialPlanning },
+  { key: 'documentation', image: stockImages.expertiseDocumentation },
   { key: 'installation', image: stockImages.processInstallation },
 ] as const;
 

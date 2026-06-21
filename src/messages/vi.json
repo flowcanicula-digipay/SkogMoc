@@ -49,10 +49,10 @@
     "expertise": {
       "title": "Chuyên môn của chúng tôi",
       "items": {
-        "masterplanning": "Quy hoạch tổng thể",
-        "preDesign": "Tiền thiết kế",
-        "schematicDesign": "Thiết kế sơ bộ",
-        "documents": "Hồ sơ thiết kế thi công",
+        "furnitureDesign": "Thiết kế đồ nội thất",
+        "materialSelection": "Lựa chọn vật liệu & hoàn thiện",
+        "spatialPlanning": "Bố trí nội thất & không gian",
+        "documentation": "Hồ sơ thiết kế kiến trúc",
         "installation": "Lắp đặt"
       }
     },
@@ -249,18 +249,17 @@
       },
       "q8": {
         "question": "Bạn có thể mời kỹ sư kết cấu, chuyên gia quy hoạch hoặc chuyên gia khác nếu dự án cần không?",
-        "answer": "Có — ngoài bốn lĩnh vực thiết kế cốt lõi, chúng tôi có mạng lưới chuyên gia bổ sung và sẽ mời đúng người khi dự án cần."
+        "answer": "Có — bên cạnh thiết kế đồ nội thất, trọng tâm của chúng tôi, chúng tôi có mạng lưới chuyên gia bổ sung (chuyên gia công nghệ kiến trúc, nhà thiết kế nội thất & không gian, chuyên viên khảo sát công trình, chuyên gia quy hoạch đô thị, nhà thiết kế sản xuất, chuyên viên khảo sát công trình lịch sử, kỹ sư kết cấu) và sẽ mời đúng người khi dự án cần."
       }
     }
   },
   "portfolio": {
     "hero": {
       "title": "Dự án",
-      "subtitle": "Bộ sưu tập các dự án kiến trúc, nội thất, đồ nội thất và cảnh quan."
+      "subtitle": "Bộ sưu tập các dự án thiết kế, chế tác và lắp đặt đồ nội thất — phần lớn công việc của chúng tôi — cùng các dự án nội thất, kiến trúc và cảnh quan."
     },
     "comingSoon": {
-      "title": "Hồ sơ dự án sắp ra mắt",
-      "body": "Chúng tôi đang xây dựng portfolio công khai. Các dự án thực tế, với sự cho phép của khách hàng, sẽ xuất hiện ở đây sớm."
+      "title": "Hồ sơ dự án sắp ra mắt"
     },
     "filters": {
       "all": "Tất cả",
@@ -316,7 +315,7 @@
       "phone": { "label": "Số điện thoại / Zalo / WhatsApp", "hint": "Không bắt buộc" },
       "projectType": {
         "label": "Loại dự án",
-        "options": ["Kiến trúc", "Nội thất", "Đồ nội thất", "Cảnh quan", "Kết hợp"]
+        "options": ["Đồ nội thất", "Nội thất", "Kiến trúc", "Cảnh quan", "Kết hợp"]
       },
       "propertyType": { "label": "Loại bất động sản" },
       "plotArea": { "label": "Diện tích đất hoặc diện tích sàn ước tính" },
@@ -404,11 +403,11 @@
     },
     "s05": {
       "heading": "Quyền của bạn",
-      "body": "Bạn có quyền truy cập, sửa đổi hoặc yêu cầu xóa dữ liệu cá nhân của mình. Để thực hiện các quyền này, vui lòng gửi email đến thuy@tnpgr.vn. Chúng tôi sẽ phản hồi trong vòng 30 ngày."
+      "body": "Bạn có quyền truy cập, sửa đổi hoặc yêu cầu xóa dữ liệu cá nhân của mình. Để thực hiện các quyền này, vui lòng gửi email đến thuyken52914@yahoo.com.vn. Chúng tôi sẽ phản hồi trong vòng 30 ngày."
     },
     "s06": {
       "heading": "Liên hệ với chúng tôi",
-      "body": "Về các vấn đề bảo mật: thuy@tnpgr.vn · +84 90 333 37 29 · Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Việt Nam"
+      "body": "Về các vấn đề bảo mật: thuyken52914@yahoo.com.vn · +84 90 333 37 29 · Lô 35 đường số 9, KCN Tam Phước, Biên Hòa, Việt Nam"
     },
     "backHome": "Về trang chủ"
   },
@@ -434,7 +433,7 @@
     },
     "portfolio": {
       "title": "Dự án — Skog Mộc by TNP",
-      "description": "Bộ sưu tập các dự án kiến trúc, nội thất, đồ nội thất và cảnh quan."
+      "description": "Bộ sưu tập các dự án thiết kế, chế tác và lắp đặt đồ nội thất, cùng các dự án nội thất, kiến trúc và cảnh quan."
     },
     "contact": {
       "title": "Liên hệ — Skog Mộc by TNP",
