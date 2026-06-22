@@ -30,12 +30,15 @@ export default function Header() {
   const isHome = pathname === '/';
   const isServices = pathname.startsWith('/services');
   const isPortfolio = pathname.startsWith('/portfolio');
+  const isPricing = pathname.startsWith('/pricing');
+  const isProcess = pathname.startsWith('/process');
   // These pages all open with a full GSAP intro hero — the header stays
   // hidden until that hero settles, then makes a visibly delayed entrance
-  // rather than competing with it. Services and Portfolio's hero timelines
-  // run a beat longer (kicker + two-line headline), so they get a longer,
-  // more noticeable gap.
-  const heroDelay = isHome ? 2.8 : isServices || isPortfolio ? 3.4 : null;
+  // rather than competing with it. Services, Portfolio, Pricing, and
+  // Process's hero timelines run a beat longer (kicker + two-line
+  // headline), so they get a longer, more noticeable gap.
+  const heroDelay =
+    isHome ? 2.8 : isServices || isPortfolio || isPricing || isProcess ? 3.4 : null;
 
   useIsomorphicLayoutEffect(() => {
     if (heroDelay === null || !headerRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

@@ -212,9 +212,20 @@
   "pricing": {
     "hero": {
       "title": "Pricing",
-      "subtitle": "Design package tiers by service depth. Every project gets a custom quote based on scope."
+      "subtitle": "Design package tiers by service depth. Every project gets a custom quote based on scope — never a guess.",
+      "imageAlt": "A finished furniture installation in a Ho Chi Minh City home",
+      "cta": "Start Your Project",
+      "secondaryCta": "See Our Process"
+    },
+    "statement": {
+      "title": "Built To The Plan.\nPriced With\nNo Surprises.",
+      "body": "Every package is scoped to your project before a single number is discussed — architecture, interior, landscape, and furniture, finished exactly as drawn.",
+      "lead": "No templated tiers stretched to fit. No hidden add-ons later. Just an honest quote for the work your home actually needs."
     },
     "packages": {
+      "kicker": "Choose Your Path",
+      "title": "Three Ways To Begin",
+      "lead": "Every tier starts with the same honest conversation about your home — the depth of the work is the only thing that changes.",
       "consult": {
         "name": "Design Consultation",
         "tagline": "Start here",
@@ -224,6 +235,7 @@
       "design": {
         "name": "Full Design Package",
         "tagline": "Most projects",
+        "badge": "Most Popular",
         "description": "Concept through fabrication-ready specifications across the disciplines your project needs.",
         "price": "Custom quote — contact us"
       },
@@ -233,6 +245,9 @@
         "description": "Full design package plus delivery and installation of your furniture.",
         "price": "Custom quote — contact us"
       }
+    },
+    "bold": {
+      "text": "One quote. Zero surprises. Architecture and furniture finished exactly to plan — nothing added, nothing assumed."
     },
     "included": {
       "title": "What's included",
@@ -248,6 +263,11 @@
     "comparison": {
       "title": "Compare packages",
       "note": "Exact deliverables are confirmed with you during consultation."
+    },
+    "manifesto": {
+      "eyebrow": "How We Quote",
+      "title": "We don't <accent>guess at a number</accent> and hope it holds — every quote is <accent>scoped to your project first</accent>, then priced <accent>without padding</accent>.",
+      "caption": "One conversation. One honest number. No retainer games."
     },
     "faq": {
       "title": "Frequently asked questions",
@@ -283,6 +303,12 @@
         "question": "Can you bring in a structural engineer, town planner, or other specialist if my project needs one?",
         "answer": "Yes — beyond our core architecture and furniture work, we have access to a network of additional specialists (architectural technologist, interior and spatial designer, building surveyor, town planner, production designer, historic buildings inspector, structural engineer) and bring the right one in when a project calls for it."
       }
+    },
+    "cta": {
+      "kicker": "Ready When You Are",
+      "title": "Let's Price Your Project.",
+      "body": "Every quote starts with a real conversation about your home, your site, and your budget — no templates, no guesswork.",
+      "button": "Start The Conversation"
     }
   },
   "portfolio": {
@@ -335,7 +361,20 @@
   "process": {
     "hero": {
       "title": "Our Process",
-      "subtitle": "How a project moves from first conversation to handover."
+      "subtitle": "How a project moves from first conversation to handover.",
+      "imageAlt": "A staircase under construction, mid-build",
+      "cta": "Start Your Project",
+      "secondaryCta": "See Pricing"
+    },
+    "statement": {
+      "title": "Six Steps.\nNo Skipped\nStages.",
+      "body": "Every project moves through the same disciplined sequence — consultation, concept, development, documentation, optional installation, and handover — regardless of size.",
+      "lead": "No shortcuts taken to hit a deadline. No phase skipped to save a fee."
+    },
+    "manifesto": {
+      "eyebrow": "How We Work",
+      "title": "We don't <accent>start drawing</accent> until we understand your household — then we don't <accent>stop documenting</accent> until your fabricator needs <accent>nothing explained twice</accent>.",
+      "caption": "Process before product — every time."
     },
     "roadmap": {
       "badge": "Process",
@@ -372,6 +411,12 @@
     },
     "timeline": {
       "note": "Timelines vary by project scope and province; we'll confirm a realistic estimate during consultation."
+    },
+    "cta": {
+      "kicker": "Ready To Begin",
+      "title": "Let's Start The First Step.",
+      "body": "Every project begins the same way — a real conversation about your home, your site, and what you're hoping for.",
+      "button": "Start The Conversation"
     }
   },
   "contact": {

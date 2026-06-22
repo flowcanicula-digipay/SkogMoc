@@ -11,7 +11,7 @@ export default function PricingFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <div className="divide-y divide-amber-100 border-y border-amber-100">
+    <div className="divide-y divide-amber-100 rounded-2xl border border-amber-100 bg-white px-6 sm:px-8">
       {QUESTIONS.map((q, i) => {
         const isOpen = openIndex === i;
         return (
@@ -22,7 +22,7 @@ export default function PricingFAQ() {
               className="flex w-full items-center justify-between gap-4 py-5 text-left"
               aria-expanded={isOpen}
             >
-              <span className="font-display text-base text-forest-950">
+              <span className="font-display text-base font-semibold text-forest-950">
                 {t(`${q}.question`)}
               </span>
               <ChevronDown

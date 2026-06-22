@@ -212,9 +212,20 @@
   "pricing": {
     "hero": {
       "title": "Bảng giá",
-      "subtitle": "Các gói thiết kế theo mức độ dịch vụ. Mỗi dự án nhận báo giá riêng theo phạm vi công việc."
+      "subtitle": "Các gói thiết kế theo mức độ dịch vụ. Mỗi dự án nhận báo giá riêng theo phạm vi công việc — không bao giờ là ước đoán.",
+      "imageAlt": "Một công trình nội thất hoàn thiện tại một ngôi nhà ở TP. Hồ Chí Minh",
+      "cta": "Bắt Đầu Dự Án",
+      "secondaryCta": "Xem Quy Trình"
+    },
+    "statement": {
+      "title": "Thi Công Đúng Bản Vẽ.\nBáo Giá\nKhông Bất Ngờ.",
+      "body": "Mỗi gói được xác định phạm vi cho dự án của bạn trước khi bàn đến bất kỳ con số nào — kiến trúc, nội thất, cảnh quan và đồ nội thất, hoàn thiện đúng như bản vẽ.",
+      "lead": "Không có gói mẫu cố ép cho vừa. Không có chi phí ẩn sau này. Chỉ là một báo giá trung thực cho đúng những gì ngôi nhà của bạn cần."
     },
     "packages": {
+      "kicker": "Chọn Hướng Đi Của Bạn",
+      "title": "Ba Cách Để Bắt Đầu",
+      "lead": "Mỗi gói đều bắt đầu bằng cùng một cuộc trò chuyện thẳng thắn về ngôi nhà của bạn — chỉ chiều sâu công việc là khác nhau.",
       "consult": {
         "name": "Tư vấn thiết kế",
         "tagline": "Bắt đầu tại đây",
@@ -224,6 +235,7 @@
       "design": {
         "name": "Gói thiết kế đầy đủ",
         "tagline": "Phù hợp hầu hết dự án",
+        "badge": "Phổ biến nhất",
         "description": "Từ ý tưởng đến hồ sơ sẵn sàng sản xuất cho các lĩnh vực dự án của bạn cần.",
         "price": "Báo giá riêng — liên hệ chúng tôi"
       },
@@ -233,6 +245,9 @@
         "description": "Gói thiết kế đầy đủ cùng dịch vụ vận chuyển và lắp đặt đồ nội thất.",
         "price": "Báo giá riêng — liên hệ chúng tôi"
       }
+    },
+    "bold": {
+      "text": "Một báo giá. Không bất ngờ. Kiến trúc và nội thất hoàn thiện đúng như bản vẽ — không thêm, không suy diễn."
     },
     "included": {
       "title": "Bao gồm những gì",
@@ -248,6 +263,11 @@
     "comparison": {
       "title": "So sánh các gói",
       "note": "Hạng mục cụ thể sẽ được xác nhận cùng bạn trong buổi tư vấn."
+    },
+    "manifesto": {
+      "eyebrow": "Cách Chúng Tôi Báo Giá",
+      "title": "Chúng tôi không <accent>đoán một con số</accent> rồi hy vọng nó đúng — mọi báo giá đều được <accent>xác định phạm vi dự án trước</accent>, sau đó tính giá <accent>không thêm bớt</accent>.",
+      "caption": "Một cuộc trò chuyện. Một con số trung thực. Không có chiêu trò đặt cọc."
     },
     "faq": {
       "title": "Câu hỏi thường gặp",
@@ -283,6 +303,12 @@
         "question": "Bạn có thể mời kỹ sư kết cấu, chuyên gia quy hoạch hoặc chuyên gia khác nếu dự án cần không?",
         "answer": "Có — bên cạnh kiến trúc và đồ nội thất là trọng tâm của chúng tôi, chúng tôi có mạng lưới chuyên gia bổ sung (chuyên gia công nghệ kiến trúc, nhà thiết kế nội thất & không gian, chuyên viên khảo sát công trình, chuyên gia quy hoạch đô thị, nhà thiết kế sản xuất, chuyên viên khảo sát công trình lịch sử, kỹ sư kết cấu) và sẽ mời đúng người khi dự án cần."
       }
+    },
+    "cta": {
+      "kicker": "Sẵn Sàng Khi Bạn Cần",
+      "title": "Cùng Định Giá Dự Án Của Bạn.",
+      "body": "Mọi báo giá đều bắt đầu từ một cuộc trò chuyện thật về ngôi nhà, khu đất và ngân sách của bạn — không mẫu có sẵn, không đoán mò.",
+      "button": "Bắt Đầu Trò Chuyện"
     }
   },
   "portfolio": {
@@ -335,7 +361,20 @@
   "process": {
     "hero": {
       "title": "Quy trình của chúng tôi",
-      "subtitle": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ."
+      "subtitle": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ.",
+      "imageAlt": "Một cầu thang đang trong quá trình hoàn thiện",
+      "cta": "Bắt Đầu Dự Án",
+      "secondaryCta": "Xem Bảng Giá"
+    },
+    "statement": {
+      "title": "Sáu Bước.\nKhông Bỏ Qua\nGiai Đoạn Nào.",
+      "body": "Mọi dự án đều đi qua cùng một trình tự chặt chẽ — tư vấn, ý tưởng, phát triển, hồ sơ thiết kế, lắp đặt (tùy chọn) và bàn giao — bất kể quy mô.",
+      "lead": "Không rút ngắn để kịp tiến độ. Không bỏ qua giai đoạn để giảm chi phí."
+    },
+    "manifesto": {
+      "eyebrow": "Cách Chúng Tôi Làm Việc",
+      "title": "Chúng tôi không <accent>bắt đầu vẽ</accent> cho đến khi hiểu rõ gia đình bạn — và không <accent>ngừng lập hồ sơ</accent> cho đến khi đơn vị thi công của bạn <accent>không cần hỏi lại điều gì</accent>.",
+      "caption": "Quy trình đi trước sản phẩm — luôn luôn như vậy."
     },
     "roadmap": {
       "badge": "Quy trình",
@@ -372,6 +411,12 @@
     },
     "timeline": {
       "note": "Thời gian thay đổi theo phạm vi dự án và tỉnh thành; chúng tôi sẽ xác nhận ước tính thực tế trong buổi tư vấn."
+    },
+    "cta": {
+      "kicker": "Sẵn Sàng Bắt Đầu",
+      "title": "Cùng Thực Hiện Bước Đầu Tiên.",
+      "body": "Mọi dự án đều bắt đầu giống nhau — một cuộc trò chuyện thật về ngôi nhà, khu đất và mong muốn của bạn.",
+      "button": "Bắt Đầu Trò Chuyện"
     }
   },
   "contact": {

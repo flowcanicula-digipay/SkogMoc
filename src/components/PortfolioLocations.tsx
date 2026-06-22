@@ -165,8 +165,14 @@ export default function PortfolioLocations() {
       gsap.set(motifRefs.current, { opacity: 0, scale: 0.4 });
       gsap.set(cometRef.current, { opacity: 0 });
 
+      // start/end pinned to the viewport midline (50%) rather than near the
+      // top — with a tight end like "bottom 65%" the timeline only finishes
+      // once the section has scrolled most of the way past the sticky
+      // header, so the highest-sitting pins/motifs would pop in already
+      // tucked behind it. Symmetric 50%/50% keeps the whole reveal
+      // comfortably below the fixed nav.
       const tl = gsap.timeline({
-        scrollTrigger: { trigger: wrapper, start: 'top 75%', end: 'bottom 65%', scrub: 0.5 },
+        scrollTrigger: { trigger: wrapper, start: 'top 50%', end: 'bottom 50%', scrub: 0.5 },
       });
 
       tl.to([road, lineRef.current], { strokeDashoffset: 0, duration: 1, ease: 'none' }, 0).to(
@@ -188,7 +194,7 @@ export default function PortfolioLocations() {
         gsap.set(mobileLineRef.current, { scaleY: 0, transformOrigin: 'top' });
         gsap.set(mobilePinRefs.current, { opacity: 0, x: -14 });
         const mobileTl = gsap.timeline({
-          scrollTrigger: { trigger: mobileLineRef.current, start: 'top 80%', end: 'bottom 75%', scrub: 0.5 },
+          scrollTrigger: { trigger: mobileLineRef.current, start: 'top 50%', end: 'bottom 50%', scrub: 0.5 },
         });
         mobileTl.to(mobileLineRef.current, { scaleY: 1, duration: 1, ease: 'none' }, 0);
         stops.forEach((_, i) => {
@@ -205,7 +211,10 @@ export default function PortfolioLocations() {
   const roadPath = buildRoadPath(nodes);
 
   return (
-    <div ref={wrapperRef} className={`relative mx-auto max-w-7xl px-6 py-16 sm:py-24 ${charm.variable}`}>
+    <div
+      ref={wrapperRef}
+      className={`relative mx-auto max-w-7xl scroll-mt-28 px-6 py-16 pt-24 sm:py-24 ${charm.variable}`}
+    >
       {/* Vietnam's own coastline, faint, behind the whole section — a real
           administrative-boundary map (mapsvg.com / Wikimedia, CC-BY-SA),
           tinted to a flat silhouette via a brightness filter rather than

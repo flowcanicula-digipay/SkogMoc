@@ -5,34 +5,52 @@ import { useTranslations } from 'next-intl';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-import { MessageCircle, PenTool, Layers, FileText, Wrench, KeyRound, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 }
 
+const ICONS_DIR = '/assets/images/services/motifs';
+const PORTFOLIO_MOTIFS_DIR = '/assets/images/portfolio/motifs';
+
+// Full-color, hand-built motifs (not stock pictograms) — nón lá in
+// conversation for the site visit, a lotus bud breaking open for the
+// concept, stacked tile-roof eaves for development iterations, a stamped
+// scroll (dấu mộc red seal) for documentation, crossed mallet + chisel for
+// the "Mộc" furniture install, and a key with a roof-shaped bow for handover.
 const STEPS = [
-  { key: 'consultation', Icon: MessageCircle },
-  { key: 'concept', Icon: PenTool },
-  { key: 'development', Icon: Layers },
-  { key: 'documentation', Icon: FileText },
-  { key: 'installation', Icon: Wrench },
-  { key: 'handover', Icon: KeyRound },
+  { key: 'consultation', icon: `${ICONS_DIR}/consultation.svg` },
+  { key: 'concept', icon: `${ICONS_DIR}/concept.svg` },
+  { key: 'development', icon: `${ICONS_DIR}/development.svg` },
+  { key: 'documentation', icon: `${ICONS_DIR}/documentation.svg` },
+  { key: 'installation', icon: `${ICONS_DIR}/installation.svg` },
+  { key: 'handover', icon: `${ICONS_DIR}/handover.svg` },
+] as const;
+
+// Faint cultural texture floating behind the ribbon, reusing the same
+// open-licensed motif set as the portfolio page's road so the two roadmap
+// sections read as one family of components.
+const TEXTURE_MOTIFS = [
+  { src: `${PORTFOLIO_MOTIFS_DIR}/lotus.svg`, left: '6%', top: '14%', size: 38, rotate: -6 },
+  { src: `${PORTFOLIO_MOTIFS_DIR}/non-la.svg`, left: '94%', top: '12%', size: 34, rotate: 8 },
+  { src: `${PORTFOLIO_MOTIFS_DIR}/coffee.svg`, left: '92%', top: '78%', size: 36, rotate: -4 },
+  { src: `${PORTFOLIO_MOTIFS_DIR}/flag-vn.svg`, left: '4%', top: '80%', size: 34, rotate: 5 },
 ] as const;
 
 // Wave points for the desktop roadmap path — alternating high/low so the
 // route reads as a flowing journey rather than a flat list, the same
-// "process roadmap" feel as the reference infographic the owner pointed to.
+// "process roadmap" feel as the portfolio page's illustrated road.
 const VIEW_W = 1200;
-const VIEW_H = 300;
+const VIEW_H = 320;
 const POINTS = [
-  { x: 70, y: 230 },
-  { x: 296, y: 80 },
-  { x: 522, y: 230 },
-  { x: 748, y: 80 },
-  { x: 974, y: 230 },
-  { x: 1130, y: 80 },
+  { x: 70, y: 240 },
+  { x: 296, y: 90 },
+  { x: 522, y: 240 },
+  { x: 748, y: 90 },
+  { x: 974, y: 240 },
+  { x: 1130, y: 90 },
 ];
 
 function buildWavePath() {
@@ -51,7 +69,7 @@ export default function ServicesProcessStrip() {
   const t = useTranslations('services.process');
   const containerRef = useRef<HTMLDivElement>(null);
   const pathRef = useRef<SVGPathElement>(null);
-  const glowPathRef = useRef<SVGPathElement>(null);
+  const highlightRef = useRef<SVGPathElement>(null);
   const cometRef = useRef<SVGCircleElement>(null);
   const nodeRefs = useRef<(HTMLDivElement | null)[]>([]);
   const mobileLineRef = useRef<HTMLDivElement>(null);
@@ -66,16 +84,22 @@ export default function ServicesProcessStrip() {
 
     const ctx = gsap.context(() => {
       const length = path.getTotalLength();
-      gsap.set([path, glowPathRef.current], { strokeDasharray: length, strokeDashoffset: length });
+      gsap.set([path, highlightRef.current], { strokeDasharray: length, strokeDashoffset: length });
       gsap.set(nodeRefs.current, { opacity: 0, scale: 0.4, transformOrigin: '50% 50%' });
       gsap.set(cometRef.current, { opacity: 0 });
 
+      // end is intentionally generous (bottom 95%) — with a tight end like
+      // "bottom 70%" the timeline only finishes once the section has
+      // scrolled most of the way past the sticky header, so the
+      // last (highest-sitting) node would pop in already tucked behind it.
+      // Finishing the reveal earlier keeps every node's pop-in on screen,
+      // below the fixed nav.
       const desktopTl = gsap.timeline({
-        scrollTrigger: { trigger: container, start: 'top 75%', end: 'bottom 70%', scrub: 0.5 },
+        scrollTrigger: { trigger: container, start: 'top 75%', end: 'bottom 95%', scrub: 0.5 },
       });
 
       desktopTl
-        .to([path, glowPathRef.current], { strokeDashoffset: 0, duration: 1, ease: 'none' }, 0)
+        .to([path, highlightRef.current], { strokeDashoffset: 0, duration: 1, ease: 'none' }, 0)
         .to(
           cometRef.current,
           {
@@ -102,7 +126,7 @@ export default function ServicesProcessStrip() {
         gsap.set(mobileNodeRefs.current, { opacity: 0, x: -16 });
 
         const mobileTl = gsap.timeline({
-          scrollTrigger: { trigger: mobileLineRef.current, start: 'top 80%', end: 'bottom 75%', scrub: 0.5 },
+          scrollTrigger: { trigger: mobileLineRef.current, start: 'top 90%', end: 'bottom 50%', scrub: 0.5 },
         });
         mobileTl.to(mobileLineRef.current, { scaleY: 1, duration: 1, ease: 'none' }, 0);
         STEPS.forEach((_, i) => {
@@ -122,46 +146,88 @@ export default function ServicesProcessStrip() {
   const wavePath = buildWavePath();
 
   return (
-    <div ref={containerRef} className="relative">
-      {/* Desktop: flowing wave roadmap */}
-      <div className="relative hidden py-14 sm:block">
+    <div ref={containerRef} className="relative scroll-mt-28">
+      {/* Desktop: illustrated ribbon roadmap, same family as the portfolio
+          page's winding road. Extra top padding (vs. the portfolio road)
+          gives the highest-sitting nodes (concept/documentation/handover)
+          clearance from the sticky header once scrolled into view. */}
+      <div className="relative hidden py-16 pt-24 sm:block">
+        {/* faint cultural texture, behind everything else */}
+        <div className="pointer-events-none absolute inset-0 opacity-[0.14]" aria-hidden="true">
+          {TEXTURE_MOTIFS.map(({ src, left, top, size, rotate }, i) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={i}
+              src={src}
+              alt=""
+              className="absolute"
+              style={{
+                left,
+                top,
+                width: size,
+                height: size,
+                transform: `translate(-50%, -50%) rotate(${rotate}deg)`,
+              }}
+            />
+          ))}
+        </div>
+
         <svg
           viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="w-full"
+          className="relative w-full"
           style={{ height: 'auto' }}
           aria-hidden="true"
         >
-          <path d={wavePath} fill="none" stroke="currentColor" strokeWidth="1.5" className="text-forest-950/10" />
+          <defs>
+            <linearGradient id="serviceRibbonGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#D98A2B" />
+              <stop offset="50%" stopColor="#B86F1C" />
+              <stop offset="100%" stopColor="#4F7A52" />
+            </linearGradient>
+          </defs>
+          {/* soft shadow, offset slightly below the ribbon for lift */}
           <path
-            ref={glowPathRef}
             d={wavePath}
             fill="none"
-            stroke="#D98A2B"
-            strokeWidth="6"
+            stroke="#16231C"
+            strokeWidth="16"
             strokeLinecap="round"
-            className="opacity-30 blur-md"
+            opacity="0.08"
+            transform="translate(0, 7)"
           />
+          {/* the ribbon road itself */}
           <path
             ref={pathRef}
             d={wavePath}
             fill="none"
-            stroke="#D98A2B"
-            strokeWidth="2.5"
+            stroke="url(#serviceRibbonGradient)"
+            strokeWidth="14"
             strokeLinecap="round"
+          />
+          {/* glossy top-edge highlight */}
+          <path
+            ref={highlightRef}
+            d={wavePath}
+            fill="none"
+            stroke="#FFE8B8"
+            strokeWidth="2"
+            strokeLinecap="round"
+            opacity="0.55"
+            transform="translate(0, -4)"
           />
           <circle
             ref={cometRef}
             r="7"
-            fill="#D98A2B"
-            style={{ filter: 'drop-shadow(0 0 8px rgba(217,138,43,0.85))' }}
+            fill="#FFCD00"
+            style={{ filter: 'drop-shadow(0 0 8px rgba(255,205,0,0.9))' }}
           />
         </svg>
 
         <div className="pointer-events-none absolute inset-0">
-          {STEPS.map(({ key, Icon }, i) => {
+          {STEPS.map(({ key, icon }, i) => {
             const pt = POINTS[i]!;
             const isTop = pt.y < VIEW_H / 2;
-            const tone = i % 2 === 0 ? 'bg-amber-600' : 'bg-moss-500';
+            const ring = i % 2 === 0 ? 'ring-amber-600' : 'ring-moss-500';
             return (
               <div
                 key={key}
@@ -177,9 +243,10 @@ export default function ServicesProcessStrip() {
                 }}
               >
                 <div
-                  className={`flex h-14 w-14 items-center justify-center rounded-full text-linen-50 shadow-lg shadow-forest-950/15 ${tone}`}
+                  className={`flex h-16 w-16 items-center justify-center rounded-full bg-linen-50 p-2.5 shadow-lg shadow-forest-950/20 ring-2 ${ring}`}
                 >
-                  <Icon size={22} strokeWidth={1.75} />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={icon} alt="" className="h-full w-full object-contain" />
                 </div>
                 <span
                   className={`absolute ${isTop ? 'top-full mt-3' : 'bottom-full mb-3'} whitespace-nowrap text-center`}
@@ -199,14 +266,14 @@ export default function ServicesProcessStrip() {
 
       {/* Mobile: straight drawn line, same node order */}
       <div className="relative sm:hidden">
-        <div className="absolute left-7 top-0 h-full w-px bg-forest-950/10" aria-hidden="true" />
+        <div className="absolute left-8 top-0 h-full w-px bg-forest-950/10" aria-hidden="true" />
         <div
           ref={mobileLineRef}
-          className="absolute left-7 top-0 h-full w-px bg-amber-600"
+          className="absolute left-8 top-0 h-full w-px bg-amber-600"
           aria-hidden="true"
         />
         <ol className="flex flex-col gap-8">
-          {STEPS.map(({ key, Icon }, i) => (
+          {STEPS.map(({ key, icon }, i) => (
             <li
               key={key}
               ref={(el) => {
@@ -215,11 +282,12 @@ export default function ServicesProcessStrip() {
               className="flex items-center gap-4"
             >
               <span
-                className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full text-linen-50 shadow-lg shadow-forest-950/15 ${
-                  i % 2 === 0 ? 'bg-amber-600' : 'bg-moss-500'
+                className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-linen-50 p-2.5 shadow-lg shadow-forest-950/20 ring-2 ${
+                  i % 2 === 0 ? 'ring-amber-600' : 'ring-moss-500'
                 }`}
               >
-                <Icon size={20} strokeWidth={1.75} />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={icon} alt="" className="h-full w-full object-contain" />
               </span>
               <span>
                 <span className="block font-mono text-[10px] text-stone-600">
