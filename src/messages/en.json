@@ -288,12 +288,32 @@
   "portfolio": {
     "hero": {
       "title": "Portfolio",
-      "subtitle": "A gallery of our architecture, interior, and landscape work — houses, villas, penthouses, and more, across Vinhomes Golden River, Vinhomes Central Park, Thủ Thiêm, Thảo Điền, and Phú Mỹ Hưng. Most of what's shown here is furniture design, making, and installation, the specialty we're best known for."
+      "subtitle": "A gallery of our architecture, interior, and landscape work — houses, villas, penthouses, and more, across Vinhomes Golden River, Vinhomes Central Park, Thủ Thiêm, Thảo Điền, and Phú Mỹ Hưng. Most of what's shown here is furniture design, making, and installation, the specialty we're best known for.",
+      "cta": "Start Your Project",
+      "secondaryCta": "See Our Services",
+      "imageAlt": "A finished furniture installation in a Ho Chi Minh City home"
+    },
+    "manifesto": {
+      "eyebrow": "What This Is",
+      "title": "This is a <accent>portfolio</accent>, not a stack of case studies — <accent>real work, real addresses</accent>, told honestly while we write the rest up.",
+      "caption": "No fabricated projects. No invented numbers. Just the work."
+    },
+    "gridIntro": {
+      "kicker": "The Work",
+      "title": "What You're Looking At",
+      "lead": "Mostly furniture — the specialty we're best known for — alongside the architecture, interior, and landscape work it grows out of."
     },
     "locations": {
       "title": "Where we build",
-      "items": ["Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền", "Phú Mỹ Hưng"],
-      "note": "Houses, villas, penthouses, and more."
+      "items": ["Phú Mỹ Hưng", "An Phú", "District 10","Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền"],
+      "note": "Houses, villas, penthouses, and more.",
+      "destination": "Your Place",
+      "destinationNote": "The road leads here next."
+    },
+    "statement": {
+      "title": "Best Known\nFor Furniture.\nBuilt On Architecture.",
+      "body": "The work here leans heavily toward furniture design, making, and installation, because that's where our reputation comes from — but every piece exists inside a house, renovation, or interior we either designed ourselves or finished for a plan already underway.",
+      "lead": "Real locations. Real property types. No invented case studies."
     },
     "note": {
       "body": "Houses, villas, and penthouses — finished better than anyone else."
@@ -304,6 +324,12 @@
       "interior": "Interior",
       "furniture": "Furniture",
       "landscape": "Landscape"
+    },
+    "cta": {
+      "kicker": "Like What You See?",
+      "title": "Let's Design Yours.",
+      "body": "Whatever stage your project is at, the conversation starts the same way — tell us about your home, your site, and what you're hoping for.",
+      "button": "Start The Conversation"
     }
   },
   "process": {

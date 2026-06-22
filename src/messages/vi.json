@@ -288,12 +288,32 @@
   "portfolio": {
     "hero": {
       "title": "Dự án",
-      "subtitle": "Bộ sưu tập các dự án kiến trúc, nội thất và cảnh quan của chúng tôi — nhà phố, biệt thự, penthouse và nhiều loại hình khác, tại Vinhomes Golden River, Vinhomes Central Park, Thủ Thiêm, Thảo Điền và Phú Mỹ Hưng. Phần lớn nội dung ở đây là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất."
+      "subtitle": "Bộ sưu tập các dự án kiến trúc, nội thất và cảnh quan của chúng tôi — nhà phố, biệt thự, penthouse và nhiều loại hình khác, tại Vinhomes Golden River, Vinhomes Central Park, Thủ Thiêm, Thảo Điền và Phú Mỹ Hưng. Phần lớn nội dung ở đây là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất.",
+      "cta": "Bắt Đầu Dự Án Của Bạn",
+      "secondaryCta": "Xem Dịch Vụ Của Chúng Tôi",
+      "imageAlt": "Một công trình lắp đặt nội thất hoàn thiện tại một ngôi nhà ở TP.HCM"
+    },
+    "manifesto": {
+      "eyebrow": "Đây Là Gì",
+      "title": "Đây là một <accent>portfolio</accent>, không phải một loạt case study — <accent>công việc thực, địa chỉ thực</accent>, được kể một cách trung thực trong khi chúng tôi hoàn thiện phần còn lại.",
+      "caption": "Không dự án bịa đặt. Không số liệu tự nghĩ ra. Chỉ là công việc thực sự."
+    },
+    "gridIntro": {
+      "kicker": "Công Việc",
+      "title": "Bạn Đang Xem Gì",
+      "lead": "Chủ yếu là đồ nội thất — thế mạnh chúng tôi được biết đến nhiều nhất — cùng với phần kiến trúc, nội thất và cảnh quan mà nó phát triển từ đó."
     },
     "locations": {
       "title": "Nơi chúng tôi đã thực hiện dự án",
-      "items": ["Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền", "Phú Mỹ Hưng"],
-      "note": "Nhà phố, biệt thự, penthouse và nhiều loại hình khác."
+      "items": ["Phú Mỹ Hưng", "An Phú", "Quận 10", "Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền"],
+      "note": "Nhà phố, biệt thự, penthouse và nhiều loại hình khác.",
+      "destination": "Nhà Của Bạn",
+      "destinationNote": "Con đường tiếp theo sẽ dẫn đến đây."
+    },
+    "statement": {
+      "title": "Được Biết Đến Nhiều Nhất\nVới Đồ Nội Thất.\nXây Trên Nền Kiến Trúc.",
+      "body": "Phần lớn công việc ở đây nghiêng về thiết kế, chế tác và lắp đặt đồ nội thất, vì đó là nơi danh tiếng của chúng tôi đến từ — nhưng mỗi sản phẩm đều tồn tại trong một ngôi nhà, dự án cải tạo hoặc nội thất mà chúng tôi tự thiết kế hoặc hoàn thiện cho một phương án đã có sẵn.",
+      "lead": "Địa điểm thực. Loại hình bất động sản thực. Không có case study bịa đặt."
     },
     "note": {
       "body": "Nhà phố, biệt thự và penthouse — hoàn thiện tốt hơn bất kỳ ai khác."
@@ -304,6 +324,12 @@
       "interior": "Nội thất",
       "furniture": "Đồ nội thất",
       "landscape": "Cảnh quan"
+    },
+    "cta": {
+      "kicker": "Thích Những Gì Bạn Thấy?",
+      "title": "Hãy Thiết Kế Ngôi Nhà Của Bạn.",
+      "body": "Dù dự án của bạn đang ở giai đoạn nào, cuộc trò chuyện luôn bắt đầu theo cùng một cách — hãy cho chúng tôi biết về ngôi nhà, khu đất của bạn, và điều bạn mong muốn.",
+      "button": "Bắt Đầu Trò Chuyện"
     }
   },
   "process": {

@@ -8,7 +8,8 @@
 .section-intro-split .line,
 .bold-statement-split .line,
 .final-cta-split .line,
-.services-hero-split .line {
+.services-hero-split .line,
+.portfolio-hero-split .line {
   display: block;
   overflow: hidden;
 }

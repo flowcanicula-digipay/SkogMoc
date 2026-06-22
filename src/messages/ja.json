@@ -288,12 +288,32 @@
   "portfolio": {
     "hero": {
       "title": "プロジェクト",
-      "subtitle": "建築、インテリア、ランドスケープの実績ギャラリーです——住宅、ヴィラ、ペントハウスなど、Vinhomes Golden River、Vinhomes Central Park、Thủ Thiêm、Thảo Điền、Phú Mỹ Hưngで手がけてきました。ここに掲載されているもののほとんどは、私たちが最も知られている強みである家具デザイン・製作・設置です。"
+      "subtitle": "建築、インテリア、ランドスケープの実績ギャラリーです——住宅、ヴィラ、ペントハウスなど、Vinhomes Golden River、Vinhomes Central Park、Thủ Thiêm、Thảo Điền、Phú Mỹ Hưngで手がけてきました。ここに掲載されているもののほとんどは、私たちが最も知られている強みである家具デザイン・製作・設置です。",
+      "cta": "プロジェクトを始める",
+      "secondaryCta": "サービスを見る",
+      "imageAlt": "ホーチミン市の住まいで仕上げられた家具設置の様子"
+    },
+    "manifesto": {
+      "eyebrow": "これは何か",
+      "title": "これは<accent>ポートフォリオ</accent>です、ケーススタディの束ではありません——<accent>実際の仕事、実際の住所</accent>を、残りを仕上げている間も正直にお伝えします。",
+      "caption": "架空のプロジェクトはありません。架空の数字もありません。あるのは仕事そのものです。"
+    },
+    "gridIntro": {
+      "kicker": "実績",
+      "title": "ご覧いただいているもの",
+      "lead": "主に家具——私たちが最も知られている強み——そして、それが生まれる建築・インテリア・ランドスケープの仕事です。"
     },
     "locations": {
       "title": "手がけてきた場所",
-      "items": ["Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền", "Phú Mỹ Hưng"],
-      "note": "住宅、ヴィラ、ペントハウスなど。"
+      "items": ["Phú Mỹ Hưng", "An Phú", "District 10", "Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền"],
+      "note": "住宅、ヴィラ、ペントハウスなど。",
+      "destination": "あなたの場所",
+      "destinationNote": "次はここへ続きます。"
+    },
+    "statement": {
+      "title": "家具で最も知られ。\n建築の上に\n築かれている。",
+      "body": "ここでの仕事の多くは家具のデザイン・製作・設置に偏っています、それが私たちの評判の出どころだからです——しかし、どの作品も、私たちが自ら設計した、あるいは既に進行中のプランを仕上げた住宅、リノベーション、インテリアの中に存在しています。",
+      "lead": "実在する場所。実在する物件タイプ。架空のケーススタディはありません。"
     },
     "note": {
       "body": "住宅、ヴィラ、ペントハウス——誰にも負けない仕上がりで。"
@@ -304,6 +324,12 @@
       "interior": "インテリア",
       "furniture": "家具",
       "landscape": "ランドスケープ"
+    },
+    "cta": {
+      "kicker": "気に入りましたか？",
+      "title": "あなたの住まいも、私たちが設計します。",
+      "body": "プロジェクトがどの段階にあっても、対話の始め方は同じです——あなたの住まい、敷地、そして望んでいることを教えてください。",
+      "button": "会話を始める"
     }
   },
   "process": {
