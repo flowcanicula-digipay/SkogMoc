@@ -3,11 +3,19 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Fraunces } from 'next/font/google';
-import { Ruler, Compass, ClipboardCheck, Map, Clapperboard, Landmark, HardHat } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { stockImages } from '@/lib/stockImages';
 import TopoPattern from './TopoPattern';
+import {
+  ArchTechnologistIcon,
+  SpatialDesignerIcon,
+  BuildingSurveyorIcon,
+  TownPlannerIcon,
+  ProductionDesignerIcon,
+  HistoricBuildingsIcon,
+  StructuralEngineerIcon,
+} from './icons/StudioIcons';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -38,7 +46,15 @@ const IMAGES = [
   stockImages.extendedStructuralEngineer,
 ];
 
-const ICONS = [Ruler, Compass, ClipboardCheck, Map, Clapperboard, Landmark, HardHat];
+const ICONS = [
+  ArchTechnologistIcon,
+  SpatialDesignerIcon,
+  BuildingSurveyorIcon,
+  TownPlannerIcon,
+  ProductionDesignerIcon,
+  HistoricBuildingsIcon,
+  StructuralEngineerIcon,
+];
 
 type ExtendedItem = { title: string; discipline: string; body: string };
 

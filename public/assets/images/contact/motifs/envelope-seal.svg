@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <!-- A letter closed with a lacquer wax seal — direct correspondence, not a generic mail glyph -->
+  <path fill="#F5E6C8" d="M4 13 18 21 32 13V28a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/>
+  <path fill="#E2C896" d="M4 13 18 21 32 13 18 4Z"/>
+  <path stroke="#B86F1C" stroke-width="0.8" fill="none" opacity="0.5" d="M4 13 18 21 32 13"/>
+  <circle cx="18" cy="20.5" r="5.4" fill="#DA251D"/>
+  <circle cx="18" cy="20.5" r="5.4" fill="none" stroke="#B86F1C" stroke-width="0.6" opacity="0.4"/>
+  <path fill="#FFCD00" d="M18 16.8 18.8 19 21.1 19 19.3 20.4 19.9 22.6 18 21.3 16.1 22.6 16.7 20.4 14.9 19 17.2 19Z"/>
+</svg>

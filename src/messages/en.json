@@ -361,7 +361,7 @@
   "process": {
     "hero": {
       "title": "Our Process",
-      "subtitle": "How a project moves from first conversation to handover.",
+      "subtitle": "Every plan documented to the last detail. Every trade — architecture, interior, furniture, landscape — working as one studio. Every home designed for how you actually live.",
       "imageAlt": "A staircase under construction, mid-build",
       "cta": "Start Your Project",
       "secondaryCta": "See Pricing"
@@ -425,28 +425,51 @@
       "subtitle": "Tell us about your home and what you're hoping to design."
     },
     "form": {
-      "name": { "label": "Full name" },
-      "email": { "label": "Email" },
-      "phone": { "label": "Phone / Zalo / WhatsApp", "hint": "Optional" },
+      "eyebrow": "Project Inquiry",
+      "formTitle": "Tell Us About Your Vision",
+      "name": { "label": "Full name", "placeholder": "e.g. Nguyễn Văn A" },
+      "email": { "label": "Email", "placeholder": "you@email.com" },
+      "phone": {
+        "label": "Phone / Zalo / WhatsApp",
+        "hint": "Optional",
+        "placeholder": "+84 90 000 0000"
+      },
       "projectType": {
         "label": "Project type",
         "options": ["Architecture", "Furniture", "Interior", "Landscape", "Combination"]
       },
-      "propertyType": { "label": "Property type" },
-      "plotArea": { "label": "Approximate plot or floor area" },
-      "province": { "label": "Province / city" },
-      "budgetRange": { "label": "Approximate budget range" },
+      "propertyType": {
+        "label": "Property type",
+        "placeholder": "e.g. Townhouse, villa, penthouse"
+      },
+      "plotArea": {
+        "label": "Approximate plot or floor area",
+        "placeholder": "e.g. 80 m² floor area"
+      },
+      "province": { "label": "Province / city", "placeholder": "e.g. Thủ Đức, Ho Chi Minh City" },
+      "budgetRange": {
+        "label": "Approximate budget range",
+        "placeholder": "e.g. 500M – 1B VND"
+      },
       "wantsInstallation": {
         "label": "Would you also like installation handled for you?"
       },
       "language": { "label": "Preferred follow-up language" },
-      "notes": { "label": "Notes, inspiration links, or questions" },
+      "notes": {
+        "label": "Notes, inspiration links, or questions",
+        "placeholder": "Tell us about your site, your household, or anything that inspires you"
+      },
       "submit": "Send Inquiry",
-      "privacy": "By submitting, you agree to our Privacy Policy."
+      "privacy": "By submitting, you agree to our Privacy Policy.",
+      "success": {
+        "title": "Thank You",
+        "body": "We've received your inquiry and will be in touch soon."
+      },
+      "error": "Something went wrong sending your inquiry. Please try again or email us directly."
     },
     "sidebar": {
       "direct": { "title": "Reach us directly" },
-      "hours": "TODO — e.g. Monday–Saturday, 9:00 AM – 6:00 PM (GMT+7)",
+      "hours": "Monday–Saturday, 9:00 AM – 6:00 PM (GMT+7)",
       "next": {
         "title": "What happens next",
         "step1": "We review your inquiry within two business days.",
@@ -459,11 +482,14 @@
   "professionals": {
     "hero": {
       "title": "For Professionals",
-      "subtitle": "Architects, builders, developers, and other studios — let's collaborate."
+      "subtitle": "Architects, builders, developers, and other studios — let's collaborate.",
+      "imageAlt": "An architectural drawing reviewed alongside a finished interior"
     },
     "form": {
-      "name": { "label": "Full name" },
-      "firmName": { "label": "Firm / company name" },
+      "eyebrow": "Collaboration Inquiry",
+      "formTitle": "Let's Discuss Working Together",
+      "name": { "label": "Full name", "placeholder": "e.g. Nguyễn Văn A" },
+      "firmName": { "label": "Firm / company name", "placeholder": "e.g. Atelier Mai & Partners" },
       "role": {
         "label": "Your role",
         "options": [
@@ -478,16 +504,27 @@
           "Other"
         ]
       },
-      "email": { "label": "Email" },
-      "phone": { "label": "Phone", "hint": "Optional" },
-      "collaboration": { "label": "Nature of the collaboration" },
-      "notes": { "label": "Notes" },
+      "email": { "label": "Email", "placeholder": "you@email.com" },
+      "phone": { "label": "Phone", "hint": "Optional", "placeholder": "+84 90 000 0000" },
+      "collaboration": {
+        "label": "Nature of the collaboration",
+        "placeholder": "e.g. structural review for a renovation, joint submission for a heritage-zone project"
+      },
+      "notes": {
+        "label": "Notes",
+        "placeholder": "Anything else that helps us understand the collaboration"
+      },
       "submit": "Send Inquiry",
-      "privacy": "By submitting, you agree to our Privacy Policy."
+      "privacy": "By submitting, you agree to our Privacy Policy.",
+      "success": {
+        "title": "Thank You",
+        "body": "We've received your inquiry and will follow up about collaboration soon."
+      },
+      "error": "Something went wrong sending your inquiry. Please try again or email us directly."
     },
     "sidebar": {
       "direct": { "title": "Reach us directly" },
-      "hours": "TODO — e.g. Monday–Saturday, 9:00 AM – 6:00 PM (GMT+7)",
+      "hours": "Monday–Saturday, 9:00 AM – 6:00 PM (GMT+7)",
       "next": {
         "title": "What happens next",
         "step1": "We review your inquiry within two business days.",

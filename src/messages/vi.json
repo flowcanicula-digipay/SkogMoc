@@ -361,7 +361,7 @@
   "process": {
     "hero": {
       "title": "Quy trình của chúng tôi",
-      "subtitle": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ.",
+      "subtitle": "Mọi bản vẽ được lập hồ sơ đến từng chi tiết. Mọi hạng mục — kiến trúc, nội thất, đồ gỗ, cảnh quan — vận hành như một studio duy nhất. Mọi ngôi nhà được thiết kế đúng theo cách bạn sống.",
       "imageAlt": "Một cầu thang đang trong quá trình hoàn thiện",
       "cta": "Bắt Đầu Dự Án",
       "secondaryCta": "Xem Bảng Giá"
@@ -425,28 +425,51 @@
       "subtitle": "Hãy cho chúng tôi biết về ngôi nhà của bạn và những gì bạn muốn thiết kế."
     },
     "form": {
-      "name": { "label": "Họ và tên" },
-      "email": { "label": "Email" },
-      "phone": { "label": "Số điện thoại / Zalo / WhatsApp", "hint": "Không bắt buộc" },
+      "eyebrow": "Yêu Cầu Dự Án",
+      "formTitle": "Hãy Chia Sẻ Tầm Nhìn Của Bạn",
+      "name": { "label": "Họ và tên", "placeholder": "VD: Nguyễn Văn A" },
+      "email": { "label": "Email", "placeholder": "ban@email.com" },
+      "phone": {
+        "label": "Số điện thoại / Zalo / WhatsApp",
+        "hint": "Không bắt buộc",
+        "placeholder": "+84 90 000 0000"
+      },
       "projectType": {
         "label": "Loại dự án",
         "options": ["Kiến trúc", "Đồ nội thất", "Nội thất", "Cảnh quan", "Kết hợp"]
       },
-      "propertyType": { "label": "Loại bất động sản" },
-      "plotArea": { "label": "Diện tích đất hoặc diện tích sàn ước tính" },
-      "province": { "label": "Tỉnh / thành phố" },
-      "budgetRange": { "label": "Khoảng ngân sách ước tính" },
+      "propertyType": {
+        "label": "Loại bất động sản",
+        "placeholder": "VD: Nhà phố, biệt thự, căn hộ penthouse"
+      },
+      "plotArea": {
+        "label": "Diện tích đất hoặc diện tích sàn ước tính",
+        "placeholder": "VD: 80 m² diện tích sàn"
+      },
+      "province": { "label": "Tỉnh / thành phố", "placeholder": "VD: Thủ Đức, TP. Hồ Chí Minh" },
+      "budgetRange": {
+        "label": "Khoảng ngân sách ước tính",
+        "placeholder": "VD: 500 triệu – 1 tỷ VNĐ"
+      },
       "wantsInstallation": {
         "label": "Bạn có muốn chúng tôi đảm nhận việc lắp đặt không?"
       },
       "language": { "label": "Ngôn ngữ liên hệ ưu tiên" },
-      "notes": { "label": "Ghi chú, liên kết tham khảo hoặc câu hỏi" },
+      "notes": {
+        "label": "Ghi chú, liên kết tham khảo hoặc câu hỏi",
+        "placeholder": "Hãy cho chúng tôi biết về khu đất, gia đình bạn, hoặc bất kỳ điều gì truyền cảm hứng cho bạn"
+      },
       "submit": "Gửi yêu cầu",
-      "privacy": "Khi gửi, bạn đồng ý với Chính sách bảo mật của chúng tôi."
+      "privacy": "Khi gửi, bạn đồng ý với Chính sách bảo mật của chúng tôi.",
+      "success": {
+        "title": "Cảm Ơn Bạn",
+        "body": "Chúng tôi đã nhận được yêu cầu của bạn và sẽ liên hệ sớm."
+      },
+      "error": "Đã có lỗi khi gửi yêu cầu của bạn. Vui lòng thử lại hoặc gửi email trực tiếp cho chúng tôi."
     },
     "sidebar": {
       "direct": { "title": "Liên hệ trực tiếp" },
-      "hours": "TODO — ví dụ: Thứ Hai–Thứ Bảy, 9:00 – 18:00 (GMT+7)",
+      "hours": "Thứ Hai–Thứ Bảy, 9:00 – 18:00 (GMT+7)",
       "next": {
         "title": "Điều gì xảy ra tiếp theo",
         "step1": "Chúng tôi xem xét yêu cầu của bạn trong vòng hai ngày làm việc.",
@@ -459,11 +482,14 @@
   "professionals": {
     "hero": {
       "title": "Dành cho đối tác chuyên môn",
-      "subtitle": "Kiến trúc sư, đơn vị thi công, chủ đầu tư và các studio khác — cùng hợp tác."
+      "subtitle": "Kiến trúc sư, đơn vị thi công, chủ đầu tư và các studio khác — cùng hợp tác.",
+      "imageAlt": "Một bản vẽ kiến trúc được xem cùng một không gian nội thất đã hoàn thiện"
     },
     "form": {
-      "name": { "label": "Họ và tên" },
-      "firmName": { "label": "Tên công ty / đơn vị" },
+      "eyebrow": "Yêu Cầu Hợp Tác",
+      "formTitle": "Cùng Trao Đổi Về Hợp Tác",
+      "name": { "label": "Họ và tên", "placeholder": "VD: Nguyễn Văn A" },
+      "firmName": { "label": "Tên công ty / đơn vị", "placeholder": "VD: Atelier Mai & Partners" },
       "role": {
         "label": "Vai trò của bạn",
         "options": [
@@ -478,16 +504,27 @@
           "Khác"
         ]
       },
-      "email": { "label": "Email" },
-      "phone": { "label": "Số điện thoại", "hint": "Không bắt buộc" },
-      "collaboration": { "label": "Hình thức hợp tác" },
-      "notes": { "label": "Ghi chú" },
+      "email": { "label": "Email", "placeholder": "ban@email.com" },
+      "phone": { "label": "Số điện thoại", "hint": "Không bắt buộc", "placeholder": "+84 90 000 0000" },
+      "collaboration": {
+        "label": "Hình thức hợp tác",
+        "placeholder": "VD: thẩm định kết cấu cho dự án cải tạo, phối hợp hồ sơ cho dự án trong khu di tích"
+      },
+      "notes": {
+        "label": "Ghi chú",
+        "placeholder": "Bất kỳ thông tin khác giúp chúng tôi hiểu rõ hơn về sự hợp tác"
+      },
       "submit": "Gửi yêu cầu",
-      "privacy": "Khi gửi, bạn đồng ý với Chính sách bảo mật của chúng tôi."
+      "privacy": "Khi gửi, bạn đồng ý với Chính sách bảo mật của chúng tôi.",
+      "success": {
+        "title": "Cảm Ơn Bạn",
+        "body": "Chúng tôi đã nhận được yêu cầu của bạn và sẽ liên hệ sớm để thảo luận hợp tác."
+      },
+      "error": "Đã có lỗi khi gửi yêu cầu của bạn. Vui lòng thử lại hoặc gửi email trực tiếp cho chúng tôi."
     },
     "sidebar": {
       "direct": { "title": "Liên hệ trực tiếp" },
-      "hours": "TODO — ví dụ: Thứ Hai–Thứ Bảy, 9:00 – 18:00 (GMT+7)",
+      "hours": "Thứ Hai–Thứ Bảy, 9:00 – 18:00 (GMT+7)",
       "next": {
         "title": "Điều gì xảy ra tiếp theo",
         "step1": "Chúng tôi xem xét yêu cầu của bạn trong vòng hai ngày làm việc.",

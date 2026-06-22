@@ -1,21 +1,60 @@
 'use client';
 
-import { useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
+import gsap from 'gsap';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
+import ElegantSelect from './ElegantSelect';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_PROFESSIONAL_FORM_ID';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
 const inputClass =
-  'w-full rounded-lg border border-amber-100 bg-white px-4 py-3 text-sm text-ink placeholder:text-stone-600/60 focus:border-amber-600 focus:outline-none';
-const labelClass = 'mb-2 block text-sm font-medium text-forest-950';
+  'w-full border-0 border-b border-amber-100 bg-transparent px-0 py-3 text-[15px] font-light text-forest-950 placeholder:font-light placeholder:text-stone-600/40 transition-colors duration-300 focus:border-amber-600 focus:outline-none focus:ring-0';
+const labelClass = 'mb-2 block font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-stone-600';
 
 export default function ProfessionalInquiryForm() {
   const t = useTranslations('professionals.form');
   const [status, setStatus] = useState<Status>('idle');
+  const formRef = useRef<HTMLFormElement>(null);
+  const successRef = useRef<HTMLDivElement>(null);
 
   const roleOptions = t.raw('role.options') as string[];
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    const fields = form.querySelectorAll('[data-field]');
+    const tween = gsap.from(fields, {
+      opacity: 0,
+      y: 18,
+      duration: 0.6,
+      ease: 'power2.out',
+      stagger: 0.06,
+    });
+
+    return () => {
+      tween.kill();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (status !== 'success' || !successRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+    gsap.from(successRef.current, { opacity: 0, y: 16, scale: 0.97, duration: 0.6, ease: 'back.out(1.6)' });
+    gsap.from(successRef.current.querySelector('[data-success-icon]'), {
+      scale: 0,
+      rotate: -45,
+      duration: 0.7,
+      ease: 'back.out(2.2)',
+      delay: 0.1,
+    });
+  }, [status]);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -36,46 +75,80 @@ export default function ProfessionalInquiryForm() {
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl border border-amber-100 bg-amber-100/40 p-8 text-center">
-        <p className="font-display text-xl text-forest-950">Thank you</p>
-        <p className="mt-2 text-sm text-ink/80">
-          We&apos;ve received your inquiry and will follow up about collaboration.
+      <div
+        ref={successRef}
+        className="rounded-2xl border border-amber-600/25 bg-gradient-to-br from-amber-100/50 via-white to-amber-100/30 p-10 text-center"
+      >
+        <span
+          data-success-icon
+          className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-amber-100 via-amber-600 to-amber-700 shadow-[0_0_30px_rgba(217,138,43,0.45)]"
+        >
+          <CheckCircle2 size={28} className="text-linen-50" />
+        </span>
+        <p className="mt-5 font-display text-2xl font-bold text-forest-950">
+          {t('success.title')}
+        </p>
+        <p className="mx-auto mt-2 max-w-sm text-sm leading-relaxed text-ink/75">
+          {t('success.body')}
         </p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <div>
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-10">
+      <div data-field>
+        <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.3em] text-amber-600">
+          {t('eyebrow')}
+        </p>
+        <h2 className="mt-3 font-display text-2xl font-bold tracking-tight text-forest-950 sm:text-3xl">
+          {t('formTitle')}
+        </h2>
+        <span className="mt-5 block h-px w-16 bg-gradient-to-r from-amber-600 to-transparent" aria-hidden="true" />
+      </div>
+
+      <div className="grid grid-cols-1 gap-x-10 gap-y-9 sm:grid-cols-2">
+        <div data-field>
           <label className={labelClass} htmlFor="name">
             {t('name.label')}
           </label>
-          <input id="name" name="name" type="text" required maxLength={120} className={inputClass} />
+          <input
+            id="name"
+            name="name"
+            type="text"
+            required
+            maxLength={120}
+            placeholder={t('name.placeholder')}
+            className={inputClass}
+          />
         </div>
-        <div>
+        <div data-field>
           <label className={labelClass} htmlFor="firmName">
             {t('firmName.label')}
           </label>
-          <input id="firmName" name="firmName" type="text" maxLength={120} className={inputClass} />
+          <input
+            id="firmName"
+            name="firmName"
+            type="text"
+            maxLength={120}
+            placeholder={t('firmName.placeholder')}
+            className={inputClass}
+          />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-        <div>
+      <div className="grid grid-cols-1 gap-x-10 gap-y-9 sm:grid-cols-2">
+        <div data-field>
           <label className={labelClass} htmlFor="role">
             {t('role.label')}
           </label>
-          <select id="role" name="role" required className={inputClass}>
-            {roleOptions.map((opt) => (
-              <option key={opt} value={opt}>
-                {opt}
-              </option>
-            ))}
-          </select>
+          <ElegantSelect
+            id="role"
+            name="role"
+            options={roleOptions.map((opt) => ({ value: opt, label: opt }))}
+          />
         </div>
-        <div>
+        <div data-field>
           <label className={labelClass} htmlFor="email">
             {t('email.label')}
           </label>
@@ -85,19 +158,28 @@ export default function ProfessionalInquiryForm() {
             type="email"
             required
             maxLength={160}
+            placeholder={t('email.placeholder')}
             className={inputClass}
           />
         </div>
       </div>
 
-      <div>
+      <div data-field>
         <label className={labelClass} htmlFor="phone">
-          {t('phone.label')} <span className="text-stone-600">({t('phone.hint')})</span>
+          {t('phone.label')}{' '}
+          <span className="text-stone-600/70">({t('phone.hint')})</span>
         </label>
-        <input id="phone" name="phone" type="tel" maxLength={30} className={inputClass} />
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          maxLength={30}
+          placeholder={t('phone.placeholder')}
+          className={inputClass}
+        />
       </div>
 
-      <div>
+      <div data-field>
         <label className={labelClass} htmlFor="collaboration">
           {t('collaboration.label')}
         </label>
@@ -106,31 +188,44 @@ export default function ProfessionalInquiryForm() {
           name="collaboration"
           rows={3}
           maxLength={1000}
-          className={inputClass}
+          placeholder={t('collaboration.placeholder')}
+          className={`${inputClass} resize-none`}
         />
       </div>
 
-      <div>
+      <div data-field>
         <label className={labelClass} htmlFor="notes">
           {t('notes.label')}
         </label>
-        <textarea id="notes" name="notes" rows={4} maxLength={2000} className={inputClass} />
+        <textarea
+          id="notes"
+          name="notes"
+          rows={4}
+          maxLength={2000}
+          placeholder={t('notes.placeholder')}
+          className={`${inputClass} resize-none`}
+        />
       </div>
 
       {status === 'error' && (
-        <p className="text-sm text-red-700">
-          Something went wrong sending your inquiry. Please try again or email us directly.
+        <p data-field className="text-sm text-red-700">
+          {t('error')}
         </p>
       )}
 
-      <button
-        type="submit"
-        disabled={status === 'submitting'}
-        className="rounded-full bg-amber-600 px-7 py-3 text-sm font-medium text-linen-50 hover:bg-amber-700 disabled:opacity-60"
-      >
-        {status === 'submitting' ? '…' : t('submit')}
-      </button>
-      <p className="text-xs text-stone-600">{t('privacy')}</p>
+      <div data-field className="flex flex-wrap items-center gap-6 pt-2">
+        <button
+          type="submit"
+          disabled={status === 'submitting'}
+          className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-amber-600 via-amber-700 to-amber-600 py-1.5 pl-7 pr-1.5 text-xs font-semibold uppercase tracking-[0.1em] text-linen-50 shadow-[0_0_24px_rgba(217,138,43,0.35)] transition-all duration-200 hover:brightness-110 disabled:opacity-60"
+        >
+          {status === 'submitting' ? '…' : t('submit')}
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-forest-950 text-linen-50 transition-transform group-hover:translate-x-0.5">
+            <ArrowRight size={16} />
+          </span>
+        </button>
+        <p className="text-xs font-light text-stone-600">{t('privacy')}</p>
+      </div>
     </form>
   );
 }

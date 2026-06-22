@@ -36,6 +36,9 @@ export default async function ProcessPage({
     <>
       <ProcessHero />
 
+      <ManifestoSection namespace="process.manifesto" />
+
+      
       <section className="mx-auto max-w-7xl px-6 py-24 sm:py-28">
         <div className="mx-auto max-w-2xl text-center">
           <SectionIntro
@@ -62,7 +65,7 @@ export default async function ProcessPage({
           pages' StorySection */}
       <StorySection namespace="process.statement" />
 
-      <ManifestoSection namespace="process.manifesto" />
+
 
       <FinalCtaSection namespace="process.cta" />
     </>

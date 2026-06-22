@@ -9,7 +9,9 @@
 .bold-statement-split .line,
 .final-cta-split .line,
 .services-hero-split .line,
-.portfolio-hero-split .line {
+.portfolio-hero-split .line,
+.contact-hero-split .line,
+.professionals-hero-split .line {
   display: block;
   overflow: hidden;
 }
@@ -62,6 +64,50 @@
 .lantern-float-slow {
   animation: lantern-float 6.5s ease-in-out infinite;
   animation-delay: 1.2s;
+}
+
+/* Golden-luxury treatment, used on the Contact page only — a slow shimmer
+   sweeping across gold-foil text, and a soft pulsing sparkle for the
+   ornamental dust motes scattered around the hero. */
+@keyframes gold-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.gold-shimmer-text {
+  background-image: linear-gradient(
+    110deg,
+    #f5e6c8 20%,
+    #d98a2b 40%,
+    #ffe8b8 50%,
+    #d98a2b 60%,
+    #f5e6c8 80%
+  );
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gold-shimmer 6s linear infinite;
+}
+
+@keyframes sparkle-pulse {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.sparkle-pulse {
+  animation: sparkle-pulse 2.8s ease-in-out infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

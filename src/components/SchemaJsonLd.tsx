@@ -6,7 +6,7 @@ const schema = {
     'Architectural, interior, furniture, and landscape design for Vietnamese homes.',
   url: 'https://TODO-domain.vn',
   telephone: '+84 90 333 37 29',
-  email: 'thuy@tnpgr.vn',
+  email: 'thuyken52914@yahoo.com.vn',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Lô 35 đường số 9, KCN Tam Phước',

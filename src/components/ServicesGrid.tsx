@@ -1,11 +1,11 @@
 import { useTranslations } from 'next-intl';
-import { Armchair, Building2, Sofa, Trees } from 'lucide-react';
+import { FurnitureIcon, InteriorIcon, ArchitectureIcon, LandscapeIcon } from './icons/StudioIcons';
 
 const SERVICES = [
-  { key: 'furniture', Icon: Armchair, lead: true },
-  { key: 'interior', Icon: Sofa, lead: false },
-  { key: 'architecture', Icon: Building2, lead: false },
-  { key: 'landscape', Icon: Trees, lead: false },
+  { key: 'furniture', Icon: FurnitureIcon, lead: true },
+  { key: 'interior', Icon: InteriorIcon, lead: false },
+  { key: 'architecture', Icon: ArchitectureIcon, lead: false },
+  { key: 'landscape', Icon: LandscapeIcon, lead: false },
 ] as const;
 
 export default function ServicesGrid({ namespace }: { namespace: string }) {

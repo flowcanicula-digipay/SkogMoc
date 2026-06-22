@@ -2,7 +2,11 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import ContactHero from '@/components/ContactHero';
 import ProjectInquiryForm from '@/components/ProjectInquiryForm';
+import Reveal from '@/components/Reveal';
+
+const MOTIFS_DIR = '/assets/images/contact/motifs';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -28,54 +32,91 @@ export default async function ContactPage({
   const t = await getTranslations({ locale, namespace: 'contact' });
 
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <p className="font-mono text-xs uppercase tracking-widest text-amber-600">
-        {t('hero.title')}
-      </p>
-      <h1 className="mt-6 max-w-2xl font-display text-4xl text-forest-950 sm:text-5xl">
-        {t('hero.title')}
-      </h1>
-      <p className="mt-6 max-w-xl text-base leading-relaxed text-ink/80">
-        {t('hero.subtitle')}
-      </p>
+    <>
+      <ContactHero />
 
-      <div className="mt-16 grid grid-cols-1 gap-16 lg:grid-cols-[2fr_1fr]">
-        <ProjectInquiryForm />
+      <section className="mx-auto max-w-7xl px-6 py-24">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-[2fr_1fr]">
+          <Reveal>
+            <div className="rounded-2xl border border-amber-600/20 bg-white p-8 shadow-[0_30px_60px_-30px_rgba(217,138,43,0.25)] sm:p-10">
+              <ProjectInquiryForm />
+            </div>
+          </Reveal>
 
-        <aside className="space-y-10 border-t border-amber-100 pt-10 lg:border-t-0 lg:border-l lg:pl-10 lg:pt-0">
-          {/* TODO: temporary stock placeholder — replace with real studio/site photography */}
-          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-            <Image
-              src="/assets/images/contact/contact-bg.jpg"
-              alt=""
-              fill
-              className="object-cover"
-            />
-          </div>
+          <Reveal delay={0.1} as="div">
+            <aside className="space-y-10">
+              {/* TODO: temporary stock placeholder — replace with real studio/site photography */}
+              <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-amber-600/25 shadow-[0_20px_45px_-20px_rgba(217,138,43,0.35)]">
+                <Image
+                  src="/assets/images/contact/contact-bg.jpg"
+                  alt=""
+                  fill
+                  priority
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-forest-950/70 via-forest-950/0 to-transparent" />
+                <span className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-amber-100/30" aria-hidden="true" />
+              </div>
 
-          <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-stone-600">
-              {t('sidebar.direct.title')}
-            </p>
-            <p className="mt-3 text-sm text-ink/80">thuy@tnpgr.vn</p>
-            <p className="mt-1 text-sm text-ink/80">+84 90 333 37 29</p>
-            <p className="mt-4 text-sm text-ink/60">{t('sidebar.hours')}</p>
-          </div>
+              <div className="rounded-2xl border border-amber-600/20 bg-white p-7 shadow-[0_20px_40px_-25px_rgba(217,138,43,0.25)]">
+                <p className="flex items-center gap-2.5 font-mono text-xs uppercase tracking-widest text-amber-600">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={`${MOTIFS_DIR}/envelope-seal.svg`} alt="" className="h-5 w-5" />
+                  {t('sidebar.direct.title')}
+                </p>
+                <div className="mt-4 space-y-2.5">
+                  <a
+                    href="mailto:thuyken52914@yahoo.com.vn"
+                    className="flex items-center gap-2.5 text-sm text-ink/80 transition-colors hover:text-amber-600"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`${MOTIFS_DIR}/envelope-seal.svg`} alt="" className="h-4 w-4 opacity-80" />
+                    thuyken52914@yahoo.com.vn
+                  </a>
+                  <a
+                    href="tel:+84903333729"
+                    className="flex items-center gap-2.5 text-sm text-ink/80 transition-colors hover:text-amber-600"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`${MOTIFS_DIR}/hand-bell.svg`} alt="" className="h-4 w-4 opacity-80" />
+                    +84 90 333 37 29
+                  </a>
+                </div>
+                <span className="mt-5 block h-px w-full bg-gradient-to-r from-amber-600/30 via-amber-600/10 to-transparent" />
+                <p className="mt-4 flex items-start gap-2.5 text-sm text-ink/60">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={`${MOTIFS_DIR}/watch-drum.svg`} alt="" className="mt-0.5 h-5 w-5 shrink-0" />
+                  {t('sidebar.hours')}
+                </p>
+              </div>
 
-          <div>
-            <p className="font-mono text-xs uppercase tracking-widest text-stone-600">
-              {t('sidebar.next.title')}
-            </p>
-            <ol className="mt-3 space-y-2 text-sm text-ink/80">
-              <li>1. {t('sidebar.next.step1')}</li>
-              <li>2. {t('sidebar.next.step2')}</li>
-              <li>3. {t('sidebar.next.step3')}</li>
-            </ol>
-          </div>
+              <div className="rounded-2xl border border-amber-600/20 bg-white p-7 shadow-[0_20px_40px_-25px_rgba(217,138,43,0.25)]">
+                <p className="font-mono text-xs uppercase tracking-widest text-amber-600">
+                  {t('sidebar.next.title')}
+                </p>
+                <ol className="mt-4 space-y-4">
+                  {[t('sidebar.next.step1'), t('sidebar.next.step2'), t('sidebar.next.step3')].map(
+                    (step, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-amber-100 via-amber-600 to-amber-700 font-mono text-[11px] font-bold text-linen-50 shadow-sm">
+                          {i + 1}
+                        </span>
+                        <span className="text-sm leading-relaxed text-ink/80">{step}</span>
+                      </li>
+                    ),
+                  )}
+                </ol>
+              </div>
 
-          <p className="text-sm text-ink/60">{t('sidebar.trust')}</p>
-        </aside>
-      </div>
-    </section>
+              <p className="flex items-start gap-2.5 text-sm text-ink/60">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={`${MOTIFS_DIR}/lotus-seal.svg`} alt="" className="mt-0.5 h-5 w-5 shrink-0" />
+                {t('sidebar.trust')}
+              </p>
+            </aside>
+          </Reveal>
+        </div>
+      </section>
+    </>
   );
 }

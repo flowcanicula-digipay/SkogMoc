@@ -361,7 +361,7 @@
   "process": {
     "hero": {
       "title": "私たちのプロセス",
-      "subtitle": "初回のご相談から納品まで、プロジェクトがどのように進むか。",
+      "subtitle": "すべての図面を細部まで文書化します。建築・インテリア・家具・ランドスケープ、すべての分野を一つのスタジオとして手がけます。すべての住まいを、暮らし方に合わせて設計します。",
       "imageAlt": "建設中の階段",
       "cta": "プロジェクトを始める",
       "secondaryCta": "料金を見る"
@@ -425,28 +425,42 @@
       "subtitle": "ご自宅とデザインしたい内容について教えてください。"
     },
     "form": {
-      "name": { "label": "お名前" },
-      "email": { "label": "メールアドレス" },
-      "phone": { "label": "電話番号 / Zalo / WhatsApp", "hint": "任意" },
+      "eyebrow": "プロジェクトのご相談",
+      "formTitle": "あなたのビジョンをお聞かせください",
+      "name": { "label": "お名前", "placeholder": "例：山田 太郎" },
+      "email": { "label": "メールアドレス", "placeholder": "you@email.com" },
+      "phone": {
+        "label": "電話番号 / Zalo / WhatsApp",
+        "hint": "任意",
+        "placeholder": "+84 90 000 0000"
+      },
       "projectType": {
         "label": "プロジェクトの種類",
         "options": ["建築", "家具", "インテリア", "ランドスケープ", "複合"]
       },
-      "propertyType": { "label": "物件の種類" },
-      "plotArea": { "label": "敷地面積または延床面積（概算）" },
-      "province": { "label": "省 / 都市" },
-      "budgetRange": { "label": "ご予算の概算" },
+      "propertyType": { "label": "物件の種類", "placeholder": "例：タウンハウス、ヴィラ、ペントハウス" },
+      "plotArea": { "label": "敷地面積または延床面積（概算）", "placeholder": "例：延床面積 80 m²" },
+      "province": { "label": "省 / 都市", "placeholder": "例：トゥードゥック区、ホーチミン市" },
+      "budgetRange": { "label": "ご予算の概算", "placeholder": "例：5億〜10億VND" },
       "wantsInstallation": {
         "label": "設置サービスもご希望ですか？"
       },
       "language": { "label": "ご希望の連絡言語" },
-      "notes": { "label": "ご要望、参考リンク、ご質問など" },
+      "notes": {
+        "label": "ご要望、参考リンク、ご質問など",
+        "placeholder": "敷地やご家族について、またインスピレーションを受けたものがあればお知らせください"
+      },
       "submit": "送信する",
-      "privacy": "送信することで、プライバシーポリシーに同意したものとみなされます。"
+      "privacy": "送信することで、プライバシーポリシーに同意したものとみなされます。",
+      "success": {
+        "title": "ありがとうございます",
+        "body": "お問い合わせを受け付けました。近日中にご連絡いたします。"
+      },
+      "error": "送信中に問題が発生しました。再度お試しいただくか、直接メールでお問い合わせください。"
     },
     "sidebar": {
       "direct": { "title": "直接お問い合わせ" },
-      "hours": "TODO — 例：月曜〜土曜、9:00〜18:00（GMT+7）",
+      "hours": "月曜〜土曜、9:00〜18:00（GMT+7）",
       "next": {
         "title": "送信後の流れ",
         "step1": "2営業日以内にお問い合わせ内容を確認いたします。",
@@ -459,11 +473,14 @@
   "professionals": {
     "hero": {
       "title": "専門家の方へ",
-      "subtitle": "建築家、施工会社、デベロッパー、その他のスタジオの方々と — ぜひ協業させてください。"
+      "subtitle": "建築家、施工会社、デベロッパー、その他のスタジオの方々と — ぜひ協業させてください。",
+      "imageAlt": "完成したインテリアと並べて確認する建築図面"
     },
     "form": {
-      "name": { "label": "お名前" },
-      "firmName": { "label": "会社名 / 事務所名" },
+      "eyebrow": "協業のご相談",
+      "formTitle": "協業についてお話ししましょう",
+      "name": { "label": "お名前", "placeholder": "例：山田 太郎" },
+      "firmName": { "label": "会社名 / 事務所名", "placeholder": "例：Atelier Mai & Partners" },
       "role": {
         "label": "ご職業",
         "options": [
@@ -478,16 +495,27 @@
           "その他"
         ]
       },
-      "email": { "label": "メールアドレス" },
-      "phone": { "label": "電話番号", "hint": "任意" },
-      "collaboration": { "label": "協業の内容" },
-      "notes": { "label": "ご要望" },
+      "email": { "label": "メールアドレス", "placeholder": "you@email.com" },
+      "phone": { "label": "電話番号", "hint": "任意", "placeholder": "+84 90 000 0000" },
+      "collaboration": {
+        "label": "協業の内容",
+        "placeholder": "例：リノベーションの構造確認、歴史的建造物保護区域内プロジェクトの共同申請"
+      },
+      "notes": {
+        "label": "ご要望",
+        "placeholder": "協業の理解に役立つその他の情報があればご記入ください"
+      },
       "submit": "送信する",
-      "privacy": "送信することで、プライバシーポリシーに同意したものとみなされます。"
+      "privacy": "送信することで、プライバシーポリシーに同意したものとみなされます。",
+      "success": {
+        "title": "ありがとうございます",
+        "body": "お問い合わせを受け付けました。協業について近日中にご連絡いたします。"
+      },
+      "error": "送信中に問題が発生しました。再度お試しいただくか、直接メールでお問い合わせください。"
     },
     "sidebar": {
       "direct": { "title": "直接お問い合わせ" },
-      "hours": "TODO — 例：月曜〜土曜、9:00〜18:00（GMT+7）",
+      "hours": "月曜〜土曜、9:00〜18:00（GMT+7）",
       "next": {
         "title": "送信後の流れ",
         "step1": "2営業日以内にお問い合わせ内容を確認いたします。",
