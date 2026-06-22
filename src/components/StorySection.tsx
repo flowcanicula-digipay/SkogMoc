@@ -13,7 +13,7 @@ if (typeof window !== 'undefined') {
 
 export default function StorySection() {
   const t = useTranslations('home.statement');
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const bodyRef = useRef<HTMLParagraphElement>(null);
   const leadRef = useRef<HTMLParagraphElement>(null);
@@ -66,9 +66,9 @@ export default function StorySection() {
   }, []);
 
   return (
-    <div
+    <section
       ref={sectionRef}
-      className="relative overflow-hidden bg-forest-950 px-6 py-28 sm:px-[8vw] sm:py-36"
+      className="relative z-10 overflow-hidden bg-forest-950 px-6 py-28 sm:px-[8vw] sm:py-36"
     >
       <TopoPattern className="right-0 top-0 h-auto w-[55%] text-linen-50 opacity-[0.06]" />
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col gap-12 sm:flex-row sm:items-start sm:justify-between">
@@ -90,6 +90,6 @@ export default function StorySection() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

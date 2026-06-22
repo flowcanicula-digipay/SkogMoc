@@ -3,9 +3,48 @@
 @tailwind utilities;
 
 .hero-split .line,
-.story-split .line {
+.story-split .line,
+.manifesto-split .line,
+.section-intro-split .line,
+.bold-statement-split .line {
   display: block;
   overflow: hidden;
+}
+
+@keyframes process-spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes process-pulse-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.18);
+  }
+}
+
+.process-marker-idle {
+  animation: process-spin-slow 14s linear infinite;
+}
+
+.process-marker-glow {
+  animation: process-pulse-glow 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process-marker-idle,
+  .process-marker-glow {
+    animation: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

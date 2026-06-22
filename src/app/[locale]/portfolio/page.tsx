@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import PortfolioGrid from '@/components/PortfolioGrid';
+import BoldStatement from '@/components/BoldStatement';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -41,11 +42,31 @@ export default async function PortfolioPage({
           <p className="mt-6 max-w-xl text-base leading-relaxed text-linen-50/80">
             {t('hero.subtitle')}
           </p>
+          <div className="mt-10">
+            <p className="font-mono text-xs uppercase tracking-widest text-amber-100/70">
+              {t('locations.title')}
+            </p>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {t.raw('locations.items').map((location: string) => (
+                <span
+                  key={location}
+                  className="rounded-full border border-linen-50/30 px-4 py-1.5 text-sm text-linen-50/90"
+                >
+                  {location}
+                </span>
+              ))}
+            </div>
+            <p className="mt-3 text-sm text-linen-50/60">{t('locations.note')}</p>
+          </div>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-24">
         <PortfolioGrid />
+        <BoldStatement
+          text={t('note.body')}
+          className="mx-auto mt-14 max-w-2xl text-center text-2xl sm:text-3xl"
+        />
       </section>
     </>
   );

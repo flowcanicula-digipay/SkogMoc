@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useRef, type ReactNode, type Ref } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -12,12 +12,14 @@ export default function Reveal({
   children,
   className,
   delay = 0,
+  as: Tag = 'div',
 }: {
   children: ReactNode;
   className?: string;
   delay?: number;
+  as?: 'div' | 'section';
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
     const el = ref.current;
@@ -44,8 +46,8 @@ export default function Reveal({
   }, [delay]);
 
   return (
-    <div ref={ref} className={className}>
+    <Tag ref={ref as Ref<HTMLDivElement>} className={className}>
       {children}
-    </div>
+    </Tag>
   );
 }

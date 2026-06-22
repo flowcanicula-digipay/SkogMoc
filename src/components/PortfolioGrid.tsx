@@ -1,13 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { ArrowUpRight } from 'lucide-react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { stockImages } from '@/lib/stockImages';
 
+if (typeof window !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
 const PLACEHOLDER_COUNT = 12;
-const DISCIPLINES = ['furniture', 'interior', 'architecture', 'landscape'] as const;
-// Furniture design, making, and installation make up most of our real project work —
-// weight the placeholder grid the same way so it doesn't misrepresent the studio's focus.
+const DISCIPLINES = ['architecture', 'furniture', 'interior', 'landscape'] as const;
+// We're a general architecture practice, but furniture design, making, and
+// installation make up most of our real project track record — weight the
+// placeholder grid the same way so it doesn't misrepresent the studio's focus.
 const ITEM_DISCIPLINES = [
   'furniture',
   'furniture',
@@ -51,12 +59,40 @@ const PLACEHOLDER_IMAGES = [
 export default function PortfolioGrid({ limit }: { limit?: number }) {
   const t = useTranslations('portfolio');
   const [filter, setFilter] = useState<(typeof DISCIPLINES)[number] | 'all'>('all');
+  const gridRef = useRef<HTMLDivElement>(null);
 
   const items = Array.from({ length: limit ?? PLACEHOLDER_COUNT }, (_, i) => ({
     id: i,
     discipline: ITEM_DISCIPLINES[i % ITEM_DISCIPLINES.length],
     image: PLACEHOLDER_IMAGES[i % PLACEHOLDER_IMAGES.length],
   })).filter((item) => filter === 'all' || item.discipline === filter);
+
+  useEffect(() => {
+    const grid = gridRef.current;
+    if (!grid || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    const cards = grid.querySelectorAll<HTMLElement>('[data-card]');
+    const tween = gsap.from(cards, {
+      opacity: 0,
+      y: 56,
+      scale: 0.94,
+      duration: 0.8,
+      ease: 'power3.out',
+      stagger: { each: 0.08, grid: 'auto', from: 'start' },
+      scrollTrigger: {
+        trigger: grid,
+        start: 'top 85%',
+      },
+    });
+
+    return () => {
+      tween.scrollTrigger?.kill();
+      tween.kill();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filter, limit]);
 
   return (
     <div>
@@ -79,26 +115,36 @@ export default function PortfolioGrid({ limit }: { limit?: number }) {
         </div>
       )}
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div ref={gridRef} className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <div
             key={item.id}
-            className="group relative flex aspect-[4/5] flex-col items-center justify-center overflow-hidden rounded-2xl border border-amber-100 p-6 text-center"
+            data-card
+            className="group relative flex aspect-[4/5] flex-col items-end overflow-hidden rounded-2xl border border-amber-100 p-6"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={item.image}
               alt=""
               aria-hidden="true"
-              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-forest-950/55" />
-            <span className="relative z-10 font-mono text-xs uppercase tracking-widest text-amber-100">
-              {t(`filters.${item.discipline}`)}
-            </span>
-            <p className="relative z-10 mt-3 font-display text-lg text-linen-50">
-              {t('comingSoon.title')}
-            </p>
+            <div className="absolute inset-0 bg-gradient-to-t from-forest-950/80 via-forest-950/20 to-transparent transition-opacity duration-500 group-hover:from-forest-950/90" />
+
+            <div className="relative z-10 flex w-full items-end justify-between gap-3">
+              <div>
+                <span className="font-mono text-xs uppercase tracking-widest text-amber-100">
+                  {t(`filters.${item.discipline}`)}
+                </span>
+                <span
+                  className="mt-2 block h-0.5 w-8 origin-left scale-x-0 bg-amber-600 transition-transform duration-500 group-hover:scale-x-100"
+                  aria-hidden="true"
+                />
+              </div>
+              <span className="flex h-9 w-9 shrink-0 translate-y-2 items-center justify-center rounded-full bg-linen-50 text-forest-950 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <ArrowUpRight size={16} />
+              </span>
+            </div>
           </div>
         ))}
       </div>

@@ -17,7 +17,7 @@ export default function ImageBanner({
   alt: string;
   title: string;
 }) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ export default function ImageBanner({
   }, []);
 
   return (
-    <div ref={containerRef} className="relative h-[70vh] min-h-[420px] overflow-hidden">
+    <section ref={containerRef} className="relative h-[70vh] min-h-[420px] overflow-hidden">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={image} alt={alt} className="h-full w-full object-cover" />
       <div
@@ -70,6 +70,6 @@ export default function ImageBanner({
           <div key={i} data-panel className="scale-0 bg-forest-950" />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

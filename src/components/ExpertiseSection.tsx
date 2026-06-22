@@ -6,10 +6,10 @@ import { stockImages } from '@/lib/stockImages';
 import TopoPattern from './TopoPattern';
 
 const ITEMS = [
+  { key: 'architecturalDesign', image: stockImages.expertiseArchitecturalDesign },
   { key: 'furnitureDesign', image: stockImages.expertiseFurnitureDesign },
   { key: 'materialSelection', image: stockImages.expertiseMaterialSelection },
   { key: 'spatialPlanning', image: stockImages.expertiseSpatialPlanning },
-  { key: 'documentation', image: stockImages.expertiseDocumentation },
   { key: 'installation', image: stockImages.processInstallation },
 ] as const;
 

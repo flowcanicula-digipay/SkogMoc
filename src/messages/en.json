@@ -15,7 +15,7 @@
       "learnMore": "Learn More"
     },
     "footer": {
-      "tagline": "Furniture made for how you live.",
+      "tagline": "Architecture for how you live. Furniture, finished like no one else.",
       "ctaTitle": "Let's design your next room.",
       "ctaBody": "Tell us about your home and what you're hoping to design — we'll take it from there.",
       "address": "Visit",
@@ -24,35 +24,40 @@
   },
   "home": {
     "hero": {
-      "title": "Furniture designed around how you actually live.",
-      "subtitle": "Custom and semi-custom furniture design for Vietnamese homes, with interior, architectural, and landscape design available alongside it. Want it installed? We'll handle that too.",
-      "cta": "Design My Furniture",
-      "secondaryCta": "View Our Work",
+      "title": "Architecture built for how Vietnamese homes actually live.",
+      "subtitle": "A general architecture and design studio — concept design, renovations, additions, interior, and landscape. Once your plan is in place, our furniture design, making, and installation finish it better than anyone else.",
+      "cta": "Start a Project",
+      "secondaryCta": "See Our Work",
       "imageAlt": "Modern Vietnamese home with a warm-lit courtyard and wood ceiling at dusk"
     },
     "about": {
-      "title": "Furniture-first, designed around your home",
-      "body": "Skog Mộc by TNP designs bespoke and semi-custom furniture, resolved alongside your interior so the pieces and the room are considered together — not furnished afterward. We also offer interior, architectural, and landscape design for projects that need them, and we'll install your furniture for you if you'd rather not handle that yourself.",
-      "point1": "Furniture design is what we do best",
-      "point2": "Vietnamese climate and lot conditions inform every piece",
-      "point3": "Installation available, if you want it handled for you",
-      "point4": "Interior, architectural, and landscape design available alongside"
+      "title": "A general architecture studio. One unmatched specialty.",
+      "body": "Skog Mộc by TNP is a full-service architecture and design studio — concept design, construction documentation, renovations, and additions for Vietnamese homes, with interior and landscape design handled as part of the same practice. Where we go further than anyone else is furniture: once a plan is already built, or a renovation is already planned, our furniture design, making, and installation finish the space in a way the rest of the market doesn't match.",
+      "point1": "Full architectural design, from concept through construction documentation",
+      "point2": "Furniture design, making, and installation — our unmatched specialty",
+      "point3": "Interior and landscape design, handled as part of the same practice",
+      "point4": "Furniture also available on its own, once your plan or renovation is already in place"
     },
     "statement": {
-      "title": "Craft\nShaping\nHow You Live",
-      "body": "Our expertise is furniture, told through how you actually live. We design pieces that fit your space and your routine — not furniture chosen to fill a room.",
-      "lead": "Every piece is made for a real home in Vietnam — not a showroom."
+      "title": "Plans Built.\nFurniture\nFinished Best.",
+      "body": "We're architects first — houses, renovations, and additions, designed around how a Vietnamese household actually lives. It's furniture where nobody touches us: once a plan exists, that's where we finish best.",
+      "lead": "Every project is designed for a real home in Vietnam — and, when it gets to furniture, finished better than anyone else."
+    },
+    "manifesto": {
+      "eyebrow": "Philosophy",
+      "title": "Our craft is to <accent>tell your story</accent> through architecture. Every room is designed <accent>to evoke a feeling</accent> — rooted in how a Vietnamese home truly lives, carried <accent>beyond the merely functional</accent>.",
+      "caption": "Story before structure — rooted in how Vietnamese homes live."
     },
     "banner": {
-      "title": "Furniture\nMade for\nReal Life"
+      "title": "Built to Plan.\nFinished\nLike No One Else."
     },
     "expertise": {
       "title": "Our Expertise",
       "items": {
-        "furnitureDesign": "Furniture Design",
+        "architecturalDesign": "Architectural & Renovation Design",
+        "furnitureDesign": "Furniture Design — Unmatched",
         "materialSelection": "Material & Finish Selection",
         "spatialPlanning": "Interior & Spatial Planning",
-        "documentation": "Architectural Documentation",
         "installation": "Installation"
       }
     },
@@ -66,37 +71,21 @@
       "note": "Designed for Vietnamese homes — tropical climate, narrow urban lots, and multi-generational households, not generic floor plans."
     },
     "services": {
-      "title": "What we design",
-      "lead": "Furniture first — the easiest place to start — with interior, architectural, and landscape design available alongside it."
+      "title": "What we do",
+      "lead": "A general architecture and design practice — with furniture design, making, and installation as the specialty nobody else matches."
     },
     "process": {
       "title": "How a project unfolds",
-      "lead": "From first consultation to handover, in four phases.",
-      "step1": {
-        "title": "Consultation",
-        "body": "We learn your household, your site, and your budget before drawing anything."
-      },
-      "step2": {
-        "title": "Concept design",
-        "body": "Initial spatial and material direction, presented for your feedback."
-      },
-      "step3": {
-        "title": "Development & documentation",
-        "body": "Concept resolved into a fabrication-ready drawing and specification set."
-      },
-      "step4": {
-        "title": "Handover",
-        "body": "Documentation and specifications delivered to you, with installation available if you'd like it handled for you."
-      }
+      "lead": "From first consultation to handover, in six phases."
     },
     "installation": {
-      "title": "Design it. Install it. Done.",
-      "body": "Most clients start with furniture. If you'd rather not handle delivery and setup yourself, we'll install your pieces for you — just say so when you reach out."
+      "title": "Where we're unmatched: furniture, installed.",
+      "body": "Once your plan is built — new or renovation — our furniture design, making, and installation finish the space better than anyone else. Just say so when you reach out."
     },
     "portfolio": {
       "title": "Recent work",
-      "lead": "A look at the kind of projects we design.",
-      "honestNote": "We're building our public portfolio. Real projects, with the client's permission, will appear here soon.",
+      "lead": "Real, completed projects — houses, villas, and penthouses across Ho Chi Minh City — mostly furniture design, making, and installation, the specialty we're best known for, alongside our architecture, interior, and landscape work.",
+      "honestNote": "From Vinhomes Golden River to Phú Mỹ Hưng — houses, villas, and penthouses, finished better than anyone else.",
       "viewAll": "View all work"
     },
     "cta": {
@@ -108,14 +97,14 @@
   "services": {
     "hero": {
       "title": "Our Services",
-      "subtitle": "Furniture design is what we do best — with interior, architectural, and landscape design, plus a wider network of specialists, available when a project calls for them."
+      "subtitle": "A general architecture and design practice — concept design, renovations, additions, interior, and landscape — with furniture design, making, and installation as the specialty nobody else matches."
     },
     "core": {
       "title": "What we design",
-      "leadTag": "Easiest place to start",
+      "leadTag": "Where we're unmatched",
       "furniture": {
         "title": "Furniture Design",
-        "body": "Bespoke and semi-custom pieces, designed around your space and how you live in it. Installation available, if you want it handled for you."
+        "body": "Bespoke and semi-custom furniture, designed, made, and installed once your plan or renovation is already in place — the part of the process nobody does better than us."
       },
       "interior": {
         "title": "Interior Design",
@@ -123,7 +112,7 @@
       },
       "architecture": {
         "title": "Architectural Design",
-        "body": "Concept design and documentation for houses, townhouses, and additions."
+        "body": "Concept design and documentation for houses, townhouses, renovations, and additions — the core of our practice."
       },
       "landscape": {
         "title": "Landscape Design",
@@ -132,7 +121,7 @@
     },
     "installation": {
       "title": "Furniture installation",
-      "body": "If you'd rather not handle delivery and setup yourself, we'll install your furniture for you — just let us know when you reach out."
+      "body": "If you'd rather not handle delivery and setup yourself, we'll install your furniture for you — it's the part of the process we do better than anyone else."
     },
     "extended": {
       "title": "Extended specialist services",
@@ -220,16 +209,16 @@
     "faq": {
       "title": "Frequently asked questions",
       "q1": {
-        "question": "Does Skog Mộc by TNP install the furniture, or only design it?",
-        "answer": "We design first — furniture is what we do best, alongside interior, architectural, and landscape design when a project calls for them. Installation is available too: if you'd rather not handle delivery and setup yourself, just let us know and we'll take care of it."
+        "question": "Are you a furniture company, or a full architecture practice?",
+        "answer": "We're a general architecture and design studio — concept design, construction documentation, renovations, and additions. Furniture is our specialty within that practice: design, making, and installation, delivered once your plan or renovation is already in place. It's the part of the process nobody else matches us on."
       },
       "q2": {
         "question": "What if I already have my own installer or fabricator?",
         "answer": "That's fine — many clients do. We design to a level of detail any competent installer or fabricator can work from, and we're happy to coordinate with your chosen team if you want that handoff support; it's not required."
       },
       "q3": {
-        "question": "Do you only design furniture, or also full interiors?",
-        "answer": "Both. Furniture is our core focus, designed alongside an interior scheme when one's needed. Renovation and addition projects typically need an initial site survey before concept design begins."
+        "question": "Do you only design furniture, or also full architecture and interiors?",
+        "answer": "Full architecture and interiors — that's the core of our practice. Furniture is designed alongside it, or on its own once a plan already exists. Renovation and addition projects typically need an initial site survey before concept design begins."
       },
       "q4": {
         "question": "What's included in a full design package?",
@@ -249,17 +238,22 @@
       },
       "q8": {
         "question": "Can you bring in a structural engineer, town planner, or other specialist if my project needs one?",
-        "answer": "Yes — beyond furniture design, our core focus, we have access to a network of additional specialists (architectural technologist, interior and spatial designer, building surveyor, town planner, production designer, historic buildings inspector, structural engineer) and bring the right one in when a project calls for it."
+        "answer": "Yes — beyond our core architecture and furniture work, we have access to a network of additional specialists (architectural technologist, interior and spatial designer, building surveyor, town planner, production designer, historic buildings inspector, structural engineer) and bring the right one in when a project calls for it."
       }
     }
   },
   "portfolio": {
     "hero": {
       "title": "Portfolio",
-      "subtitle": "A gallery of furniture design, making, and installation — most of our work — alongside interior, architectural, and landscape projects."
+      "subtitle": "A gallery of our architecture, interior, and landscape work — houses, villas, penthouses, and more, across Vinhomes Golden River, Vinhomes Central Park, Thủ Thiêm, Thảo Điền, and Phú Mỹ Hưng. Most of what's shown here is furniture design, making, and installation, the specialty we're best known for."
     },
-    "comingSoon": {
-      "title": "Project case studies coming soon"
+    "locations": {
+      "title": "Where we build",
+      "items": ["Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền", "Phú Mỹ Hưng"],
+      "note": "Houses, villas, penthouses, and more."
+    },
+    "note": {
+      "body": "Houses, villas, and penthouses — finished better than anyone else."
     },
     "filters": {
       "all": "All",
@@ -273,6 +267,13 @@
     "hero": {
       "title": "Our Process",
       "subtitle": "How a project moves from first conversation to handover."
+    },
+    "roadmap": {
+      "badge": "Process",
+      "kicker": "Process roadmap",
+      "titleEmphasis": "In six",
+      "titleSuffix": "steps",
+      "statement": "From first sketch to final handover — finished better than anyone else."
     },
     "steps": {
       "consultation": {
@@ -315,7 +316,7 @@
       "phone": { "label": "Phone / Zalo / WhatsApp", "hint": "Optional" },
       "projectType": {
         "label": "Project type",
-        "options": ["Furniture", "Interior", "Architecture", "Landscape", "Combination"]
+        "options": ["Architecture", "Furniture", "Interior", "Landscape", "Combination"]
       },
       "propertyType": { "label": "Property type" },
       "plotArea": { "label": "Approximate plot or floor area" },
@@ -420,12 +421,12 @@
   },
   "meta": {
     "home": {
-      "title": "Skog Mộc by TNP — Furniture Design for Vietnamese Homes",
-      "description": "Custom and semi-custom furniture design for Vietnamese homes, with interior, architectural, and landscape design available alongside it. Installation available."
+      "title": "Skog Mộc by TNP — Architecture & Design for Vietnamese Homes",
+      "description": "A general architecture and design studio for Vietnamese homes — concept design, renovations, and additions, with interior and landscape design. Furniture design, making, and installation is our unmatched specialty."
     },
     "services": {
       "title": "Services — Skog Mộc by TNP",
-      "description": "Furniture design and installation, with interior, architectural, and landscape design available alongside it."
+      "description": "Architecture, interior, and landscape design, with furniture design, making, and installation as our standout specialty."
     },
     "pricing": {
       "title": "Pricing — Skog Mộc by TNP",
@@ -433,7 +434,7 @@
     },
     "portfolio": {
       "title": "Portfolio — Skog Mộc by TNP",
-      "description": "A gallery of furniture design, making, and installation, alongside interior, architectural, and landscape work."
+      "description": "A gallery of our architecture, interior, and landscape work — mostly furniture design, making, and installation, the specialty we're best known for."
     },
     "contact": {
       "title": "Contact — Skog Mộc by TNP",

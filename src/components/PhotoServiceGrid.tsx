@@ -37,11 +37,10 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
         ))}
       </div>
 
-      {/* Desktop: expanding panel row, opens to color on hover */}
-      <div className="hidden h-[58vh] min-h-[420px] w-full overflow-hidden sm:flex">
+      {/* Desktop: full-bleed grayscale row, panel grows and colorizes on hover */}
+      <div className="hidden h-[80vh] min-h-[520px] w-full overflow-hidden sm:flex">
         {TILES.map(({ key, image, focalPoint }, i) => {
           const isActive = active === i;
-          const isDimmed = active !== null && !isActive;
 
           return (
             <button
@@ -56,25 +55,17 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
                 backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 12%), url(${image})`,
                 backgroundPosition: `0 0, ${focalPoint}`,
                 backgroundSize: 'auto, cover',
-                filter: isDimmed ? 'grayscale(1)' : 'grayscale(0)',
+                filter: isActive ? 'grayscale(0)' : 'grayscale(1)',
                 transition:
-                  'filter 0.8s cubic-bezier(0.55,0.085,0.68,0.53), flex-grow 1.5s cubic-bezier(0.645,0.045,0.355,1)',
+                  'filter 1.4s cubic-bezier(0.22,1,0.36,1), flex-grow 2.2s cubic-bezier(0.22,1,0.36,1)',
               }}
-              className="relative flex h-full items-end overflow-hidden border-r border-forest-950/10 px-6 pb-6 text-left last:border-r-0 focus:outline-none"
+              className="relative flex h-full w-0 min-w-0 items-end overflow-hidden px-6 pb-6 text-left focus:outline-none"
             >
               <div className="overflow-hidden whitespace-nowrap text-linen-50">
-                <h3
-                  className={`font-display uppercase tracking-wide transition-all duration-500 ${
-                    isActive ? 'text-2xl font-extrabold' : 'text-base font-bold'
-                  }`}
-                >
+                <h3 className="font-display text-xl font-extrabold uppercase tracking-wide">
                   {t(`${key}.title`)}
                 </h3>
-                <p
-                  className={`mt-2 max-w-xs whitespace-normal text-sm text-linen-50/85 transition-opacity duration-500 ${
-                    isActive ? 'opacity-100' : 'opacity-0'
-                  }`}
-                >
+                <p className="mt-2 max-w-xs whitespace-normal text-sm text-linen-50/85">
                   {t(`${key}.body`)}
                 </p>
                 <div

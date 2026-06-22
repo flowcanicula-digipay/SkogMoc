@@ -15,7 +15,7 @@
       "learnMore": "Tìm hiểu thêm"
     },
     "footer": {
-      "tagline": "Đồ nội thất làm cho cách bạn sống.",
+      "tagline": "Kiến trúc cho cách bạn sống. Đồ nội thất, hoàn thiện không ai sánh được.",
       "ctaTitle": "Cùng thiết kế không gian tiếp theo của bạn.",
       "ctaBody": "Hãy kể cho chúng tôi về ngôi nhà của bạn và điều bạn muốn thiết kế — chúng tôi sẽ lo phần còn lại.",
       "address": "Địa chỉ",
@@ -24,35 +24,40 @@
   },
   "home": {
     "hero": {
-      "title": "Đồ nội thất được thiết kế theo cách bạn thực sự sống.",
-      "subtitle": "Thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu cho nhà ở Việt Nam, cùng với thiết kế nội thất, kiến trúc và cảnh quan khi cần. Muốn lắp đặt? Chúng tôi cũng đảm nhận luôn.",
-      "cta": "Thiết kế đồ nội thất của tôi",
-      "secondaryCta": "Xem dự án của chúng tôi",
+      "title": "Kiến trúc được thiết kế cho cách người Việt thực sự sống.",
+      "subtitle": "Một studio kiến trúc và thiết kế tổng hợp — thiết kế ý tưởng, cải tạo, mở rộng, nội thất và cảnh quan. Khi phương án đã có, dịch vụ thiết kế, chế tác và lắp đặt đồ nội thất của chúng tôi hoàn thiện không gian tốt hơn bất kỳ ai khác.",
+      "cta": "Bắt đầu dự án",
+      "secondaryCta": "Xem công trình của chúng tôi",
       "imageAlt": "Ngôi nhà hiện đại Việt Nam với khoảng sân ấm áp và trần gỗ lúc chạng vạng"
     },
     "about": {
-      "title": "Đồ nội thất là trọng tâm, thiết kế theo ngôi nhà của bạn",
-      "body": "Skog Mộc by TNP thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu, được giải quyết cùng với không gian nội thất để đồ đạc và căn phòng được xem xét đồng thời — không bố trí sau. Chúng tôi cũng cung cấp thiết kế nội thất, kiến trúc và cảnh quan cho các dự án cần đến, và sẽ lắp đặt đồ nội thất cho bạn nếu bạn không muốn tự thực hiện.",
-      "point1": "Thiết kế đồ nội thất là thế mạnh của chúng tôi",
-      "point2": "Khí hậu và điều kiện lô đất Việt Nam định hình từng sản phẩm",
-      "point3": "Có dịch vụ lắp đặt, nếu bạn muốn chúng tôi đảm nhận",
-      "point4": "Thiết kế nội thất, kiến trúc và cảnh quan có sẵn khi cần"
+      "title": "Một studio kiến trúc tổng hợp. Một thế mạnh không ai sánh được.",
+      "body": "Skog Mộc by TNP là một studio kiến trúc và thiết kế trọn gói — thiết kế ý tưởng, hồ sơ thiết kế thi công, cải tạo và mở rộng cho nhà ở Việt Nam, cùng thiết kế nội thất và cảnh quan trong cùng một quy trình. Nơi chúng tôi vượt trội hơn bất kỳ ai khác là đồ nội thất: khi phương án đã hoàn thiện, hoặc khi một dự án cải tạo đã được lên kế hoạch, dịch vụ thiết kế, chế tác và lắp đặt đồ nội thất của chúng tôi hoàn thiện không gian theo cách mà không đơn vị nào khác trên thị trường sánh được.",
+      "point1": "Thiết kế kiến trúc đầy đủ, từ ý tưởng đến hồ sơ thiết kế thi công",
+      "point2": "Thiết kế, chế tác và lắp đặt đồ nội thất — thế mạnh không ai sánh được",
+      "point3": "Thiết kế nội thất và cảnh quan, là một phần của cùng một quy trình",
+      "point4": "Đồ nội thất cũng có thể thực hiện riêng, khi phương án hoặc dự án cải tạo của bạn đã có sẵn"
     },
     "statement": {
-      "title": "Tay nghề\nĐịnh hình\nCách bạn sống",
-      "body": "Chuyên môn của chúng tôi là đồ nội thất, kể qua cách bạn thực sự sống. Chúng tôi thiết kế sản phẩm phù hợp với không gian và nhịp sống của bạn — không phải đồ nội thất chọn để lấp đầy phòng.",
-      "lead": "Mỗi sản phẩm được làm cho một ngôi nhà thực sự tại Việt Nam — không phải cho phòng trưng bày."
+      "title": "Phương án đã có.\nĐồ nội thất\nHoàn thiện tốt nhất.",
+      "body": "Chúng tôi là kiến trúc sư trước tiên — nhà ở, cải tạo và mở rộng, thiết kế theo cách một gia đình Việt Nam thực sự sống. Đồ nội thất là nơi không ai chạm được đến chúng tôi: khi phương án đã có, đó là nơi chúng tôi hoàn thiện tốt nhất.",
+      "lead": "Mỗi dự án được thiết kế cho một ngôi nhà thực sự tại Việt Nam — và khi đến phần đồ nội thất, được hoàn thiện tốt hơn bất kỳ ai khác."
+    },
+    "manifesto": {
+      "eyebrow": "Triết lý",
+      "title": "Sở trường của chúng tôi là <accent>kể câu chuyện của bạn</accent> qua kiến trúc. Mỗi không gian được thiết kế <accent>để khơi gợi cảm xúc</accent> — bắt nguồn từ cách một gia đình Việt thực sự sống, vượt xa <accent>công năng đơn thuần</accent>.",
+      "caption": "Câu chuyện đi trước kết cấu — bắt nguồn từ nếp sống Việt."
     },
     "banner": {
-      "title": "Đồ nội thất\ncho cuộc sống\nthực tế"
+      "title": "Phương án đã có.\nHoàn thiện\nKhông ai sánh được."
     },
     "expertise": {
       "title": "Chuyên môn của chúng tôi",
       "items": {
-        "furnitureDesign": "Thiết kế đồ nội thất",
+        "architecturalDesign": "Thiết kế kiến trúc & cải tạo",
+        "furnitureDesign": "Thiết kế đồ nội thất — Không ai sánh được",
         "materialSelection": "Lựa chọn vật liệu & hoàn thiện",
         "spatialPlanning": "Bố trí nội thất & không gian",
-        "documentation": "Hồ sơ thiết kế kiến trúc",
         "installation": "Lắp đặt"
       }
     },
@@ -66,37 +71,21 @@
       "note": "Thiết kế cho nhà ở Việt Nam — khí hậu nhiệt đới, đất đô thị hẹp, và hộ gia đình nhiều thế hệ, không phải mặt bằng rập khuôn."
     },
     "services": {
-      "title": "Chúng tôi thiết kế gì",
-      "lead": "Đồ nội thất là trọng tâm — điểm khởi đầu dễ nhất — cùng với thiết kế nội thất, kiến trúc và cảnh quan khi cần."
+      "title": "Chúng tôi làm gì",
+      "lead": "Một studio kiến trúc và thiết kế tổng hợp — với thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh không ai sánh được."
     },
     "process": {
       "title": "Một dự án diễn ra như thế nào",
-      "lead": "Từ buổi tư vấn đầu tiên đến khi giao hồ sơ, qua bốn giai đoạn.",
-      "step1": {
-        "title": "Tư vấn",
-        "body": "Chúng tôi tìm hiểu gia đình, khu đất và ngân sách của bạn trước khi vẽ bất cứ điều gì."
-      },
-      "step2": {
-        "title": "Thiết kế ý tưởng",
-        "body": "Định hướng không gian và vật liệu ban đầu, trình bày để bạn góp ý."
-      },
-      "step3": {
-        "title": "Phát triển & hồ sơ thiết kế",
-        "body": "Ý tưởng được hoàn thiện thành hồ sơ bản vẽ và quy cách sẵn sàng để sản xuất."
-      },
-      "step4": {
-        "title": "Giao hồ sơ",
-        "body": "Hồ sơ và quy cách được giao cho bạn, kèm dịch vụ lắp đặt nếu bạn muốn chúng tôi đảm nhận."
-      }
+      "lead": "Từ buổi tư vấn đầu tiên đến khi giao hồ sơ, qua sáu giai đoạn."
     },
     "installation": {
-      "title": "Thiết kế. Lắp đặt. Hoàn thành.",
-      "body": "Hầu hết khách hàng bắt đầu với đồ nội thất. Nếu bạn không muốn tự vận chuyển và lắp đặt, chúng tôi sẽ lắp đặt sản phẩm cho bạn — chỉ cần cho chúng tôi biết khi liên hệ."
+      "title": "Nơi chúng tôi không ai sánh được: đồ nội thất, đã lắp đặt.",
+      "body": "Khi phương án đã có — dự án mới hoặc cải tạo — dịch vụ thiết kế, chế tác và lắp đặt đồ nội thất của chúng tôi hoàn thiện không gian tốt hơn bất kỳ ai khác. Chỉ cần cho chúng tôi biết khi liên hệ."
     },
     "portfolio": {
       "title": "Dự án gần đây",
-      "lead": "Một góc nhìn về các dự án chúng tôi thiết kế.",
-      "honestNote": "Chúng tôi đang xây dựng portfolio công khai. Các dự án thực tế, với sự cho phép của khách hàng, sẽ xuất hiện ở đây sớm.",
+      "lead": "Các dự án thực tế đã hoàn thành — nhà phố, biệt thự và penthouse tại TP.HCM — chủ yếu là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất, cùng với các dự án kiến trúc, nội thất và cảnh quan.",
+      "honestNote": "Từ Vinhomes Golden River đến Phú Mỹ Hưng — nhà phố, biệt thự và penthouse, hoàn thiện tốt hơn bất kỳ ai khác.",
       "viewAll": "Xem tất cả dự án"
     },
     "cta": {
@@ -108,14 +97,14 @@
   "services": {
     "hero": {
       "title": "Dịch vụ của chúng tôi",
-      "subtitle": "Thiết kế đồ nội thất là thế mạnh của chúng tôi — cùng thiết kế nội thất, kiến trúc, cảnh quan và mạng lưới chuyên gia rộng hơn khi dự án cần."
+      "subtitle": "Một studio kiến trúc và thiết kế tổng hợp — thiết kế ý tưởng, cải tạo, mở rộng, nội thất và cảnh quan — với thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh không ai sánh được."
     },
     "core": {
       "title": "Chúng tôi thiết kế gì",
-      "leadTag": "Điểm khởi đầu dễ nhất",
+      "leadTag": "Nơi chúng tôi không ai sánh được",
       "furniture": {
         "title": "Thiết kế đồ nội thất",
-        "body": "Các sản phẩm đặt riêng và bán đặt riêng, thiết kế theo không gian và cách bạn sống. Có dịch vụ lắp đặt, nếu bạn muốn chúng tôi đảm nhận."
+        "body": "Các sản phẩm đặt riêng và bán đặt riêng, được thiết kế, chế tác và lắp đặt khi phương án hoặc dự án cải tạo của bạn đã có sẵn — phần việc mà không ai làm tốt hơn chúng tôi."
       },
       "interior": {
         "title": "Thiết kế nội thất",
@@ -123,7 +112,7 @@
       },
       "architecture": {
         "title": "Thiết kế kiến trúc",
-        "body": "Thiết kế ý tưởng và hồ sơ cho nhà phố, nhà ống và các công trình mở rộng."
+        "body": "Thiết kế ý tưởng và hồ sơ cho nhà phố, nhà ống, cải tạo và các công trình mở rộng — trọng tâm của studio chúng tôi."
       },
       "landscape": {
         "title": "Thiết kế cảnh quan",
@@ -132,7 +121,7 @@
     },
     "installation": {
       "title": "Lắp đặt đồ nội thất",
-      "body": "Nếu bạn không muốn tự vận chuyển và lắp đặt, chúng tôi sẽ lắp đặt đồ nội thất cho bạn — chỉ cần cho chúng tôi biết khi liên hệ."
+      "body": "Nếu bạn không muốn tự vận chuyển và lắp đặt, chúng tôi sẽ lắp đặt đồ nội thất cho bạn — đây là phần việc mà chúng tôi làm tốt hơn bất kỳ ai khác."
     },
     "extended": {
       "title": "Dịch vụ chuyên môn mở rộng",
@@ -220,16 +209,16 @@
     "faq": {
       "title": "Câu hỏi thường gặp",
       "q1": {
-        "question": "Skog Mộc by TNP có lắp đặt đồ nội thất, hay chỉ thiết kế?",
-        "answer": "Chúng tôi thiết kế trước — đồ nội thất là thế mạnh của chúng tôi, cùng thiết kế nội thất, kiến trúc và cảnh quan khi dự án cần. Lắp đặt cũng có sẵn: nếu bạn không muốn tự vận chuyển và lắp đặt, chỉ cần cho chúng tôi biết và chúng tôi sẽ đảm nhận."
+        "question": "Skog Mộc by TNP là công ty đồ nội thất, hay một studio kiến trúc trọn gói?",
+        "answer": "Chúng tôi là một studio kiến trúc và thiết kế tổng hợp — thiết kế ý tưởng, hồ sơ thiết kế thi công, cải tạo và mở rộng. Đồ nội thất là thế mạnh của chúng tôi trong studio: thiết kế, chế tác và lắp đặt, được thực hiện khi phương án hoặc dự án cải tạo của bạn đã có sẵn. Đây là phần việc mà không ai sánh được với chúng tôi."
       },
       "q2": {
         "question": "Nếu tôi đã có đơn vị lắp đặt hoặc sản xuất riêng thì sao?",
         "answer": "Không vấn đề — nhiều khách hàng đã có. Chúng tôi thiết kế hồ sơ đủ chi tiết để bất kỳ đơn vị lắp đặt hoặc sản xuất có năng lực nào cũng có thể thực hiện. Chúng tôi sẵn lòng phối hợp với đơn vị bạn chọn nếu bạn muốn; điều này không bắt buộc."
       },
       "q3": {
-        "question": "Bạn chỉ thiết kế đồ nội thất, hay cả không gian nội thất đầy đủ?",
-        "answer": "Cả hai. Đồ nội thất là trọng tâm của chúng tôi, được thiết kế cùng phương án nội thất khi cần. Dự án cải tạo hoặc mở rộng thường cần khảo sát hiện trạng ban đầu trước khi bắt đầu thiết kế ý tưởng."
+        "question": "Bạn chỉ thiết kế đồ nội thất, hay cả kiến trúc và nội thất đầy đủ?",
+        "answer": "Kiến trúc và nội thất đầy đủ — đó là trọng tâm của studio chúng tôi. Đồ nội thất được thiết kế cùng dự án, hoặc thực hiện riêng khi phương án đã có sẵn. Dự án cải tạo hoặc mở rộng thường cần khảo sát hiện trạng ban đầu trước khi bắt đầu thiết kế ý tưởng."
       },
       "q4": {
         "question": "Gói thiết kế đầy đủ bao gồm những gì?",
@@ -249,17 +238,22 @@
       },
       "q8": {
         "question": "Bạn có thể mời kỹ sư kết cấu, chuyên gia quy hoạch hoặc chuyên gia khác nếu dự án cần không?",
-        "answer": "Có — bên cạnh thiết kế đồ nội thất, trọng tâm của chúng tôi, chúng tôi có mạng lưới chuyên gia bổ sung (chuyên gia công nghệ kiến trúc, nhà thiết kế nội thất & không gian, chuyên viên khảo sát công trình, chuyên gia quy hoạch đô thị, nhà thiết kế sản xuất, chuyên viên khảo sát công trình lịch sử, kỹ sư kết cấu) và sẽ mời đúng người khi dự án cần."
+        "answer": "Có — bên cạnh kiến trúc và đồ nội thất là trọng tâm của chúng tôi, chúng tôi có mạng lưới chuyên gia bổ sung (chuyên gia công nghệ kiến trúc, nhà thiết kế nội thất & không gian, chuyên viên khảo sát công trình, chuyên gia quy hoạch đô thị, nhà thiết kế sản xuất, chuyên viên khảo sát công trình lịch sử, kỹ sư kết cấu) và sẽ mời đúng người khi dự án cần."
       }
     }
   },
   "portfolio": {
     "hero": {
       "title": "Dự án",
-      "subtitle": "Bộ sưu tập các dự án thiết kế, chế tác và lắp đặt đồ nội thất — phần lớn công việc của chúng tôi — cùng các dự án nội thất, kiến trúc và cảnh quan."
+      "subtitle": "Bộ sưu tập các dự án kiến trúc, nội thất và cảnh quan của chúng tôi — nhà phố, biệt thự, penthouse và nhiều loại hình khác, tại Vinhomes Golden River, Vinhomes Central Park, Thủ Thiêm, Thảo Điền và Phú Mỹ Hưng. Phần lớn nội dung ở đây là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất."
     },
-    "comingSoon": {
-      "title": "Hồ sơ dự án sắp ra mắt"
+    "locations": {
+      "title": "Nơi chúng tôi đã thực hiện dự án",
+      "items": ["Vinhomes Golden River", "Vinhomes Central Park", "Thủ Thiêm", "Thảo Điền", "Phú Mỹ Hưng"],
+      "note": "Nhà phố, biệt thự, penthouse và nhiều loại hình khác."
+    },
+    "note": {
+      "body": "Nhà phố, biệt thự và penthouse — hoàn thiện tốt hơn bất kỳ ai khác."
     },
     "filters": {
       "all": "Tất cả",
@@ -273,6 +267,13 @@
     "hero": {
       "title": "Quy trình của chúng tôi",
       "subtitle": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ."
+    },
+    "roadmap": {
+      "badge": "Quy trình",
+      "kicker": "Lộ trình quy trình",
+      "titleEmphasis": "Trong sáu",
+      "titleSuffix": "bước",
+      "statement": "Từ bản vẽ đầu tiên đến khi giao hồ sơ cuối cùng — hoàn thiện tốt hơn bất kỳ ai khác."
     },
     "steps": {
       "consultation": {
@@ -315,7 +316,7 @@
       "phone": { "label": "Số điện thoại / Zalo / WhatsApp", "hint": "Không bắt buộc" },
       "projectType": {
         "label": "Loại dự án",
-        "options": ["Đồ nội thất", "Nội thất", "Kiến trúc", "Cảnh quan", "Kết hợp"]
+        "options": ["Kiến trúc", "Đồ nội thất", "Nội thất", "Cảnh quan", "Kết hợp"]
       },
       "propertyType": { "label": "Loại bất động sản" },
       "plotArea": { "label": "Diện tích đất hoặc diện tích sàn ước tính" },
@@ -420,12 +421,12 @@
   },
   "meta": {
     "home": {
-      "title": "Skog Mộc by TNP — Thiết kế đồ nội thất cho nhà ở Việt Nam",
-      "description": "Thiết kế đồ nội thất theo yêu cầu và bán theo yêu cầu cho nhà ở Việt Nam, cùng thiết kế nội thất, kiến trúc và cảnh quan khi cần. Có dịch vụ lắp đặt."
+      "title": "Skog Mộc by TNP — Kiến trúc & Thiết kế cho nhà ở Việt Nam",
+      "description": "Một studio kiến trúc và thiết kế tổng hợp cho nhà ở Việt Nam — thiết kế ý tưởng, cải tạo và mở rộng, cùng thiết kế nội thất và cảnh quan. Thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh không ai sánh được."
     },
     "services": {
       "title": "Dịch vụ — Skog Mộc by TNP",
-      "description": "Thiết kế và lắp đặt đồ nội thất, cùng thiết kế nội thất, kiến trúc và cảnh quan khi cần."
+      "description": "Thiết kế kiến trúc, nội thất và cảnh quan, với thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh nổi bật của chúng tôi."
     },
     "pricing": {
       "title": "Bảng giá — Skog Mộc by TNP",
@@ -433,7 +434,7 @@
     },
     "portfolio": {
       "title": "Dự án — Skog Mộc by TNP",
-      "description": "Bộ sưu tập các dự án thiết kế, chế tác và lắp đặt đồ nội thất, cùng các dự án nội thất, kiến trúc và cảnh quan."
+      "description": "Bộ sưu tập các dự án kiến trúc, nội thất và cảnh quan — chủ yếu là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất."
     },
     "contact": {
       "title": "Liên hệ — Skog Mộc by TNP",
