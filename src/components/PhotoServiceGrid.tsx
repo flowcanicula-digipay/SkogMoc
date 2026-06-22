@@ -69,7 +69,7 @@ export default function PhotoServiceGrid({ namespace }: { namespace: string }) {
                   {t(`${key}.body`)}
                 </p>
                 <div
-                  className={`mt-3 h-px bg-linen-50/70 transition-all duration-500 ${
+                  className={`mt-3 h-px bg-linen-50/70 transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                     isActive ? 'w-16' : 'w-8'
                   }`}
                 />
