@@ -11,8 +11,8 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-export default function StorySection() {
-  const t = useTranslations('home.statement');
+export default function StorySection({ namespace = 'home.statement' }: { namespace?: string }) {
+  const t = useTranslations(namespace);
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const bodyRef = useRef<HTMLParagraphElement>(null);

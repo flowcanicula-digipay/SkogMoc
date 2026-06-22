@@ -79,6 +79,7 @@
       "lead": "Từ buổi tư vấn đầu tiên đến khi giao hồ sơ, qua sáu giai đoạn."
     },
     "installation": {
+      "kicker": "Đồ nội thất · Lắp đặt",
       "title": "Nơi chúng tôi không ai sánh được: đồ nội thất, đã lắp đặt.",
       "body": "Khi phương án đã có — dự án mới hoặc cải tạo — dịch vụ thiết kế, chế tác và lắp đặt đồ nội thất của chúng tôi hoàn thiện không gian tốt hơn bất kỳ ai khác. Chỉ cần cho chúng tôi biết khi liên hệ."
     },
@@ -89,18 +90,29 @@
       "viewAll": "Xem tất cả dự án"
     },
     "cta": {
-      "title": "Bạn đang có một dự án?",
-      "body": "Hãy cho chúng tôi biết về ngôi nhà của bạn và những gì bạn muốn thiết kế.",
-      "button": "Bắt đầu dự án"
+      "kicker": "Cùng trò chuyện",
+      "title": "Đây là cảm giác mà ngôi nhà của bạn nên có.",
+      "body": "Kiến trúc, nội thất, và phần hoàn thiện đồ nội thất không ai sánh được — một studio, từ đầu đến cuối. Hãy cho chúng tôi biết về ngôi nhà, khu đất của bạn, và điều bạn đang mong muốn thiết kế.",
+      "button": "Có, hãy bắt đầu"
     }
   },
   "services": {
     "hero": {
-      "title": "Dịch vụ của chúng tôi",
-      "subtitle": "Một studio kiến trúc và thiết kế tổng hợp — thiết kế ý tưởng, cải tạo, mở rộng, nội thất và cảnh quan — với thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh không ai sánh được."
+      "title": "Chúng Tôi Thiết Kế Nhà.\nChúng Tôi Hoàn Thiện Tốt Hơn Bất Kỳ Ai.",
+      "subtitle": "Một studio kiến trúc và thiết kế tổng hợp — thiết kế ý tưởng, cải tạo, mở rộng, nội thất và cảnh quan. Và khi đến phần đồ nội thất: thiết kế, chế tác và lắp đặt, hoàn thiện theo cách không nơi nào khác có được.",
+      "cta": "Bắt Đầu Dự Án Của Bạn",
+      "secondaryCta": "Xem Cách Chúng Tôi Làm Việc",
+      "imageAlt": "Bản vẽ ý tưởng kiến trúc bên cạnh nội thất hoàn thiện của một ngôi nhà Việt Nam"
+    },
+    "manifesto": {
+      "eyebrow": "Chúng Tôi Là Ai",
+      "title": "Chúng tôi là <accent>kiến trúc sư trước tiên</accent> — ý tưởng, hồ sơ thiết kế, cải tạo, mở rộng. Đồ nội thất là nơi <accent>không ai sánh được với chúng tôi</accent>, và chúng tôi nói điều đó <accent>không cần rào trước đón sau</accent>.",
+      "caption": "Một studio. Mọi lớp của căn nhà. Không qua tay ai khác."
     },
     "core": {
+      "kicker": "Lĩnh vực cốt lõi",
       "title": "Chúng tôi thiết kế gì",
+      "lead": "Bốn lĩnh vực, một studio duy nhất — kiến trúc dẫn đầu, đồ nội thất là nơi không ai sánh được với chúng tôi.",
       "leadTag": "Nơi chúng tôi không ai sánh được",
       "furniture": {
         "title": "Thiết kế đồ nội thất",
@@ -120,10 +132,13 @@
       }
     },
     "installation": {
+      "kicker": "Dịch vụ trực tiếp",
       "title": "Lắp đặt đồ nội thất",
+      "statement": "Thiết Kế Đúng Bản Vẽ.\nLắp Đặt\nKhông Ai Sánh Được.",
       "body": "Nếu bạn không muốn tự vận chuyển và lắp đặt, chúng tôi sẽ lắp đặt đồ nội thất cho bạn — đây là phần việc mà chúng tôi làm tốt hơn bất kỳ ai khác."
     },
     "extended": {
+      "kicker": "Mạng lưới chuyên môn",
       "title": "Dịch vụ chuyên môn mở rộng",
       "lead": "Có sẵn khi dự án cần, qua mạng lưới chuyên môn của chúng tôi — không phải công việc thường xuyên của studio.",
       "items": [
@@ -164,6 +179,34 @@
         }
       ],
       "note": "Có sẵn khi cần, qua mạng lưới của chúng tôi."
+    },
+    "statement": {
+      "title": "Vinhomes Golden River.\nThảo Điền.\nPhú Mỹ Hưng.",
+      "body": "Nhà phố, biệt thự và penthouse tại những khu vực khắt khe nhất của TP.HCM — do chúng tôi thiết kế, và khi có phần đồ nội thất, cũng do chúng tôi hoàn thiện. Không ai giao lại mười phần trăm cuối cùng cho người khác. Chúng tôi tự làm, vì đó là phần thực sự được nhìn thấy.",
+      "lead": "Kiến trúc, nội thất, cảnh quan và đồ nội thất — một studio, từ đầu đến cuối."
+    },
+    "process": {
+      "kicker": "Quy Trình",
+      "title": "Một Lộ Trình, Không Phải Phỏng Đoán.",
+      "lead": "Sáu điểm dừng từ một mảnh đất trống đến một ngôi nhà hoàn thiện — mỗi điểm là một kết quả thực sự, không phải một bước mơ hồ.",
+      "cta": "Xem toàn bộ quy trình",
+      "steps": {
+        "consultation": "Tư vấn",
+        "concept": "Ý tưởng",
+        "development": "Phát triển",
+        "documentation": "Hồ sơ",
+        "installation": "Lắp đặt",
+        "handover": "Giao hồ sơ"
+      }
+    },
+    "proof": {
+      "text": "Chúng tôi không giao đồ nội thất cho bên khác. Chúng tôi thiết kế, chế tác, lắp đặt — và điều đó thể hiện rõ."
+    },
+    "cta": {
+      "kicker": "Cùng Trò Chuyện",
+      "title": "Cho Chúng Tôi Biết Bạn Đang Xây Gì.",
+      "body": "Dù bạn đang ở giai đoạn nào — một mảnh đất trống, một dự án cải tạo đang dở, hay một căn nhà đã hoàn thiện phần xây chỉ còn thiếu nội thất — hãy bắt đầu bằng một cuộc trò chuyện, không phải một bản báo giá.",
+      "button": "Bắt Đầu Trò Chuyện"
     }
   },
   "pricing": {

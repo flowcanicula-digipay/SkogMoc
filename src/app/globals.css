@@ -6,7 +6,9 @@
 .story-split .line,
 .manifesto-split .line,
 .section-intro-split .line,
-.bold-statement-split .line {
+.bold-statement-split .line,
+.final-cta-split .line,
+.services-hero-split .line {
   display: block;
   overflow: hidden;
 }
@@ -40,6 +42,27 @@
   animation: process-pulse-glow 2.4s ease-in-out infinite;
 }
 
+@keyframes lantern-float {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(-14px) scale(1.15);
+    opacity: 1;
+  }
+}
+
+.lantern-float {
+  animation: lantern-float 4.5s ease-in-out infinite;
+}
+
+.lantern-float-slow {
+  animation: lantern-float 6.5s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .process-marker-idle,
   .process-marker-glow {
@@ -56,4 +79,21 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Native cursor is hidden site-wide only once CustomCursor.tsx has mounted
+   (skips prefers-reduced-motion and coarse/touch pointers) — text fields keep
+   a real text caret since a hidden cursor there hurts usability more than
+   the "magical" effect is worth. */
+.custom-cursor-active,
+.custom-cursor-active a,
+.custom-cursor-active button,
+.custom-cursor-active [role='button'] {
+  cursor: none;
+}
+
+.custom-cursor-active input,
+.custom-cursor-active textarea,
+.custom-cursor-active select {
+  cursor: auto;
 }

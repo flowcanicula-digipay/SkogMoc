@@ -6,6 +6,10 @@ function local(name: string) {
   return `/assets/images/installations/${name}`;
 }
 
+function localBg(name: string) {
+  return `/assets/images/backgrounds/${name}`;
+}
+
 export const stockImages = {
   heroBg: pexels(13573493),
   banner: pexels(3965520),
@@ -25,6 +29,10 @@ export const stockImages = {
   expertiseFurnitureDesign: local('furniture-3.jpg'),
   expertiseMaterialSelection: pexels(6580549),
   expertiseSpatialPlanning: pexels(834892),
+  extendedBuildingSurveyor: pexels(8278896),
+  extendedStructuralEngineer: pexels(10932215),
+  extendedHistoricBuildings: pexels(30882228),
+  extendedProductionDesigner: pexels(3651904),
   roadmapConsultation: pexels(7964538),
   roadmapConcept: pexels(17077378),
   roadmapDevelopment: pexels(3760788),
@@ -58,4 +66,5 @@ export const stockImages = {
   installation25: local('installlation-grand-2.jpg'),
   installation26: local('installation-stairs-1.jpg'),
   installation27: local('installation-stairs-2.jpg'),
+  ctaBg: localBg('skyline-river.jpg'),
 } as const;

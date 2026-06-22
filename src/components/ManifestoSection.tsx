@@ -29,8 +29,8 @@ function RoofMotif() {
   );
 }
 
-export default function ManifestoSection() {
-  const t = useTranslations('home.manifesto');
+export default function ManifestoSection({ namespace = 'home.manifesto' }: { namespace?: string }) {
+  const t = useTranslations(namespace);
   const sectionRef = useRef<HTMLElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const captionRef = useRef<HTMLParagraphElement>(null);

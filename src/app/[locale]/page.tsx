@@ -15,6 +15,7 @@ import ProcessTimeline from '@/components/ProcessTimeline';
 import FormulaSection from '@/components/FormulaSection';
 import PortfolioGrid from '@/components/PortfolioGrid';
 import BoldStatement from '@/components/BoldStatement';
+import FinalCtaSection from '@/components/FinalCtaSection';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -49,22 +50,35 @@ export default async function HomePage({
       {/* Full-bleed image banner */}
       <ImageBanner image={stockImages.banner} alt={t('banner.title')} title={t('banner.title')} />
 
-      {/* 01 Services — furniture leads, photo grid */}
-      <section className="pt-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <SectionIntro
-            index="01"
-            label={tCommon('nav.services')}
-            title={t('services.title')}
-            lead={t('services.lead')}
-          />
+      {/*
+        01 Services — given the same sticky-pin/cover treatment as Expertise
+        below, but mirrored: `sticky bottom-0` instead of `top-0`, so scrolling
+        back UP out of Expertise, this section re-covers it from below instead
+        of just scrolling away. z-20 keeps it above Expertise's z-0 regardless
+        of DOM order. The spacer above the sticky panel (not padding on it —
+        see ExpertiseSection.tsx's note on the Chromium sticky-height bug)
+        provides the dwell scroll room the stuck state needs to be visible
+        for more than an instant.
+      */}
+      <div className="relative z-20">
+        <div className="h-[20vh] sm:h-[26vh]" aria-hidden="true" />
+        <div className="sticky bottom-0 bg-linen-50 pt-24">
+          <div className="mx-auto max-w-7xl px-6">
+            <SectionIntro
+              index="01"
+              label={tCommon('nav.services')}
+              title={t('services.title')}
+              lead={t('services.lead')}
+            />
+          </div>
+          <Reveal as="div" className="mt-12 w-full">
+            <PhotoServiceGrid namespace="services.core" />
+          </Reveal>
         </div>
-        <Reveal as="div" className="mt-12 w-full">
-          <PhotoServiceGrid namespace="services.core" />
-        </Reveal>
-      </section>
+      </div>
 
-      {/* Expertise — pinned via CSS sticky; StorySection slides up and covers
+      {/* Expertise — pinned via CSS sticky, lowest z-index on the page, so
+          the sections immediately before and after both slide over and cover
           it (see ExpertiseSection.tsx and StorySection.tsx z-index/scrub) */}
       <ExpertiseSection />
 
@@ -113,23 +127,8 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Final CTA */}
-      <Reveal as="section" className="mx-auto max-w-7xl px-6 py-24">
-        <div className="rounded-2xl bg-forest-950 px-8 py-16 text-center sm:px-16">
-          <h2 className="font-display text-3xl font-bold text-linen-50 sm:text-4xl">
-            {t('cta.title')}
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-linen-50/80">
-            {t('cta.body')}
-          </p>
-          <Link
-            href="/contact"
-            className="mt-8 inline-block rounded-full bg-amber-600 px-8 py-3 text-sm font-medium text-linen-50 hover:bg-amber-700"
-          >
-            {t('cta.button')}
-          </Link>
-        </div>
-      </Reveal>
+      {/* Final CTA — full-bleed, dramatic word reveal, see FinalCtaSection.tsx */}
+      <FinalCtaSection />
     </>
   );
 }

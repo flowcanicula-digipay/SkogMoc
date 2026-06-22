@@ -9,6 +9,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
 import SmoothScroll from '@/components/SmoothScroll';
+import CustomCursor from '@/components/CustomCursor';
 import '../globals.css';
 
 const displayFont = Plus_Jakarta_Sans({
@@ -35,6 +36,15 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://example-skogmoc-todo.vn'),
+  icons: {
+    icon: [
+      { url: '/assets/favicon/favicon.ico', sizes: 'any' },
+      { url: '/assets/favicon/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+      { url: '/assets/favicon/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    apple: '/assets/favicon/apple-touch-icon.png',
+  },
+  manifest: '/assets/favicon/site.webmanifest',
 };
 
 // Next dev's HMR relies on inline <script> tags and eval()-based source maps,
@@ -51,6 +61,7 @@ const csp = [
   "font-src 'self' https://fonts.gstatic.com",
   "connect-src 'self' https://formspree.io",
   "img-src 'self' data: https://images.pexels.com",
+  "manifest-src 'self'",
   "base-uri 'self'",
   "form-action https://formspree.io",
 ].join('; ');
@@ -86,6 +97,7 @@ export default async function LocaleLayout({
       <body className="bg-linen-50 text-ink font-sans antialiased">
         <NextIntlClientProvider messages={messages}>
           <SmoothScroll />
+          <CustomCursor />
           <SchemaJsonLd />
           <Header />
           <main>{children}</main>

@@ -201,13 +201,13 @@ The **professional inquiry form** (`/professionals`) collects:
 Both forms' data is:
 - Transmitted directly from the visitor's browser to Formspree
   (TLS-encrypted)
-- Forwarded by Formspree to the business email (thuy@tnpgr.vn)
+- Forwarded by Formspree to the business email (thuyken52914@yahoo.com.vn)
 - Stored in the Formspree dashboard (subject to Formspree's privacy policy)
 - Never processed, stored, or logged by this application itself
 - Never sold or shared with third parties
 
 Visitors may request access to, correction of, or deletion of their
-submitted data by emailing **thuy@tnpgr.vn**.
+submitted data by emailing **thuyken52914@yahoo.com.vn**.
 
 A full privacy policy is published at `/[locale]/privacy/` in all three
 languages. That page carries `robots: noindex, follow` so it doesn't compete

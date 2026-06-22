@@ -1,11 +1,16 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import gsap from 'gsap';
 import { Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+
+// Avoids the SSR-only "useLayoutEffect does nothing on the server" warning
+// during static export, while still running synchronously before paint in
+// the browser — that's what hides the header before it can flash visible.
+const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
 const NAV_ITEMS = [
   { href: '/', key: 'home' },
@@ -23,9 +28,15 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const isHome = pathname === '/';
+  const isServices = pathname.startsWith('/services');
+  // Both pages open with a full GSAP intro hero — the header stays hidden
+  // until that hero settles, then makes a visibly delayed entrance rather
+  // than competing with it. Services' hero timeline runs a beat longer
+  // (kicker + two-line headline), so it gets a longer, more noticeable gap.
+  const heroDelay = isHome ? 2.8 : isServices ? 3.4 : null;
 
-  useEffect(() => {
-    if (!isHome || !headerRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  useIsomorphicLayoutEffect(() => {
+    if (heroDelay === null || !headerRef.current || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       return;
     }
 
@@ -34,14 +45,14 @@ export default function Header() {
       y: 0,
       opacity: 1,
       duration: 0.9,
-      delay: 2.8,
+      delay: heroDelay,
       ease: 'power3.out',
     });
 
     return () => {
       tween.kill();
     };
-  }, [isHome]);
+  }, [heroDelay]);
 
   return (
     <header

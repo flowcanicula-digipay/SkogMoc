@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import PortfolioGrid from '@/components/PortfolioGrid';
 import BoldStatement from '@/components/BoldStatement';
+import FinalCtaSection from '@/components/FinalCtaSection';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -68,6 +69,8 @@ export default async function PortfolioPage({
           className="mx-auto mt-14 max-w-2xl text-center text-2xl sm:text-3xl"
         />
       </section>
+
+      <FinalCtaSection />
     </>
   );
 }

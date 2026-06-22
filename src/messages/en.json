@@ -79,6 +79,7 @@
       "lead": "From first consultation to handover, in six phases."
     },
     "installation": {
+      "kicker": "Furniture · Installation",
       "title": "Where we're unmatched: furniture, installed.",
       "body": "Once your plan is built — new or renovation — our furniture design, making, and installation finish the space better than anyone else. Just say so when you reach out."
     },
@@ -89,18 +90,29 @@
       "viewAll": "View all work"
     },
     "cta": {
-      "title": "Have a project in mind?",
-      "body": "Tell us about your home, your site, and what you're hoping to design.",
-      "button": "Start a Project"
+      "kicker": "Let's talk",
+      "title": "This is how your home should feel.",
+      "body": "Architecture, interiors, and the furniture finish nobody else matches — one studio, start to finish. Tell us about your home, your site, and what you're hoping to design.",
+      "button": "Yes, Let's Start"
     }
   },
   "services": {
     "hero": {
-      "title": "Our Services",
-      "subtitle": "A general architecture and design practice — concept design, renovations, additions, interior, and landscape — with furniture design, making, and installation as the specialty nobody else matches."
+      "title": "We Design Houses.\nWe Finish Them Better Than Anyone.",
+      "subtitle": "A general architecture and design studio — concept design, renovations, additions, interiors, and landscapes. And when it comes to furniture: design, making, and installation, finished like nowhere else.",
+      "cta": "Start Your Project",
+      "secondaryCta": "See How We Work",
+      "imageAlt": "Architectural concept drawings beside a finished Vietnamese home interior"
+    },
+    "manifesto": {
+      "eyebrow": "What We Are",
+      "title": "We are <accent>architects first</accent> — concept, documentation, renovations, additions. Furniture is where <accent>nobody touches us</accent>, and we say that <accent>without hedging</accent>.",
+      "caption": "One studio. Every layer of the house. No handoffs."
     },
     "core": {
+      "kicker": "Core disciplines",
       "title": "What we design",
+      "lead": "Four disciplines, one studio — architecture leads, and furniture is where nobody touches us.",
       "leadTag": "Where we're unmatched",
       "furniture": {
         "title": "Furniture Design",
@@ -120,10 +132,13 @@
       }
     },
     "installation": {
+      "kicker": "Direct service",
       "title": "Furniture installation",
+      "statement": "Designed To Plan.\nInstalled\nLike No One Else.",
       "body": "If you'd rather not handle delivery and setup yourself, we'll install your furniture for you — it's the part of the process we do better than anyone else."
     },
     "extended": {
+      "kicker": "Specialist network",
       "title": "Extended specialist services",
       "lead": "Available when a project needs them, via our professional network — not part of our everyday core work.",
       "items": [
@@ -164,6 +179,34 @@
         }
       ],
       "note": "Available as needed, via our network."
+    },
+    "statement": {
+      "title": "Vinhomes Golden River.\nThảo Điền.\nPhú Mỹ Hưng.",
+      "body": "Houses, villas, and penthouses across Ho Chi Minh City's most demanding addresses — designed by us, and where furniture is involved, finished by us too. Nobody hands off the last ten percent. We do it ourselves, because that's the part that actually shows.",
+      "lead": "Architecture, interiors, landscape, and furniture — one studio, start to finish."
+    },
+    "process": {
+      "kicker": "The Process",
+      "title": "A Roadmap, Not A Guessing Game.",
+      "lead": "Six stops from a blank site to a finished home — each one a real deliverable, not a placeholder step.",
+      "cta": "See the full process",
+      "steps": {
+        "consultation": "Consultation",
+        "concept": "Concept",
+        "development": "Development",
+        "documentation": "Documentation",
+        "installation": "Installation",
+        "handover": "Handover"
+      }
+    },
+    "proof": {
+      "text": "We don't refer furniture out to someone else. We design it, make it, install it — and it shows."
+    },
+    "cta": {
+      "kicker": "Let's Talk",
+      "title": "Tell Us What You're Building.",
+      "body": "Whatever stage you're at — a bare plot, a renovation already underway, or a finished shell that just needs furnishing — start with a conversation, not a quote form.",
+      "button": "Start The Conversation"
     }
   },
   "pricing": {

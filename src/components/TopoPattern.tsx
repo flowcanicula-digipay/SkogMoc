@@ -1,12 +1,12 @@
-export default function TopoPattern({
-  className = '',
-  flip = false,
-}: {
-  className?: string;
-  flip?: boolean;
-}) {
+import { forwardRef } from 'react';
+
+const TopoPattern = forwardRef<
+  SVGSVGElement,
+  { className?: string; flip?: boolean }
+>(function TopoPattern({ className = '', flip = false }, ref) {
   return (
     <svg
+      ref={ref}
       className={`pointer-events-none absolute ${flip ? 'left-0 bottom-0 -scale-x-100' : 'right-0 top-0'} ${className}`}
       width="640"
       height="480"
@@ -22,4 +22,6 @@ export default function TopoPattern({
       </g>
     </svg>
   );
-}
+});
+
+export default TopoPattern;
