@@ -3,15 +3,15 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect bare / to /en/
-RewriteRule ^$ /en/ [L,R=301]
+# Redirect bare / to /vi/
+RewriteRule ^$ /vi/ [L,R=301]
 
 # Disable directory listing
 Options -Indexes
 
 # Locale-aware 404 — generated from src/app/[locale]/not-found.tsx via the
 # src/app/[locale]/[...rest]/page.tsx catch-all (locale + literal "404" param)
-ErrorDocument 404 /en/404/
+ErrorDocument 404 /vi/404/
 
 # Security headers — frame-ancestors here, since the CSP <meta> tag in
 # src/app/[locale]/layout.tsx cannot enforce it (see SECURITY.md A04)

@@ -17,7 +17,7 @@ See [STORY.md](./STORY.md) for the product/content brief and
 - Next.js 15 (App Router), static export (`output: 'export'`)
 - TypeScript (strict mode)
 - Tailwind CSS
-- `next-intl` — locales: `en` (default), `vi`, `ja`
+- `next-intl` — locales: `vi` (default), `en`, `ja`
 - Formspree — static-compatible form backend (separate forms for
   residential design inquiries and trade/professional-services inquiries)
 
@@ -26,7 +26,7 @@ See [STORY.md](./STORY.md) for the product/content brief and
 ```bash
 node --version   # 20+
 npm install
-npm run dev      # http://localhost:3000 — redirects to /en/
+npm run dev      # http://localhost:3000 — redirects to /vi/
 ```
 
 ## Build
@@ -66,7 +66,7 @@ any metric falls below that bar. `npm run build` runs this gate before
 
 | Route | Description |
 |---|---|
-| `/` | Redirects to `/en/` |
+| `/` | Redirects to `/vi/` |
 | `/[locale]/` | Home |
 | `/[locale]/services/` | Service breakdown: design disciplines + the optional build-connection model |
 | `/[locale]/pricing/` | Design package tiers, what's included, FAQ |
@@ -81,7 +81,7 @@ any metric falls below that bar. `npm run build` runs this gate before
 
 **Production**: built `out/` is uploaded to Hostinger shared hosting
 (`public_html/`). The `.htaccess` in `public/.htaccess` (copied into `out/`
-on build) handles the HTTPS redirect, the bare `/` → `/en/` rewrite, and
+on build) handles the HTTPS redirect, the bare `/` → `/vi/` rewrite, and
 cache headers.
 
 **GitHub Pages**: `.github/workflows/deploy-pages.yml` builds and publishes
