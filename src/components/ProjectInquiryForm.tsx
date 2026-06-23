@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import gsap from 'gsap';
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import ElegantSelect from './ElegantSelect';
+import { withBasePath } from '@/lib/assetPath';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
 
@@ -239,7 +240,7 @@ export default function ProjectInquiryForm() {
             />
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/images/portfolio/motifs/flag-vn.svg"
+              src={withBasePath('/assets/images/portfolio/motifs/flag-vn.svg')}
               alt=""
               className="pointer-events-none h-3 w-4 scale-110 object-contain opacity-0 transition-opacity duration-200 peer-checked:opacity-100"
             />

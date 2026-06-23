@@ -4,8 +4,9 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Check, ArrowRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
+import { withBasePath } from '@/lib/assetPath';
 
-const ICONS_DIR = '/assets/images/pricing/motifs';
+const ICONS_DIR = withBasePath('/assets/images/pricing/motifs');
 
 const PACKAGES = ['consult', 'design', 'fullService'] as const;
 

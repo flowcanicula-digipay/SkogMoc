@@ -1,7 +1,8 @@
 import { useTranslations } from 'next-intl';
 import { Check, Minus } from 'lucide-react';
+import { withBasePath } from '@/lib/assetPath';
 
-const ICONS_DIR = '/assets/images/pricing/motifs';
+const ICONS_DIR = withBasePath('/assets/images/pricing/motifs');
 
 const PACKAGES = ['consult', 'design', 'fullService'] as const;
 

@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { Instagram, Facebook } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import TopoPattern from './TopoPattern';
+import { withBasePath } from '@/lib/assetPath';
 
 const NAV_ITEMS = [
   { href: '/', key: 'home' },
@@ -59,7 +60,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-start gap-3 text-sm text-linen-50/70 lg:items-end lg:text-right">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/logo/logo-mark-light.png" alt="Skog Mộc by TNP" className="h-12 w-12" />
+            <img src={withBasePath('/assets/logo/logo-mark-light.png')} alt="Skog Mộc by TNP" className="h-12 w-12" />
             <p className="max-w-[14rem] font-display text-base text-linen-50">
               {t('footer.tagline')}
             </p>

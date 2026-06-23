@@ -11,7 +11,8 @@
 .services-hero-split .line,
 .portfolio-hero-split .line,
 .contact-hero-split .line,
-.professionals-hero-split .line {
+.professionals-hero-split .line,
+.privacy-header-split .line {
   display: block;
   overflow: hidden;
 }

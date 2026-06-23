@@ -7,13 +7,14 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import { ArrowRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
+import { withBasePath } from '@/lib/assetPath';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
 }
 
-const ICONS_DIR = '/assets/images/services/motifs';
-const PORTFOLIO_MOTIFS_DIR = '/assets/images/portfolio/motifs';
+const ICONS_DIR = withBasePath('/assets/images/services/motifs');
+const PORTFOLIO_MOTIFS_DIR = withBasePath('/assets/images/portfolio/motifs');
 
 // Full-color, hand-built motifs (not stock pictograms) — nón lá in
 // conversation for the site visit, a lotus bud breaking open for the

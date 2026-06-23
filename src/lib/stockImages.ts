@@ -1,44 +1,46 @@
-function pexels(id: number, width = 1600) {
-  return `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${width}`;
-}
+import { withBasePath } from './assetPath';
 
 function local(name: string) {
-  return `/assets/images/installations/${name}`;
+  return withBasePath(`/assets/images/installations/${name}`);
 }
 
 function localBg(name: string) {
-  return `/assets/images/backgrounds/${name}`;
+  return withBasePath(`/assets/images/backgrounds/${name}`);
+}
+
+function stock(name: string) {
+  return withBasePath(`/assets/images/stock/${name}.jpg`);
 }
 
 export const stockImages = {
-  heroBg: pexels(13573493),
-  banner: pexels(3965520),
+  heroBg: stock('hero-bg'),
+  banner: stock('banner'),
   furniture: local('furniture-5.jpg'),
   interior: local('installation-grand-5.jpg'),
-  architecture: pexels(7147286),
-  landscape: pexels(14024974),
-  processConsultation: pexels(5825380),
-  processConcept: pexels(30909748),
-  processDevelopment: pexels(6790091),
-  processDocumentation: pexels(6790072),
+  architecture: stock('architecture'),
+  landscape: stock('landscape'),
+  processConsultation: stock('process-consultation'),
+  processConcept: stock('process-concept'),
+  processDevelopment: stock('process-development'),
+  processDocumentation: stock('process-documentation'),
   processInstallation: local('installation-1.jpg'),
   formulaBg: local('installation-grand-1.jpg'),
-  servicesGridFurniture: pexels(5570228),
-  servicesGridInterior: pexels(3952034),
-  expertiseArchitecturalDesign: pexels(5582585),
+  servicesGridFurniture: stock('services-grid-furniture'),
+  servicesGridInterior: stock('services-grid-interior'),
+  expertiseArchitecturalDesign: stock('expertise-architectural-design'),
   expertiseFurnitureDesign: local('furniture-3.jpg'),
-  expertiseMaterialSelection: pexels(6580549),
-  expertiseSpatialPlanning: pexels(834892),
-  extendedBuildingSurveyor: pexels(8278896),
-  extendedStructuralEngineer: pexels(10932215),
-  extendedHistoricBuildings: pexels(30882228),
-  extendedProductionDesigner: pexels(3651904),
-  roadmapConsultation: pexels(7964538),
-  roadmapConcept: pexels(17077378),
-  roadmapDevelopment: pexels(3760788),
-  roadmapDocumentation: pexels(6615235),
+  expertiseMaterialSelection: stock('expertise-material-selection'),
+  expertiseSpatialPlanning: stock('expertise-spatial-planning'),
+  extendedBuildingSurveyor: stock('extended-building-surveyor'),
+  extendedStructuralEngineer: stock('extended-structural-engineer'),
+  extendedHistoricBuildings: stock('extended-historic-buildings'),
+  extendedProductionDesigner: stock('extended-production-designer'),
+  roadmapConsultation: stock('roadmap-consultation'),
+  roadmapConcept: stock('roadmap-concept'),
+  roadmapDevelopment: stock('roadmap-development'),
+  roadmapDocumentation: stock('roadmap-documentation'),
   roadmapInstallation: local('installation.jpg'),
-  roadmapHandover: pexels(7190873),
+  roadmapHandover: stock('roadmap-handover'),
   installation1: local('installation.jpg'),
   installation2: local('installation-1.jpg'),
   installation3: local('installation-2.jpg'),

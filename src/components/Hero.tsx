@@ -9,6 +9,7 @@ import { ArrowRight } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import TopoPattern from './TopoPattern';
 import { stockImages } from '@/lib/stockImages';
+import { withBasePath } from '@/lib/assetPath';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -140,7 +141,7 @@ export default function Hero() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         ref={logoRef}
-        src="/assets/logo/logo-mark-light.png"
+        src={withBasePath('/assets/logo/logo-mark-light.png')}
         alt=""
         aria-hidden="true"
         className="absolute left-[74%] top-[24%] hidden h-24 w-24 -translate-x-1/2 -translate-y-1/2 drop-shadow-lg sm:block sm:h-28 sm:w-28"

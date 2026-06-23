@@ -5,8 +5,9 @@ import { routing } from '@/i18n/routing';
 import ProfessionalsHero from '@/components/ProfessionalsHero';
 import ProfessionalInquiryForm from '@/components/ProfessionalInquiryForm';
 import Reveal from '@/components/Reveal';
+import { withBasePath } from '@/lib/assetPath';
 
-const MOTIFS_DIR = '/assets/images/professionals/motifs';
+const MOTIFS_DIR = withBasePath('/assets/images/professionals/motifs');
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));

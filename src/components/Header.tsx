@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import { Menu, X } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
+import { withBasePath } from '@/lib/assetPath';
 
 // Avoids the SSR-only "useLayoutEffect does nothing on the server" warning
 // during static export, while still running synchronously before paint in
@@ -77,7 +78,7 @@ export default function Header() {
         <Link href="/" className="group flex items-center gap-3">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/assets/logo/logo-mark-light.png"
+            src={withBasePath('/assets/logo/logo-mark-light.png')}
             alt="Skog Mộc by TNP"
             className="h-10 w-10 transition-opacity group-hover:opacity-80"
           />

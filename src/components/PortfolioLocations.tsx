@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 import HcmcLocator from './HcmcLocator';
+import { withBasePath } from '@/lib/assetPath';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
@@ -18,7 +19,7 @@ if (typeof window !== 'undefined') {
 // font-selection note).
 const charm = Charm({ subsets: ['latin', 'vietnamese'], weight: '700', variable: '--font-charm' });
 
-const MOTIFS_DIR = '/assets/images/portfolio/motifs';
+const MOTIFS_DIR = withBasePath('/assets/images/portfolio/motifs');
 
 // Faint hand-drawn-style line doodles scattered behind the ribbon — a
 // sketchbook texture in the spirit of street-food doodle sheets, hand-built
@@ -221,7 +222,7 @@ export default function PortfolioLocations() {
           edited pixel-by-pixel, so nothing here is traced by hand. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/assets/images/portfolio/vietnam-outline.svg"
+        src={withBasePath('/assets/images/portfolio/vietnam-outline.svg')}
         alt=""
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 m-auto h-full w-auto max-w-none opacity-[0.1]"
