@@ -49,7 +49,7 @@ export default async function ProfessionalsPage({
               {/* TODO: temporary stock placeholder — replace with real studio/site photography */}
               <div className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-amber-600/25 shadow-[0_20px_45px_-20px_rgba(217,138,43,0.35)]">
                 <Image
-                  src="/assets/images/professionals/professionals-bg.jpg"
+                  src={withBasePath('/assets/images/professionals/professionals-bg.jpg')}
                   alt=""
                   fill
                   priority
