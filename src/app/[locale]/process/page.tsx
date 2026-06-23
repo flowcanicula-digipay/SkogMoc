@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import { buildPageMetadata } from '@/lib/seo';
 import ProcessHero from '@/components/ProcessHero';
 import ProcessTimeline from '@/components/ProcessTimeline';
 import StorySection from '@/components/StorySection';
@@ -19,8 +20,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'meta.process' });
-  return { title: t('title'), description: t('description') };
+  return buildPageMetadata({
+    locale,
+    namespace: 'meta.process',
+    path: 'process',
+    imagePath: '/assets/images/stock/process-consultation.jpg',
+  });
 }
 
 export default async function ProcessPage({

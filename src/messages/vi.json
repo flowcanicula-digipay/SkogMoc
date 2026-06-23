@@ -573,27 +573,33 @@
   "meta": {
     "home": {
       "title": "Skog Mộc by TNP — Kiến trúc & Thiết kế cho nhà ở Việt Nam",
-      "description": "Một studio kiến trúc và thiết kế tổng hợp cho nhà ở Việt Nam — thiết kế ý tưởng, cải tạo và mở rộng, cùng thiết kế nội thất và cảnh quan. Thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh không ai sánh được."
+      "description": "Một studio kiến trúc và thiết kế tổng hợp cho nhà ở Việt Nam — thiết kế ý tưởng, cải tạo và mở rộng, cùng thiết kế nội thất và cảnh quan. Thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh không ai sánh được.",
+      "keywords": ["studio kiến trúc Việt Nam", "thiết kế nhà ở Việt Nam", "thiết kế đồ nội thất theo yêu cầu", "thiết kế nội thất TP.HCM", "thiết kế cảnh quan Việt Nam", "kiến trúc sư cải tạo nhà", "lắp đặt nội thất Việt Nam"]
     },
     "services": {
       "title": "Dịch vụ — Skog Mộc by TNP",
-      "description": "Thiết kế kiến trúc, nội thất và cảnh quan, với thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh nổi bật của chúng tôi."
+      "description": "Thiết kế kiến trúc, nội thất và cảnh quan, với thiết kế, chế tác và lắp đặt đồ nội thất là thế mạnh nổi bật của chúng tôi.",
+      "keywords": ["dịch vụ thiết kế kiến trúc Việt Nam", "dịch vụ thiết kế nội thất", "dịch vụ thiết kế cảnh quan", "thiết kế đồ gỗ theo yêu cầu", "dịch vụ lắp đặt nội thất", "kỹ sư kết cấu Việt Nam"]
     },
     "pricing": {
       "title": "Bảng giá — Skog Mộc by TNP",
-      "description": "Các gói thiết kế theo mức độ dịch vụ. Liên hệ chúng tôi để nhận báo giá riêng."
+      "description": "Các gói thiết kế theo mức độ dịch vụ. Liên hệ chúng tôi để nhận báo giá riêng.",
+      "keywords": ["chi phí thiết kế kiến trúc Việt Nam", "bảng giá thiết kế nội thất", "gói tư vấn thiết kế", "báo giá đồ nội thất theo yêu cầu", "giá thiết kế và lắp đặt"]
     },
     "portfolio": {
       "title": "Dự án — Skog Mộc by TNP",
-      "description": "Bộ sưu tập các dự án kiến trúc, nội thất và cảnh quan — chủ yếu là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất."
+      "description": "Bộ sưu tập các dự án kiến trúc, nội thất và cảnh quan — chủ yếu là thiết kế, chế tác và lắp đặt đồ nội thất, thế mạnh chúng tôi được biết đến nhiều nhất.",
+      "keywords": ["dự án kiến trúc Việt Nam", "dự án thiết kế nội thất", "bộ sưu tập đồ nội thất theo yêu cầu", "thiết kế nội thất Vinhomes", "kiến trúc Thảo Điền", "thiết kế nội thất Phú Mỹ Hưng"]
     },
     "contact": {
       "title": "Liên hệ — Skog Mộc by TNP",
-      "description": "Bắt đầu dự án thiết kế nhà ở cùng Skog Mộc by TNP."
+      "description": "Bắt đầu dự án thiết kế nhà ở cùng Skog Mộc by TNP.",
+      "keywords": ["liên hệ kiến trúc sư Việt Nam", "yêu cầu báo giá thiết kế", "tư vấn thiết kế nhà ở Việt Nam", "bắt đầu dự án cải tạo"]
     },
     "professionals": {
       "title": "Dành cho đối tác chuyên môn — Skog Mộc by TNP",
-      "description": "Yêu cầu hợp tác cho kiến trúc sư, đơn vị thi công, chủ đầu tư và các studio khác."
+      "description": "Yêu cầu hợp tác cho kiến trúc sư, đơn vị thi công, chủ đầu tư và các studio khác.",
+      "keywords": ["hợp tác kiến trúc Việt Nam", "hợp tác công ty thiết kế", "hợp tác kỹ sư kết cấu", "yêu cầu hợp tác chuyên môn"]
     },
     "privacy": {
       "title": "Chính sách bảo mật — Skog Mộc by TNP",
@@ -601,7 +607,8 @@
     },
     "process": {
       "title": "Quy trình của chúng tôi — Skog Mộc by TNP",
-      "description": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ."
+      "description": "Một dự án diễn ra như thế nào từ cuộc trò chuyện đầu tiên đến khi giao hồ sơ.",
+      "keywords": ["quy trình thiết kế kiến trúc", "tiến độ dự án cải tạo Việt Nam", "quy trình tư vấn thiết kế", "giai đoạn hồ sơ thiết kế thi công"]
     }
   }
 }

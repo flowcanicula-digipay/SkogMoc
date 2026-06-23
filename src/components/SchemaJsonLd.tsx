@@ -1,10 +1,12 @@
+import { SITE_URL } from '@/lib/seo';
+
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'ProfessionalService',
   name: 'Skog Mộc by TNP',
   description:
     'Architectural, interior, furniture, and landscape design for Vietnamese homes.',
-  url: 'https://TODO-domain.vn',
+  url: SITE_URL,
   telephone: '+84 90 333 37 29',
   email: 'thuyken52914@yahoo.com.vn',
   address: {

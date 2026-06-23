@@ -573,27 +573,33 @@
   "meta": {
     "home": {
       "title": "Skog Mộc by TNP — Architecture & Design for Vietnamese Homes",
-      "description": "A general architecture and design studio for Vietnamese homes — concept design, renovations, and additions, with interior and landscape design. Furniture design, making, and installation is our unmatched specialty."
+      "description": "A general architecture and design studio for Vietnamese homes — concept design, renovations, and additions, with interior and landscape design. Furniture design, making, and installation is our unmatched specialty.",
+      "keywords": ["architecture studio Vietnam", "Vietnamese home design", "custom furniture design Vietnam", "interior design Ho Chi Minh City", "landscape design Vietnam", "renovation architect Vietnam", "furniture installation Vietnam"]
     },
     "services": {
       "title": "Services — Skog Mộc by TNP",
-      "description": "Architecture, interior, and landscape design, with furniture design, making, and installation as our standout specialty."
+      "description": "Architecture, interior, and landscape design, with furniture design, making, and installation as our standout specialty.",
+      "keywords": ["architectural design services Vietnam", "interior design services", "landscape design services", "custom furniture making", "furniture installation service", "structural engineer Vietnam"]
     },
     "pricing": {
       "title": "Pricing — Skog Mộc by TNP",
-      "description": "Design package tiers by service depth. Contact us for a custom quote."
+      "description": "Design package tiers by service depth. Contact us for a custom quote.",
+      "keywords": ["architecture design fees Vietnam", "interior design pricing", "design consultation package", "custom furniture quote", "design and build pricing"]
     },
     "portfolio": {
       "title": "Portfolio — Skog Mộc by TNP",
-      "description": "A gallery of our architecture, interior, and landscape work — mostly furniture design, making, and installation, the specialty we're best known for."
+      "description": "A gallery of our architecture, interior, and landscape work — mostly furniture design, making, and installation, the specialty we're best known for.",
+      "keywords": ["architecture portfolio Vietnam", "interior design portfolio", "custom furniture gallery", "Vinhomes interior design", "Thảo Điền architecture", "Phú Mỹ Hưng interior design"]
     },
     "contact": {
       "title": "Contact — Skog Mộc by TNP",
-      "description": "Start a residential design project with Skog Mộc by TNP."
+      "description": "Start a residential design project with Skog Mộc by TNP.",
+      "keywords": ["contact architect Vietnam", "request design quote", "residential design inquiry Vietnam", "start renovation project"]
     },
     "professionals": {
       "title": "For Professionals — Skog Mộc by TNP",
-      "description": "Collaboration inquiries for architects, builders, developers, and other studios."
+      "description": "Collaboration inquiries for architects, builders, developers, and other studios.",
+      "keywords": ["architecture collaboration Vietnam", "design firm partnership", "structural engineer collaboration", "trade professional inquiry"]
     },
     "privacy": {
       "title": "Privacy Policy — Skog Mộc by TNP",
@@ -601,7 +607,8 @@
     },
     "process": {
       "title": "Our Process — Skog Mộc by TNP",
-      "description": "How a project moves from first conversation to handover."
+      "description": "How a project moves from first conversation to handover.",
+      "keywords": ["architecture design process", "renovation project timeline Vietnam", "design consultation process", "construction documentation phase"]
     }
   }
 }

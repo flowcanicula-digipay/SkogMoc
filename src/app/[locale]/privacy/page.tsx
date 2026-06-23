@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
+import { buildPageMetadata } from '@/lib/seo';
 import PrivacyHeader from '@/components/PrivacyHeader';
 import TopoPattern from '@/components/TopoPattern';
 import Reveal from '@/components/Reveal';
@@ -16,12 +17,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'meta.privacy' });
-  return {
-    title: t('title'),
-    description: t('description'),
+  return buildPageMetadata({
+    locale,
+    namespace: 'meta.privacy',
+    path: 'privacy',
     robots: { index: false, follow: true },
-  };
+  });
 }
 
 const SECTIONS = ['s01', 's02', 's03', 's04', 's05', 's06'] as const;

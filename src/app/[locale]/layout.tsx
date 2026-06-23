@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { Plus_Jakarta_Sans, Montserrat, Inter_Tight } from 'next/font/google';
 import { routing, type Locale } from '@/i18n/routing';
 import { withBasePath } from '@/lib/assetPath';
+import { SITE_URL } from '@/lib/seo';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
@@ -36,7 +37,7 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://example-skogmoc-todo.vn'),
+  metadataBase: new URL(SITE_URL),
   icons: {
     icon: [
       { url: withBasePath('/assets/favicon/favicon.ico'), sizes: 'any' },

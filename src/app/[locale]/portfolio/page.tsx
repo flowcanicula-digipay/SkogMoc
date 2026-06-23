@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
+import { buildPageMetadata } from '@/lib/seo';
 import PortfolioHero from '@/components/PortfolioHero';
 import ManifestoSection from '@/components/ManifestoSection';
 import PortfolioLocations from '@/components/PortfolioLocations';
@@ -22,8 +23,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'meta.portfolio' });
-  return { title: t('title'), description: t('description') };
+  return buildPageMetadata({
+    locale,
+    namespace: 'meta.portfolio',
+    path: 'portfolio',
+    imagePath: '/assets/images/installations/installation-grand-1.jpg',
+  });
 }
 
 export default async function PortfolioPage({

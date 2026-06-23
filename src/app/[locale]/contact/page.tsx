@@ -6,6 +6,7 @@ import ContactHero from '@/components/ContactHero';
 import ProjectInquiryForm from '@/components/ProjectInquiryForm';
 import Reveal from '@/components/Reveal';
 import { withBasePath } from '@/lib/assetPath';
+import { buildPageMetadata } from '@/lib/seo';
 
 const MOTIFS_DIR = withBasePath('/assets/images/contact/motifs');
 
@@ -19,8 +20,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'meta.contact' });
-  return { title: t('title'), description: t('description') };
+  return buildPageMetadata({
+    locale,
+    namespace: 'meta.contact',
+    path: 'contact',
+    imagePath: '/assets/images/contact/contact-bg.jpg',
+  });
 }
 
 export default async function ContactPage({
