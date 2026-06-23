@@ -73,7 +73,7 @@ no-op with a console warning); every other directive works fine in `<meta>`.
    `src/app/[locale]/layout.tsx`:
    ```
    default-src 'none';
-   script-src 'self';
+   script-src 'self' 'unsafe-inline';
    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
    font-src 'self' https://fonts.gstatic.com;
    connect-src 'self' https://formspree.io;
@@ -81,6 +81,13 @@ no-op with a console warning); every other directive works fine in `<meta>`.
    base-uri 'self';
    form-action https://formspree.io;
    ```
+   `script-src` carries `'unsafe-inline'` even in production — not just
+   dev. Next.js's App Router always inlines RSC hydration payloads as
+   `<script>__next_f.push(...)</script>` (and `SchemaJsonLd.tsx` inlines its
+   JSON-LD the same way), even under `output: 'export'`. A nonce isn't
+   available (no server to mint one per request) and a hash isn't either
+   (the payload, and thus its hash, differs every build and per page), so
+   `'unsafe-inline'` is the only directive that lets the app hydrate at all.
 2. `frame-ancestors` plus `X-Frame-Options` — real HTTP response headers set
    in `public/.htaccess` via `mod_headers` (`Header always set ...`), since
    Hostinger's Apache shared hosting *does* support this — the existing

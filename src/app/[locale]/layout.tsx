@@ -5,6 +5,7 @@ import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Plus_Jakarta_Sans, Montserrat, Inter_Tight } from 'next/font/google';
 import { routing, type Locale } from '@/i18n/routing';
+import { withBasePath } from '@/lib/assetPath';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import SchemaJsonLd from '@/components/SchemaJsonLd';
@@ -38,25 +39,26 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://example-skogmoc-todo.vn'),
   icons: {
     icon: [
-      { url: '/assets/favicon/favicon.ico', sizes: 'any' },
-      { url: '/assets/favicon/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
-      { url: '/assets/favicon/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: withBasePath('/assets/favicon/favicon.ico'), sizes: 'any' },
+      { url: withBasePath('/assets/favicon/favicon-16x16.png'), type: 'image/png', sizes: '16x16' },
+      { url: withBasePath('/assets/favicon/favicon-32x32.png'), type: 'image/png', sizes: '32x32' },
     ],
-    apple: '/assets/favicon/apple-touch-icon.png',
+    apple: withBasePath('/assets/favicon/apple-touch-icon.png'),
   },
-  manifest: '/assets/favicon/site.webmanifest',
+  manifest: withBasePath('/assets/favicon/site.webmanifest'),
 };
 
-// Next dev's HMR relies on inline <script> tags and eval()-based source maps,
-// both of which a strict `script-src 'self'` blocks — silently killing all
-// client JS (hydration, GSAP, etc.) when testing via `npm run dev`. The
-// production static export doesn't use either, so only the dev script-src is
-// relaxed; the shipped CSP stays exactly as strict as documented.
+// Next.js's App Router always inlines RSC hydration payloads as
+// `<script>__next_f.push(...)</script>` tags (and SchemaJsonLd inlines its
+// JSON-LD the same way) — even in a static `output: 'export'` build, with no
+// server available to mint a per-request nonce and no fixed hash (the payload
+// differs every build and per page). `'unsafe-inline'` is therefore required
+// in script-src for the app to hydrate at all, not just in dev.
 const isDev = process.env.NODE_ENV === 'development';
 
 const csp = [
   "default-src 'none'",
-  isDev ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'" : "script-src 'self'",
+  isDev ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'" : "script-src 'self' 'unsafe-inline'",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "connect-src 'self' https://formspree.io",
